@@ -58,7 +58,7 @@
 
 | # | Tarefa | Status | Observacao |
 |---|---|---|---|
-| 3.1 | Palavras-chave prioritarias do nicho | 🔄 | Em execucao — bio, titulos, hooks, hashtags |
+| 3.1 | Palavras-chave prioritarias do nicho | ✅ | Criado em `/estrategia/palavras-chave-nicho.md` — 4 niveis + hashtags por tipo de video |
 | 3.2 | Plano de frequencia e consistencia semanal | ⏳ | Estrutura Espelho / Tatica / Escudo para 6 videos/semana |
 | 3.3 | Validacao do nome "O Guardiao Sobrio" | ⏳ | Pesquisa de mercado + analise de posicionamento |
 | 3.4 | Fontes tecnicas e referencias do metodo | ⏳ | Estoicismo, mindfulness, ACT, psicoeducacao — lista curada para citar |
@@ -84,4 +84,4 @@
 
 ---
 
-*Atualizado em: 17/06/2026*
+*Atualizado em: 17/06/2026 — item 3.1 concluido*
