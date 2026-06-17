@@ -1,0 +1,597 @@
+# PRD — App O Guardiao Sobrio
+
+> Product Requirements Document
+> Versão: 1.0
+> Stack: Next.js 15 (App Router) · Supabase · Vercel
+> Atualizado em: Junho 2026
+> Fonte de verdade: este arquivo + repositório guardiao-sobrio-docs
+
+---
+
+## 1. Visão do Produto
+
+### 1.1 Problema
+
+Pessoas em processo de sobriedade — e seus familiares — não têm acesso a uma ferramenta digital laica, honesta, sem jargão de coach e sem vínculo religioso que:
+
+- Apoie os **primeiros 30 dias** (período de maior risco de recaída)
+- Entregue protocolos de crise disponíveis **24h por dia**, no celular
+- Conecte quem está no caos com uma comunidade real de suporte
+- Permita que **familiares e cônjuges** também tenham estrutura e orientação
+
+Grupos como AA existem mas têm barreira religiosa e de anonimato. Terapeutas são caros e indisponíveis às 23h quando o impulso chega. O app O Guardião Sóbrio preenche essa lacuna.
+
+### 1.2 Solução
+
+Uma plataforma web progressiva (PWA-friendly) que entrega:
+
+1. **Ferramenta diária gratuita** — contador de sobriedade, checklist e protocolo de crise (conversão de leads e prova de valor)
+2. **Conteúdo pago por produto** — protocolos, fundamentos e programas desbloqueados por compra individual
+3. **Comunidade fechada** — O Escudo (assinatura mensal/anual)
+4. **Painel de criador** — dashboard para Luis gerenciar conteúdo, leads e receita
+
+### 1.3 Posicionamento
+
+> "Sobriedade não é abstinência. É construção."
+
+O app não é um substituto para psiquiatras, psicólogos ou grupos de apoio. Essa afirmação deve aparecer em tela na autenticação e em todas as páginas de produto.
+
+---
+
+## 2. Usuários
+
+### 2.1 Personas
+
+| Persona | Quem é | Dor central | Entrada no app |
+|---|---|---|---|
+| **Pedro, 38 anos** | Homem que quer parar de beber, ainda na negação ou nos primeiros dias | "Não sei como atravessar hoje" | Vídeo TikTok → landing → cadastro gratuito |
+| **Marcos, 42 anos** | Em processo, já parou mas frágil — medo de recaída | "Preciso de estrutura para não cair" | Produto de entrada (R$ 47) |
+| **Ana, 35 anos** | Cônjuge/familiar de quem bebe | "Não sei como ajudar sem me destruir" | Pilar ESCUDO no TikTok → Guia do Familiar → app |
+| **Luis (Admin)** | Criador da marca | Gerenciar conteúdo, leads, receita e comunidade | Painel admin protegido |
+
+### 2.2 Jornada Principal (Pedro → Marcos → Comunidade)
+
+```
+TikTok → Landing Page → Cadastro Gratuito → Ferramenta Diária
+                                                    |
+                              Compra produto de entrada (R$ 47)
+                                                    |
+                              Programa 30 Dias (R$ 197) ou Plano 14 Dias (R$ 97)
+                                                    |
+                              Comunidade O Escudo (R$ 39,90/mês)
+                                                    |
+                              Mentoria Individual (R$ 997/mês)
+```
+
+---
+
+## 3. Arquitetura do Produto
+
+### 3.1 Módulos
+
+| Módulo | Acesso | Descrição |
+|---|---|---|
+| **Landing Page** | Público | Apresentação da marca, CTA para cadastro e produtos |
+| **Ferramenta Diária** | Gratuito (autenticado) | Contador, checklist, protocolo de crise |
+| **Biblioteca de Conteúdo** | Por produto desbloqueado | Protocolos, fundamentos, programas |
+| **Comunidade O Escudo** | Assinatura ativa | Feed, comentários, suporte mútuo |
+| **Painel Admin** | Luis apenas | Gestão de conteúdo, usuários, produtos, métricas |
+
+### 3.2 Stack Técnica
+
+| Camada | Tecnologia | Justificativa |
+|---|---|---|
+| **Frontend** | Next.js 15 (App Router) | SSR/SSG para SEO da landing, RSC para performance |
+| **Auth** | Supabase Auth (email + magic link) | Sem fricção — sem senha na primeira entrada |
+| **Banco de dados** | Supabase PostgreSQL | RLS nativo por usuário/produto |
+| **Storage** | Supabase Storage | PDFs, assets de produto, fotos de perfil |
+| **Edge Functions** | Supabase Edge Functions | Webhooks de pagamento, notificações |
+| **Pagamentos** | Stripe (via Supabase webhook) | PIX + cartão; gerenciamento de assinaturas |
+| **Deploy** | Vercel | Preview deploys, Edge Network, CI/CD automático |
+| **Email** | Resend | Transacional: confirmação, acesso ao produto, boas-vindas |
+| **Estética** | Tailwind CSS v4 + shadcn/ui | Design system noir realista — paleta escura |
+
+---
+
+## 4. Funcionalidades por Módulo
+
+### 4.1 Landing Page (público)
+
+**Objetivo:** Converter visitante do TikTok em lead cadastrado ou comprador direto.
+
+**Seções obrigatórias:**
+
+| Seção | Conteúdo |
+|---|---|
+| Hero | Headline direta + CTA "Começar agora — grátis" + sub-CTA "Ver produtos" |
+| Prova social | Número de dias somados da comunidade + depoimentos reais (quando disponíveis) |
+| O Método | Explicação visual dos 3 pilares: ESPELHO · TÁTICA · ESCUDO |
+| Produtos | Cards dos 4 produtos pagos com preço explícito (sem enrolação) |
+| Para familiares | Seção separada com CTA para o Guia do Familiar |
+| Sobre Luis | Narrativa da trincheira — não herói, guardião em combate |
+| Disclaimer | "Este app não substitui psiquiatra, psicólogo ou grupos de apoio" |
+| Footer | Links legais (termos, privacidade), redes sociais |
+
+**Regras de design:**
+- Paleta noir: preto `#0e0e0e`, cinza chumbo `#1c1c1e`, dourado opaco `#c9a84c`
+- Tipografia: display serifado bold para headlines, sans-serif para corpo
+- Sem gradientes coloridos, sem ícones em círculos coloridos, sem emojis como elementos de design
+- CTA primário: fundo dourado, texto escuro — único elemento de cor quente por seção
+
+### 4.2 Autenticação
+
+- **Magic link** por email (sem senha) — menor fricção possível
+- Confirmação de email obrigatória
+- Ao primeiro login: tela de boas-vindas com disclaimer obrigatório (não substituição de profissionais) + pergunta: "Você está começando sua jornada ou é familiar de alguém em processo?"
+- A resposta define a `persona` do usuário: `user_type: 'self' | 'family'` — personaliza a home
+
+### 4.3 Ferramenta Diária (gratuita, autenticada)
+
+O núcleo gratuito. Prova de valor diária. Motor de retenção orgânica.
+
+#### 4.3.1 Contador de Sobriedade
+
+- Usuário define a data de início da sobriedade atual
+- Exibe: dias, horas, minutos — em tempo real
+- Ao marcar o dia: micro-animação de confirmação (sem exagero)
+- Histórico de streaks visível (30 dias, 60 dias, etc.)
+- Se o usuário registrar recaída: fluxo empático — sem punição, sem reset agressivo:
+  > "Hoje foi difícil. O Protocolo de Recaída está disponível agora."
+  > CTA para o protocolo gratuito de crise
+
+#### 4.3.2 Checklist Diário de Segurança
+
+Baseado em `/protocolos/seguranca-e-respeito-24h.md`:
+
+- **Manhã:** dormiu 6h+? tomou água? tem plano para as próximas 8h?
+- **Final da tarde (push notification às 17h):** comeu nas últimas 4h? identificou gatilho hoje? tem contato humano planejado?
+- **Noite:** o perímetro foi mantido? houve situação de risco? como respondeu?
+
+O checklist é marcado diariamente. Dados armazenados em `daily_logs` no Supabase.
+
+#### 4.3.3 Protocolo de Crise (Botão do Escudo)
+
+Botão fixo, sempre visível, em destaque na home: **"ATIVAR ESCUDO"**
+
+Ao pressionar:
+1. Tela de resposta imediata com as 5 etapas do protocolo (baseado em `/protocolos/protocolo-escudo-72h.md`)
+2. Timer de 5 minutos visível: "Não tome nenhuma decisão nos próximos 5 minutos"
+3. Breathing exercise animado: 4s in · 4s hold · 6s out
+4. Campo: "Com quem você pode falar agora?" + botão de ligação/mensagem rápida
+5. Movimento: "Saia do ambiente. 10 minutos."
+
+Essa funcionalidade é **sempre gratuita**. Nunca bloqueada por paywall.
+
+#### 4.3.4 Diário de Gatilhos
+
+- Registro simples: horário, situação, emoção, como respondeu
+- Visualização de padrão após 7 dias: "Seus gatilhos aparecem mais às [horário] quando você está [emoção]"
+- Dados locais no Supabase — visíveis apenas para o próprio usuário (RLS estrito)
+
+### 4.4 Biblioteca de Conteúdo (desbloqueio por compra)
+
+Cada produto comprado desbloqueia um conjunto de conteúdo:
+
+| Produto | Preço | Conteúdo desbloqueado no app |
+|---|---|---|
+| Protocolo do Escudo — 72h | R$ 47 | Módulo 72h completo: roteiro hora a hora, checklist, áudio guiado |
+| Mapa dos 13 Fundamentos | R$ 47 | Os 13 fundamentos interativos com workbook e reflexões |
+| Plano de Correção — 14 Dias | R$ 97 | Sprint 14 dias: checklist diário, módulos por fase, tracking |
+| Programa O Guardião — 30 Dias | R$ 197 | Programa completo: os 3 pilares, protocolos, módulo familiares |
+
+**Regras de acesso:**
+- Compra via Stripe — webhook confirma compra no Supabase → linha em `user_purchases`
+- RLS: `SELECT` em conteúdo restrito exige `user_purchases.product_id = content.product_id`
+- Compra não expira — acesso vitalício ao produto
+- Programa 30 Dias inclui módulo específico para familiares (visível se `user_type = 'family'`)
+
+**Estrutura de conteúdo:**
+- Cada módulo: texto (MDX renderizado), checklist interativo, campo de reflexão pessoal
+- Progresso salvo automaticamente por usuário em `user_progress`
+- Versão mobile-first: leitura confortável em 375px
+
+### 4.5 Comunidade O Escudo (assinatura)
+
+Fase 3 — abrir quando a base de leads ultrapassar 300 contatos.
+
+**Funcionalidades MVP da comunidade:**
+
+| Feature | Descrição |
+|---|---|
+| Feed de posts | Texto curto, sem imagem obrigatória — foco na palavra |
+| Comentários | Threading simples (1 nível) |
+| Reações | 3 opções: "Reconheço", "Força" e "Obrigado" — sem like genérico |
+| Categorias | ESPELHO, TÁTICA, ESCUDO, FAMILIARES |
+| Moderação | Luis como admin — posts ficam em fila para aprovação nas primeiras 48h |
+| Regras visíveis | Fixadas no topo: sem julgamento, sem proselitismo, sem promessas de cura |
+
+**Preços:**
+- R$ 39,90/mês ou R$ 299/ano (Stripe Subscription)
+- Acesso encerrado automaticamente ao cancelar (webhook Supabase)
+
+### 4.6 Painel Admin (Luis)
+
+Rota protegida: `/admin` — acesso restrito por `user_role = 'admin'` no Supabase.
+
+| Área | Funcionalidades |
+|---|---|
+| **Dashboard** | Usuários ativos, receita do mês, produtos vendidos, leads capturados |
+| **Usuários** | Listagem, filtro por produto, exportar CSV de leads |
+| **Conteúdo** | Criar/editar módulos em MDX, publicar/despublicar |
+| **Comunidade** | Fila de moderação, banir usuário, fixar post |
+| **Produtos** | Criar/editar produtos, ajustar preços |
+| **Métricas** | Churn de assinatura, taxa de conclusão de módulos, dias somados pela comunidade |
+
+---
+
+## 5. Modelo de Dados (Supabase)
+
+### 5.1 Tabelas principais
+
+```sql
+-- Perfil do usuário (extende auth.users)
+create table profiles (
+  id          uuid primary key references auth.users on delete cascade,
+  name        text,
+  user_type   text check (user_type in ('self', 'family')) default 'self',
+  role        text check (role in ('user', 'admin')) default 'user',
+  created_at  timestamptz default now()
+);
+
+-- Sobriedade
+create table sobriety_records (
+  id            uuid primary key default gen_random_uuid(),
+  user_id       uuid references profiles on delete cascade,
+  start_date    date not null,
+  relapse_date  date,        -- null = ativo
+  notes         text,
+  created_at    timestamptz default now()
+);
+
+-- Logs diários (checklist + diário de gatilhos)
+create table daily_logs (
+  id          uuid primary key default gen_random_uuid(),
+  user_id     uuid references profiles on delete cascade,
+  log_date    date not null,
+  checklist   jsonb,         -- { morning: {sleep: true, water: false}, afternoon: {...}, night: {...} }
+  triggers    jsonb,         -- [{ time, situation, emotion, response }]
+  shield_used boolean default false,
+  created_at  timestamptz default now(),
+  unique (user_id, log_date)
+);
+
+-- Produtos disponíveis
+create table products (
+  id          uuid primary key default gen_random_uuid(),
+  slug        text unique not null,
+  name        text not null,
+  price_cents int not null,
+  stripe_price_id text,
+  type        text check (type in ('one_time', 'subscription')),
+  active      boolean default true,
+  created_at  timestamptz default now()
+);
+
+-- Compras confirmadas
+create table user_purchases (
+  id              uuid primary key default gen_random_uuid(),
+  user_id         uuid references profiles on delete cascade,
+  product_id      uuid references products,
+  stripe_session  text,
+  purchased_at    timestamptz default now()
+);
+
+-- Assinatura ativa (comunidade)
+create table subscriptions (
+  id                  uuid primary key default gen_random_uuid(),
+  user_id             uuid references profiles on delete cascade,
+  product_id          uuid references products,
+  stripe_subscription text,
+  status              text check (status in ('active', 'canceled', 'past_due')),
+  current_period_end  timestamptz,
+  updated_at          timestamptz default now()
+);
+
+-- Conteúdo dos módulos
+create table modules (
+  id          uuid primary key default gen_random_uuid(),
+  product_id  uuid references products,
+  slug        text unique not null,
+  title       text not null,
+  content_mdx text,
+  order_index int,
+  published   boolean default false,
+  created_at  timestamptz default now()
+);
+
+-- Progresso do usuário nos módulos
+create table user_progress (
+  id          uuid primary key default gen_random_uuid(),
+  user_id     uuid references profiles on delete cascade,
+  module_id   uuid references modules,
+  completed   boolean default false,
+  notes       text,    -- reflexão pessoal salva no módulo
+  updated_at  timestamptz default now(),
+  unique (user_id, module_id)
+);
+
+-- Posts da comunidade
+create table community_posts (
+  id          uuid primary key default gen_random_uuid(),
+  user_id     uuid references profiles on delete cascade,
+  category    text check (category in ('espelho', 'tatica', 'escudo', 'familiares')),
+  content     text not null,
+  approved    boolean default false,
+  created_at  timestamptz default now()
+);
+
+-- Reações
+create table community_reactions (
+  id       uuid primary key default gen_random_uuid(),
+  post_id  uuid references community_posts on delete cascade,
+  user_id  uuid references profiles on delete cascade,
+  type     text check (type in ('reconheco', 'forca', 'obrigado')),
+  unique (post_id, user_id, type)
+);
+```
+
+### 5.2 Políticas de RLS (Row Level Security)
+
+```sql
+-- Perfis: usuário vê e edita apenas o próprio
+alter table profiles enable row level security;
+create policy "own profile" on profiles
+  for all using (auth.uid() = id);
+
+-- Logs diários: apenas o próprio usuário
+alter table daily_logs enable row level security;
+create policy "own logs" on daily_logs
+  for all using (auth.uid() = user_id);
+
+-- Conteúdo de módulo: exige compra ativa
+alter table modules enable row level security;
+create policy "purchased content" on modules
+  for select using (
+    exists (
+      select 1 from user_purchases
+      where user_purchases.user_id = auth.uid()
+        and user_purchases.product_id = modules.product_id
+    )
+    or exists (
+      select 1 from profiles
+      where profiles.id = auth.uid()
+        and profiles.role = 'admin'
+    )
+  );
+
+-- Comunidade: apenas assinantes ativos
+alter table community_posts enable row level security;
+create policy "active subscribers" on community_posts
+  for all using (
+    exists (
+      select 1 from subscriptions
+      where subscriptions.user_id = auth.uid()
+        and subscriptions.status = 'active'
+    )
+    or exists (
+      select 1 from profiles
+      where profiles.id = auth.uid()
+        and profiles.role = 'admin'
+    )
+  );
+```
+
+---
+
+## 6. Estrutura de Rotas (Next.js App Router)
+
+```
+app/
+├── (public)/
+│   ├── page.tsx                  — Landing page
+│   ├── sobre/page.tsx            — Sobre Luis
+│   ├── produtos/
+│   │   ├── page.tsx              — Vitrine de produtos
+│   │   └── [slug]/page.tsx       — Página de venda do produto
+│   ├── termos/page.tsx
+│   └── privacidade/page.tsx
+│
+├── (auth)/
+│   ├── login/page.tsx            — Magic link
+│   └── callback/page.tsx         — Supabase auth callback
+│
+├── (app)/                        — Autenticado (middleware protege)
+│   ├── home/page.tsx             — Dashboard diário
+│   ├── escudo/page.tsx           — Protocolo de crise (sempre free)
+│   ├── diario/page.tsx           — Diário de gatilhos
+│   ├── conteudo/
+│   │   ├── page.tsx              — Biblioteca de produtos desbloqueados
+│   │   └── [produto]/
+│   │       └── [modulo]/page.tsx — Módulo de conteúdo
+│   ├── comunidade/
+│   │   ├── page.tsx              — Feed da comunidade
+│   │   └── novo/page.tsx         — Novo post
+│   └── perfil/page.tsx           — Configurações, planos, histórico
+│
+└── (admin)/                      — role = 'admin' apenas
+    └── admin/
+        ├── page.tsx              — Dashboard de métricas
+        ├── usuarios/page.tsx
+        ├── conteudo/page.tsx
+        ├── comunidade/page.tsx
+        └── produtos/page.tsx
+```
+
+---
+
+## 7. Integrações Externas
+
+### 7.1 Stripe
+
+| Evento | Ação no Supabase |
+|---|---|
+| `checkout.session.completed` | Insere linha em `user_purchases` |
+| `customer.subscription.created` | Insere/atualiza `subscriptions` com `status = 'active'` |
+| `customer.subscription.deleted` | Atualiza `subscriptions` com `status = 'canceled'` |
+| `invoice.payment_failed` | Atualiza `subscriptions` com `status = 'past_due'` |
+
+Webhook: Supabase Edge Function `/functions/v1/stripe-webhook`
+
+### 7.2 Resend (email transacional)
+
+| Trigger | Email enviado |
+|---|---|
+| Cadastro novo | Boas-vindas + link para Ferramenta Diária |
+| Compra confirmada | Acesso ao produto + link direto para o módulo |
+| Assinatura ativada | Boas-vindas à Comunidade O Escudo |
+| Assinatura cancelada | Confirmação + link para reativar |
+| Usuário sem log há 3 dias | Lembrete gentil (não agressivo) |
+
+### 7.3 Vercel
+
+- CI/CD automático: push em `main` → deploy em produção
+- Branch `dev` → preview deploy automático
+- Edge Middleware para proteção de rotas autenticadas
+- Analytics (Vercel Analytics) para métricas de performance
+
+---
+
+## 8. Fluxo de Compra
+
+```
+1. Usuário clica "Comprar" na página do produto
+2. Se não autenticado → redirect para /login → após login, retorna ao produto
+3. Stripe Checkout Session criada (via Next.js Route Handler)
+4. Usuário completa pagamento (PIX ou cartão)
+5. Stripe dispara webhook → Edge Function → insere user_purchases
+6. Redirect para /conteudo/[produto] — acesso imediato
+7. Email de confirmação via Resend
+```
+
+---
+
+## 9. Design e Identidade Visual no App
+
+Baseado em `/marca/manual-de-marca.md`.
+
+### 9.1 Paleta (noir realista)
+
+```css
+:root {
+  --color-bg:       #0e0e0e;   /* preto base */
+  --color-surface:  #1c1c1e;   /* cinza chumbo */
+  --color-surface-2: #242424;  /* card */
+  --color-border:   rgba(255,255,255,0.08);
+  --color-text:     #e8e6e0;   /* off-white quente */
+  --color-muted:    #787672;
+  --color-accent:   #c9a84c;   /* dourado opaco */
+  --color-accent-hover: #dbb95a;
+  --color-danger:   #c0392b;   /* vermelho crise */
+  --color-success:  #27ae60;
+}
+```
+
+### 9.2 Regras visuais
+
+- **Botão de crise (ATIVAR ESCUDO):** fundo `--color-danger`, texto branco, sempre visível na home
+- **CTA principal:** fundo `--color-accent`, texto `#0e0e0e`, bold — único elemento dourado por tela
+- **Cards de conteúdo:** borda `--color-border`, fundo `--color-surface-2`, sombra sutil
+- **Tipografia display:** fonte serifada bold para headlines (ex: Instrument Serif ou Playfair Display)
+- **Corpo:** sans-serif limpa (Inter ou Satoshi), `--text-base` mínimo
+- **Sem emojis como elementos de design**
+- **Sem gradientes coloridos**
+- **Ícones:** Lucide React — monocromáticos, tamanho consistente
+
+---
+
+## 10. Fases de Lançamento
+
+### Fase 1 — MVP (Dias 1–30)
+
+Objetivo: validar o produto e capturar os primeiros leads e compradores.
+
+| Item | Descrição |
+|---|---|
+| Landing page | Pública, otimizada para conversão |
+| Auth | Magic link por email |
+| Ferramenta Diária | Contador + checklist + Botão do Escudo |
+| Diário de Gatilhos | Registro simples |
+| Produto de entrada | Protocolo Escudo 72h (R$ 47) + Mapa dos 13 Fundamentos (R$ 47) |
+| Stripe | Checkout + webhook |
+| Email | Boas-vindas + confirmação de compra |
+| Admin básico | Dashboard de usuários e vendas |
+
+**Critério de sucesso Fase 1:** 50 cadastros + 10 vendas dos produtos de entrada.
+
+### Fase 2 — Expansão (Dias 31–60)
+
+| Item | Descrição |
+|---|---|
+| Programa 30 Dias | Produto R$ 197 com módulos completos |
+| Plano Correção 14 Dias | Produto R$ 97 |
+| Módulo familiares | Dentro do Programa 30 Dias |
+| Notificações push | PWA Service Worker para checklist de final de tarde |
+| Perfil do usuário | Histórico, progresso, badges de streak |
+
+**Critério de sucesso Fase 2:** 200 cadastros + R$ 3.000 em receita acumulada.
+
+### Fase 3 — Comunidade (Dias 61–90)
+
+| Item | Descrição |
+|---|---|
+| Comunidade O Escudo | Feed, comentários, reações, moderação |
+| Assinatura Stripe | R$ 39,90/mês ou R$ 299/ano |
+| Mentoria Individual | Lista de espera (vagas limitadas) |
+| Admin completo | Métricas avançadas, moderação, gestão de conteúdo |
+
+**Critério de sucesso Fase 3:** 30 assinantes da comunidade + 1 mentoria fechada.
+
+---
+
+## 11. Limites e Responsabilidade
+
+Estes itens devem aparecer em tela nas seguintes situações:
+
+1. **Tela de boas-vindas (pós-cadastro):**
+   > "O Guardião Sóbrio é uma ferramenta de apoio. Não substitui psiquiatra, psicólogo ou grupos de apoio. Se você está em crise, ligue 188 (CVV) ou procure atendimento médico."
+
+2. **Protocolo de Crise (Botão do Escudo):**
+   > "Este protocolo é um suporte de emergência. Se o risco for à vida, ligue 192 (SAMU) ou vá ao pronto-socorro mais próximo."
+
+3. **Páginas de produto:**
+   > "Este produto é material educativo e de apoio. Não é diagnóstico, prescrição ou tratamento médico."
+
+4. **Rodapé do app:**
+   > Ícone + "App de apoio — não substitui profissionais de saúde"
+
+---
+
+## 12. Métricas de Sucesso
+
+| Métrica | Meta Fase 1 | Meta Fase 2 | Meta Fase 3 |
+|---|---|---|---|
+| Usuários cadastrados | 50 | 200 | 500 |
+| Vendas produtos de entrada | 10 | 50 | 100 |
+| Receita acumulada | R$ 500 | R$ 3.000 | R$ 8.000 |
+| Assinantes comunidade | — | — | 30 |
+| Dias somados pela comunidade | — | 1.000 | 5.000 |
+| Taxa de abertura do checklist diário | — | > 40% | > 50% |
+| Uso do Botão do Escudo | monitorar | monitorar | monitorar |
+
+---
+
+## 13. Próximos Passos
+
+1. Criar repositório `guardiao-sobrio-app` (Next.js 15 + Supabase)
+2. Configurar projeto Supabase (tabelas + RLS conforme seção 5)
+3. Configurar projeto Vercel + variáveis de ambiente
+4. Criar conta Stripe + configurar produtos e webhooks
+5. Criar conta Resend + templates de email
+6. Iniciar Fase 1 pelo checklist da seção 10
+
+---
+
+> Documento vivo — atualizar a cada decisão de produto relevante.
+> Fonte de verdade: repositório `guardiao-sobrio-docs`, pasta `/app/`
+
+*Criado em: Junho 2026 — baseado em: funil-de-produtos-v2.md, 13-fundamentos.md, manual-de-marca.md, contexto-criador.md, protocolos/*
