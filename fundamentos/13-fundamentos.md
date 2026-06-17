@@ -140,16 +140,16 @@
 
 ---
 
-## Fundamento 10 — Ciclos (Nao Se Cobre Como Maquina)
+## Fundamento 10 — Ciclos
 > _Pilar: TATICA_
 
 **Insight:** O cerebro funciona em ciclos; cobranca excessiva ativa medo e bloqueia aprendizado.
 
-**Sobriedade:** Cobrar como maquina vira gatilho de recaida. Nos primeiros 30 dias, a sensacao de "nao estou rendindo nada" e normal — o cerebro esta se reorganizando. Aceitar o ritmo atual (nao o ideal) e um principio estoico: focar no que voce pode controlar hoje, nao no que imagina que deveria ser.
+**Sobriedade:** Cobrar como maquina vira gatilho de recaida. Nos primeiros 30 dias, a sensacao de "nao estou rendendo nada" e normal — o cerebro esta se reorganizando. Aceitar o ritmo atual (nao o ideal) e um principio estoico: focar no que voce pode controlar hoje, nao no que imagina que deveria ser. Descanso planejado nao e abandono da disciplina — e parte do metodo. Quem nao descansa, quebra.
 
-**Acao minima:** Uma recuperacao planejada (descanso, caminhada leve).
+**Acao minima:** Planeje 1 momento de recuperacao esta semana (descanso, caminhada leve, atividade prazerosa sem risco). Coloque na agenda como compromisso — nao como bonus se sobrar tempo.
 
-**Armadilha:** Usar os ciclos como desculpa para abandonar a disciplina.
+**Armadilha:** Usar os ciclos como desculpa para abandonar a disciplina; ou ignorar o descanso e explodir na semana seguinte.
 
 **Frase de ancora:** "Descansar nao e desistir. E estrategia."
 
@@ -200,17 +200,5 @@
 
 ---
 
-## Fundamento Bonus — Recuperacao/Ciclos
-
-**Insight:** Alternar esforco e descanso e estrategia, nao fraqueza.
-
-**Sobriedade:** A culpa por "nao render" pode virar gatilho de recaida.
-
-**Acao minima:** Uma recuperacao planejada por semana.
-
-**Protecao:** Descanso planejado para nao usar ciclos como desculpa para abandonar a disciplina.
-
----
-
 Fonte: MAPA DE INSIGHTS — 13 FUNDAMENTOS PARA SUPERACAO (arquivo original)
-Atualizado em: Junho 2026
+Atualizado em: Junho 2026 — Fundamento Bonus removido (conteudo absorvido pelo Fundamento 10); frases de ancora revisadas para remover associacao com AA.

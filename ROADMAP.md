@@ -1,6 +1,6 @@
 # ROADMAP — Revisao Estrategica O Guardiao Sobrio
 > Iniciado em: 17/06/2026
-> Objetivo: alinhar marca, metodo, conteudo e documentacao com a realidade atual do criador e do mercado.
+> **Status: CONCLUIDO** ✅
 
 ---
 
@@ -34,9 +34,9 @@
 
 | # | Arquivo | Status | Observacao |
 |---|---|---|---|
-| 1.1 | `/fundamentos/13-fundamentos.md` | ✅ | Pilares, primeiros 30 dias, familia, estoicismo, mindfulness inseridos |
-| 1.2 | `/marca/manual-de-marca.md` | ✅ | Metodologia, voz da trincheira, estetica dual, limites eticos atualizados |
-| 1.3 | `/contexto/contexto-criador.md` | ✅ | Atualizado com estado real de sobriedade, suporte terapeutico e narrativa do guerreiro em combate |
+| 1.1 | `/fundamentos/13-fundamentos.md` | ✅ | Pilares, primeiros 30 dias, familia, estoicismo, mindfulness; Fundamento Bonus removido (D3) |
+| 1.2 | `/marca/manual-de-marca.md` | ✅ | Metodologia, voz da trincheira, estetica dual, frases de ancora revisadas (D2) |
+| 1.3 | `/contexto/contexto-criador.md` | ✅ | Estado real de sobriedade, suporte terapeutico e narrativa do guerreiro em combate |
 
 ---
 
@@ -47,10 +47,10 @@
 | 2.1 | `/protocolos/primeiros-30-dias.md` | ✅ | Criado, auditado e ajustado |
 | 2.2 | `/protocolos/familiares.md` | ✅ | Criado, auditado e ajustado |
 | 2.3 | `/protocolos/recaida.md` | ✅ | Criado, auditado e ajustado |
-| 2.4 | `/protocolos/protocolo-escudo-72h.md` | ⚠️ | Criado pelo assistente sem solicitacao — aguarda decisao: manter / revisar / deletar |
-| 2.5 | `/protocolos/protocolo-insight-habito.md` | ⚠️ | Idem |
-| 2.6 | `/protocolos/protocolo-perimetro-24h.md` | ⚠️ | Idem |
-| 2.7 | `/protocolos/seguranca-e-respeito-24h.md` | ⚠️ | Idem |
+| 2.4 | `/protocolos/protocolo-escudo-72h.md` | ✅ | Revisado com diretrizes da marca (D1) |
+| 2.5 | `/protocolos/protocolo-insight-habito.md` | ✅ | Revisado com diretrizes da marca (D1) |
+| 2.6 | `/protocolos/protocolo-perimetro-24h.md` | ✅ | Revisado com diretrizes da marca (D1) |
+| 2.7 | `/protocolos/seguranca-e-respeito-24h.md` | ✅ | Revisado com diretrizes da marca (D1) |
 
 ---
 
@@ -58,10 +58,10 @@
 
 | # | Tarefa | Status | Observacao |
 |---|---|---|---|
-| 3.1 | Palavras-chave prioritarias do nicho | ✅ | Criado em `/estrategia/palavras-chave-nicho.md` |
-| 3.2 | Plano de frequencia e consistencia semanal | ✅ | Criado em `/estrategia/frequencia-e-consistencia.md` |
-| 3.3 | Validacao do nome "O Guardiao Sobrio" | ✅ | Criado em `/estrategia/validacao-nome-marca.md` — veredicto: manter |
-| 3.4 | Fontes tecnicas e referencias do metodo | ✅ | Criado em `/estrategia/fontes-tecnicas-referencias.md` — 4 pilares: estoicismo, mindfulness, psicoeducacao, ACT |
+| 3.1 | Palavras-chave prioritarias do nicho | ✅ | `/estrategia/palavras-chave-nicho.md` — 4 niveis + hashtags por tipo de video |
+| 3.2 | Plano de frequencia e consistencia semanal | ✅ | `/estrategia/frequencia-e-consistencia.md` — 6 videos/semana + minimo + limites pessoais |
+| 3.3 | Validacao do nome "O Guardiao Sobrio" | ✅ | `/estrategia/validacao-nome-marca.md` — veredicto: manter |
+| 3.4 | Fontes tecnicas e referencias do metodo | ✅ | `/estrategia/fontes-tecnicas-referencias.md` — estoicismo, mindfulness, ACT, psicoeducacao |
 
 ---
 
@@ -69,32 +69,35 @@
 
 | # | Arquivo | Status | Observacao |
 |---|---|---|---|
-| 4.1 | `README.md` | ✅ | Atualizado com estrutura completa, metodo, publico e decisoes pendentes |
-| 4.2 | `/contexto/recomendacoes-tiktok.md` | ✅ | Revisado com plano de frequencia e palavras-chave integrados |
+| 4.1 | `README.md` | ✅ | Atualizado com estrutura completa, metodo, publico e links |
+| 4.2 | `/contexto/recomendacoes-tiktok.md` | ✅ | Revisado com frequencia e palavras-chave integrados |
 
 ---
 
-## Decisoes Pendentes do Criador
+## Decisoes do Criador
 
-| # | Decisao | Status |
-|---|---|---|
-| D1 | O que fazer com os 4 protocolos extras nao solicitados (escudo-72h, insight-habito, perimetro-24h, seguranca-respeito-24h) | ⚠️ Aguardando |
-| D2 | Trocar frase de ancora "Um dia de cada vez" (tom de AA) por alternativa secular | ⚠️ Aguardando |
-| D3 | Destino do "Fundamento Bonus — Recuperacao/Ciclos" (sobreposicao com Fund. 10) | ⚠️ Aguardando |
+| # | Decisao | Status | Resolucao |
+|---|---|---|---|
+| D1 | 4 protocolos extras nao solicitados | ✅ Resolvido | Revisados e alinhados com diretrizes da marca |
+| D2 | Trocar frase "Um dia de cada vez" (tom de AA) | ✅ Resolvido | Substituida por: "Hoje e o unico dia que voce precisa ganhar." |
+| D3 | Fundamento Bonus — Recuperacao/Ciclos | ✅ Resolvido | Removido; conteudo absorvido e expandido no Fundamento 10 |
 
 ---
 
-## Resumo Executivo
+## Resumo Final
 
 | Fase | Status | Itens |
 |---|---|---|
 | Fase 0 — Diagnostico | ✅ Completa | 8/8 |
 | Fase 1 — Arquivos de Marca | ✅ Completa | 3/3 |
-| Fase 2 — Protocolos | ⚠️ Parcial | 3/7 concluidos; 4 aguardam decisao |
+| Fase 2 — Protocolos | ✅ Completa | 7/7 |
 | Fase 3 — Estrategia | ✅ Completa | 4/4 |
 | Fase 4 — Documentacao | ✅ Completa | 2/2 |
-| Decisoes Pendentes | ⚠️ | 3 decisoes aguardam o criador |
+| Decisoes Pendentes | ✅ Todas resolvidas | 3/3 |
 
 ---
 
-*Atualizado em: 17/06/2026 — revisao estrategica completa. Pendente apenas decisoes D1, D2, D3 do criador.*
+> **Revisao estrategica concluida em 17/06/2026.**
+> Repositorio pronto para uso como base operacional da marca O Guardiao Sobrio.
+
+*Proximo passo sugerido: responder a entrevista de diagnostico (Fase 0) para personalizar ainda mais os documentos com sua realidade atual.*

@@ -91,8 +91,8 @@ O metodo se sustenta em tres pilares praticos, seculares e complementares. Nao e
 | Consistencia | "Motivacao e consequencia — nao combustivel." |
 | Expressao | "Sentir e sagrado; expressar e libertador." |
 | Repeticao | "A identidade sobria nasce da repeticao, nao da intensidade." |
-| Ciclos | "Descansar nao e desistir. E estrategia." |
-| Primeiros 30 dias | "Um dia de cada vez nao e fraqueza. E o metodo." |
+| Ciclos / Descanso | "Descansar nao e desistir. E estrategia." |
+| Janela de 24h | "Hoje e o unico dia que voce precisa ganhar." |
 | Marca geral | "Sobriedade nao e abstinencia. E construcao." |
 
 ---
@@ -109,4 +109,4 @@ O metodo se sustenta em tres pilares praticos, seculares e complementares. Nao e
 
 ---
 
-Atualizado em: Junho 2026
+Atualizado em: Junho 2026 — frases de ancora revisadas (D2: troca de "Um dia de cada vez" por frase secular propria)

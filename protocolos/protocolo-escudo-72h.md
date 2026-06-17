@@ -1,7 +1,8 @@
 # Protocolo do Escudo — 72 Horas
 
-> Protocolo de emergencia para os primeiros 72 horas criticos.
-> Usar quando o gatilho foi ativado ou quando a recaida parece iminente.
+> Protocolo de emergencia para os momentos mais criticos: quando o gatilho foi ativado, quando a recaida parece iminente ou nas primeiras 72h apos uma recaida.
+
+> **Limite claro:** Este protocolo complementa — nao substitui — o acompanhamento de psiquiatra ou psicologo. Se voce esta em crise aguda, contate seu profissional de saude.
 
 ---
 
@@ -15,29 +16,39 @@
 
 ---
 
+## Pilar: ESCUDO + TATICA
+
+Este protocolo ativa os dois pilares simultaneamente: voce cria protecao (ESCUDO) enquanto executa acoes concretas para atravessar a crise (TATICA).
+
+---
+
 ## As 5 Etapas do Escudo
 
 ### Etapa 1 — PARE
-Interrompa o que esta fazendo. Literalmente saia do ambiente se possivel.
-Nao tome nenhuma decisao nos proximos 5 minutos.
+Interrompa o que esta fazendo. Saia do ambiente se possivel.
+Nao tome nenhuma decisao nos proximos 5 minutos. O impulso nao precisa de resposta imediata — precisa de espaco.
 
 ### Etapa 2 — RESPIRE
-4 respiracoes lentas e profundas. Expire mais longo que inspire.
-Isto ativa o sistema nervoso parassimpatico e reduz a urgencia.
+5 respiracoes lentas: inspirar 4s — segurar 4s — expirar 6s.
+Isso ativa o sistema nervoso parassimpatico e reduz a urgencia biologica do impulso.
 
 ### Etapa 3 — CONTATO
 Ligue ou mande mensagem para 1 pessoa que sabe da sua sobriedade.
-Nao precisa explicar tudo. Apenas: "Estou precisando de apoio agora."
+Nao precisa explicar tudo. Apenas: *"Estou precisando de apoio agora."*
+Se nao houver ninguem disponivel: va para um lugar publico.
 
 ### Etapa 4 — MOVIMENTO
 Mova o corpo por pelo menos 10 minutos.
-Caminhada, agua fria, movimento qualquer. O corpo precisa de saida fisica para a tensao.
+Caminhada, agua fria, qualquer movimento. O corpo precisa de saida fisica para a tensao — isso e fisiologico, nao metafora.
 
-### Etapa 5 — PROTOCOLO
-Siga o roteiro das proximas 72h hora a hora:
-- Horas 1-24: Estrutura basica (sono, agua, alimentacao, sem isolamento)
-- Horas 24-48: Retomar 1 habito de identidade sobria
-- Horas 48-72: Registrar o que aconteceu sem julgamento. O que foi o gatilho? O que funcionou?
+### Etapa 5 — ESTRUTURA DAS 72H
+Siga esta estrutura hora a hora:
+
+| Janela | Foco | Acao |
+|---|---|---|
+| Horas 1–24 | Sobreviver | Sono, agua, alimentacao, nao se isolar |
+| Horas 24–48 | Retomar | 1 habito concreto de identidade sobria |
+| Horas 48–72 | Aprender | Registrar o que aconteceu: qual foi o gatilho? O que funcionou? O que falhou? |
 
 ---
 
@@ -45,25 +56,24 @@ Siga o roteiro das proximas 72h hora a hora:
 
 - Nao tomar decisoes importantes nas primeiras 24h
 - Nao se isolar completamente
-- Nao se punir pela vulnerabilidade
-- Nao romantizar a dificuldade
+- Nao se punir pela vulnerabilidade — crise nao e fracasso, e informacao
 - Nao negociar com o impulso ("so dessa vez")
+- Nao cancelar consulta com psiquiatra ou psicologo — antecipe se possivel
 
 ---
 
-## Frase de Ancora do Protocolo
+## Frase de Ancora
 
 > "O escudo nao impede a batalha. Ele garante que voce sobreviva a ela."
 
 ---
 
-## Aplicacao como Produto
+## Nota sobre Produto
 
-Este protocolo e a base do produto **Protocolo do Escudo — 72h**.
-Versao produto: guia digital com roteiro hora a hora, checklist e suporte.
-Faixa de preco: R$ 47 a R$ 97.
+Este protocolo e a base do produto **Protocolo do Escudo — 72h**: guia digital com roteiro hora a hora, checklist e suporte.
 
 ---
 
-*Fonte: PROTOCOLO DO ESCUDO — 72 HORAS (arquivo original)*
-*Atualizado em: Junho 2026*
+_Consulte tambem: /protocolos/recaida.md e /protocolos/primeiros-30-dias.md_
+
+_Atualizado em: Junho 2026 — revisado com diretrizes da marca (ESPELHO . TATICA . ESCUDO)_

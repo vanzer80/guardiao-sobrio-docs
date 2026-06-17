@@ -3,17 +3,22 @@
 > O perimetro e o espaco entre o estimulo e a sua resposta.
 > Este protocolo treina esse espaco para que voce escolha, em vez de reagir.
 
+> **Limite claro:** Este protocolo e uma ferramenta pratica de protecao diaria. Nao substitui acompanhamento de psicologo ou psiquiatra.
+
 ---
 
-## Conceito Central
+## Pilar: ESCUDO
 
 Perimetro nao e muro. E distancia gerenciada.
 Voce nao isola — voce protege o espaco de escolha.
 
 **Os 3 componentes do perimetro:**
-1. **Fisico** — onde voce esta e com quem
-2. **Emocional** — o que voce permite entrar
-3. **Digital** — o que voce consome e quando
+
+| Componente | O que protege |
+|---|---|
+| **Fisico** | Onde voce esta e com quem |
+| **Emocional** | O que voce permite entrar (conversas, cobranças, pressoes) |
+| **Digital** | O que voce consome e quando (conteudo, redes, gatilhos online) |
 
 ---
 
@@ -22,34 +27,37 @@ Voce nao isola — voce protege o espaco de escolha.
 ### Manha (ao acordar)
 - [ ] Identifique 1 situacao potencial de pressao no dia de hoje
 - [ ] Defina sua resposta com antecedencia: o que voce dira se o gatilho aparecer?
-- [ ] Frase de ancora do dia: "Meu 'nao' respeita meu 'sim'."
+- [ ] Frase de ancora do dia: *"Meu 'nao' respeita meu 'sim'."*
 
 ### Durante o Dia
-- [ ] Antes de cada interacao de risco: 3 respiracoes
-- [ ] Se o impulso aparecer: use o espaco (nao responda imediatamente)
-- [ ] Frase padrao para recusar sem debate: "Nao vou poder. Obrigado."
+- [ ] Antes de cada interacao de risco: 3 respiracoes (inspirar 4s, expirar 6s)
+- [ ] Se o impulso aparecer: use o espaco — nao responda imediatamente
+- [ ] Frase padrao para recusar sem debate: *"Nao vou poder. Obrigado."*
 
 ### Noite (antes de dormir)
-- [ ] Registre: o perimetro foi mantido hoje?
+- [ ] O perimetro foi mantido hoje?
 - [ ] O que tentou invadir? Como voce respondeu?
 - [ ] 1 acao de amanha para fortalecer o perimetro
 
 ---
 
-## Aplicacao na Sobriedade
+## Frases de Perimetro (usar quando pressionado)
 
-- Onde isso protege meu perimetro: excesso de demanda vira gatilho
-- Acao minima: um "nao" firme, respeitoso e curto
-- Armadilha: justificar demais; protecao: frase curta, sem debate
+- *"Nao vou poder."* (sem explicacao — voce nao deve satisfacao)
+- *"Ja tenho compromisso."* (o compromisso e com voce mesmo)
+- *"Obrigado, mas nao."* (educado e definitivo)
+- *"Isso nao funciona para mim agora."*
+
+> Perimetro nao precisa de justificativa. Frase curta, sem debate.
 
 ---
 
-## Frases de Perimetro (usar quando pressionado)
+## Conexao com a Familia
 
-- "Nao vou poder." (sem explicacao)
-- "Ja tenho compromisso." (o compromisso e com voce mesmo)
-- "Obrigado, mas nao." (educado e definitivo)
-- "Isso nao funciona para mim agora."
+O perimetro nao e so individual. A familia precisa conhecer as regras do jogo:
+- Comunicar antecipadamente os eventos ou situacoes de risco da semana
+- Combinar respostas padrao para convites sociais
+- Pedir ao conjuge para nao questionar o "nao" em publico
 
 ---
 
@@ -59,5 +67,6 @@ Voce nao isola — voce protege o espaco de escolha.
 
 ---
 
-*Fonte: PROTOCOLO DO PERIMETRO — 24H (arquivo original)*
-*Atualizado em: Junho 2026*
+_Consulte tambem: /protocolos/protocolo-escudo-72h.md e /protocolos/primeiros-30-dias.md_
+
+_Atualizado em: Junho 2026 — revisado com diretrizes da marca (ESPELHO . TATICA . ESCUDO)_
