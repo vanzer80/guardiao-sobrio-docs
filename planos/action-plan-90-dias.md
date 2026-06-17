@@ -1,92 +1,127 @@
 # Action Plan — 90 Dias de Retomada
 
-> Plano completo de retomada do TikTok e lancamento do funil de produtos.
-> Dividido em 3 fases de 30 dias cada.
+> O Guardiao Sobrio — Luis Vanzer
+> Atualizado em: Junho 2026
+
+Plano completo de retomada e crescimento no TikTok com lancamento do funil de produtos. Dividido em 3 fases de 30 dias cada. Estruturado em torno dos tres pilares do metodo: **ESPELHO · TATICA · ESCUDO**.
+
+**Frequencia padrao:** 6 videos/semana (domingo = descanso obrigatorio)
+**Minimo nao-negociavel em semanas dificeis:** 3 videos
+**Publicos-alvo:** Homens adultos em processo de sobriedade + familiares e conjuges de quem bebe
 
 ---
 
-## FASE 1 — FUNDACAO (Dias 1-30)
+## FASE 1 — ESPELHO (Dias 1-30)
 
-**Objetivo:** Estabelecer presenca, otimizar perfil, testar formatos, comecar captura de leads.
+**Objetivo:** Reestabelecer presenca, apresentar a metodologia, construir confianca com o publico. O criador se posiciona como alguem que ainda esta na trincheira — nao como quem ja chegou do outro lado.
 
-### Acoes
-- [ ] Atualizar nome do perfil: `Luis Vanzer | Sobriedade Real`
-- [ ] Reescrever bio com palavras-chave e CTA
-- [ ] Ativar link na bio com isca gratuita
-- [ ] Publicar 3 videos de reintroducao (semana 1)
-- [ ] Iniciar serie "Fundamento da Semana" (13 episodios)
-- [ ] Manter 4-5 videos/semana
-- [ ] Aplicar checklist de SEO em todo video
-- [ ] 1 live quinzenal de conexao direta
-- [ ] Analisar metricas toda segunda-feira (15 min)
+### Acoes de Perfil e Posicionamento
 
-### Metas da Fase 1
-| Metrica | Meta |
-|---------|------|
-| Videos publicados | 20+ |
-| Seguidores novos | 500+ |
-| Taxa de conclusao media | 60%+ |
-| Leads capturados | 100+ |
-| Formato dominante identificado | sim |
+- [ ] Confirmar nome do perfil: **Luis Vanzer — O Guardiao Sobrio** (conforme manual-de-marca.md)
+- [ ] Bio com tagline: "Sobriedade nao e abstinencia. E construcao."
+- [ ] Ativar link na bio com isca gratuita (Checklist do Escudo — PDF)
+- [ ] Foto de perfil: fundo escuro, rosto visivel, expressao seria e firme
 
----
+### Acoes de Conteudo (6 videos/semana)
 
-## FASE 2 — CONSISTENCIA (Dias 31-60)
+Estrutura semanal por pilar:
 
-**Objetivo:** Escalar o alcance, lancar produto de entrada, aumentar leads.
+| Dia | Pilar | Tipo de Video |
+|---|---|---|
+| Segunda | ESPELHO | Fundamento da Semana (serie dos 13) |
+| Terca | TATICA | Tatica minima executavel hoje |
+| Quarta | ESPELHO | Historia real / vulnerabilidade pessoal |
+| Quinta | TATICA | Protocolo pratico / "como fazer" |
+| Sexta | ESCUDO | Conteudo para familiares e conjuges |
+| Sabado | Variado | Engajamento leve / resposta a comentario |
+| Domingo | — | DESCANSO — nao postar |
 
-### Acoes
-- [ ] Continuar serie dos 13 Fundamentos
-- [ ] Lancar Protocolo do Escudo 72h (produto de entrada R$47-97)
-- [ ] Video de lancamento do produto
-- [ ] Criar pagina de venda simples (Notion, Gumroad ou Hotmart)
-- [ ] Replicar os top 3 videos da Fase 1 com variacao
-- [ ] Responder 100% dos comentarios (engajamento)
-- [ ] Coletar depoimentos dos primeiros compradores
+- [ ] Iniciar serie "Fundamento da Semana" (13 episodios — Fundamentos 1 a 13)
+- [ ] Gravar 3 videos de reintroducao: quem sou, por que faco isso, o que e o metodo
+- [ ] Publicar ao menos 1 video ESCUDO por semana (publico de familiares)
+- [ ] Aplicar checklist de SEO em todo video (palavras-chave validadas em palavras-chave-nicho.md)
 
-### Metas da Fase 2
-| Metrica | Meta |
-|---------|------|
-| Videos publicados | 20+ adicionais |
-| Seguidores novos | +1000 |
-| Taxa de conclusao media | 65%+ |
-| Vendas produto entrada | 10-30 vendas |
-| Leads capturados | +200 adicionais |
+### Acoes de Produto
+
+- [ ] Finalizar isca gratuita: Checklist do Escudo (PDF)
+- [ ] Configurar pagina de captura de leads
+- [ ] Testar CTA de captura em ao menos 2 videos por semana
+
+### Meta de Fase 1
+
+- Publicar 24 videos no mes
+- Capturar primeiros 50-100 leads
+- Identificar os 3 formatos com maior retencao
 
 ---
 
-## FASE 3 — ESCALA (Dias 61-90)
+## FASE 2 — TATICA (Dias 31-60)
 
-**Objetivo:** Lancar produto medio, abrir lista para premium, construir comunidade.
+**Objetivo:** Consolidar rotina de 6 videos/semana, lancar primeiro produto pago, validar o funil de entrada com o publico real.
 
-### Acoes
-- [ ] Lancar Programa O Guardiao 90 Dias (produto medio R$197-497)
-- [ ] Abrir lista de espera para Mentoria Individual
-- [ ] Iniciar comunidade fechada (Telegram ou grupo)
-- [ ] Analisar top 5 videos com maior retencao e criar series derivadas
-- [ ] Avaliar frequencia: manter 4/semana ou escalar para 6/semana
-- [ ] Publicar os depoimentos dos compradores da Fase 2
+### Acoes de Conteudo
 
-### Metas da Fase 3
-| Metrica | Meta |
-|---------|------|
-| Total de seguidores novos (90 dias) | 2000+ |
-| Taxa de conclusao media | 70%+ |
-| MRR (receita mensal recorrente) | R$1.000+ |
-| Membros comunidade | 50+ |
-| Mentorias agendadas | 3-5 |
+- [ ] Manter estrutura semanal Espelho · Tatica · Escudo
+- [ ] Iniciar serie "Protocolo na Pratica" (como usar cada protocolo no dia a dia)
+- [ ] Criar ao menos 4 videos especificos para familiares no mes (pilar ESCUDO)
+- [ ] Testar formato de depoimento: "O que o familiar viu que eu nao via"
+- [ ] Analisar metricas semanalmente (retencao, salvamentos, compartilhamentos)
 
----
+### Acoes de Produto
 
-## Regras dos 90 Dias
+- [ ] Lancar **Protocolo do Escudo — 72h** como produto de entrada (R$ 47)
+- [ ] Divulgar via CTA direto em videos TATICA e ESCUDO
+- [ ] Configurar pagina de vendas com copy alinhada ao tom da marca (sem jargao de coach)
+- [ ] Coletar primeiros depoimentos de compradores
 
-1. Consistencia supera perfeicao em todos os momentos
-2. Os 13 Fundamentos sao a bussola editorial - nao as tendencias virais
-3. SEO em todo video, sem excecao
-4. Analise semanal obrigatoria toda segunda-feira
-5. Sem pular fases - fase 2 comeca so quando fase 1 estiver solida
+### Meta de Fase 2
+
+- Publicar 24 videos no mes
+- Atingir primeiras vendas do produto de entrada
+- Lista de leads acima de 200 contatos
 
 ---
 
-*Fonte: 07_ACTION_PLAN_90_DIAS (arquivo original)*
-*Atualizado em: Junho 2026*
+## FASE 3 — ESCUDO (Dias 61-90)
+
+**Objetivo:** Escalar o funil, lancar produto medio, consolidar a marca como referencia em sobriedade adulta com enfase em familiares e primeiros 30 dias.
+
+### Acoes de Conteudo
+
+- [ ] Manter estrutura semanal Espelho · Tatica · Escudo
+- [ ] Criar serie dedicada ao publico de familiares: "O que o conjuge precisa saber"
+- [ ] Lancar ao menos 1 video de prova social / depoimento de comprador
+- [ ] Intensificar conteudo ESCUDO (de 1 para 2 videos/semana neste pilar)
+
+### Acoes de Produto
+
+- [ ] Lancar **Mapa dos 13 Fundamentos** (produto de entrada — R$ 47)
+- [ ] Apresentar **Programa O Guardiao — 90 Dias** para lista de leads (produto medio)
+- [ ] Estruturar pagina de vendas do programa com copy em tom de trincheira — sem promessas milagrosas
+- [ ] Avaliar abertura de lista de espera para **Comunidade O Escudo**
+
+### Meta de Fase 3
+
+- Publicar 24 videos no mes
+- Primeiras vendas do produto medio
+- Base de leads acima de 500 contatos
+- Marca reconhecida nos dois segmentos: quem bebe + quem ama quem bebe
+
+---
+
+## Regras de Protecao do Criador
+
+Este plano so funciona se o criador estiver de pe. As regras abaixo nao sao opcionais:
+
+- Nao gravar em estado de crise aguda
+- Nao abrir camadas emocionais que ainda nao foram processadas em terapia
+- Semanas com bateria emocional abaixo de 3/10: ativar protocolo de minimo (3 videos) sem culpa
+- Domingo e intocavel — descanso criativo nao e negociavel
+- Pausa total em caso de emergencia pessoal: comunicar brevemente ao publico e voltar sem drama
+
+---
+
+> "Sobriedade nao e abstinencia. E construcao."
+> Luis Vanzer — O Guardiao Sobrio
+
+Atualizado em: Junho 2026
