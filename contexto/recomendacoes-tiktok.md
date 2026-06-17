@@ -1,20 +1,20 @@
 # Recomendacoes TikTok — Estrategia e Crescimento
 
 > Baseado no arquivo 04_RECOMENDACOES_TIKTOK_GROWTH e atualizado com dados do algoritmo TikTok 2026.
+> Revisado em junho/2026 com palavras-chave e plano de frequencia atualizados.
 
 ---
 
 ## Algoritmo TikTok 2026 — O Que Mudou
 
 | Fator | 2024 | 2026 |
-|-------|------|------|
+|---|---|---|
 | Taxa de conclusao para viral | 50%+ | **70%+** |
 | Rewatch rate ideal | 10%+ | **15-20%+** |
 | Duracao ideal | 15-30s | **60-180s** |
 | Audio original | Bonus | **Fortemente recompensado** |
 | Autoridade de nicho | Pouco relevante | **Alto impacto no ranqueamento** |
-
-**Fonte:** Socialync.io TikTok Algorithm 2026 (atualizado maio/2026)
+| Consistencia de postagem | Recomendada | **Penaliza irregularidade** |
 
 ---
 
@@ -25,67 +25,66 @@ O TikTok funciona como mecanismo de busca. O algoritmo analisa:
 1. **Keywords na caption** — nas primeiras 2 linhas
 2. **Texto na tela (on-screen text)** — TikTok transcreve e indexa
 3. **Audio falado** — mencionar palavras-chave nos primeiros 5 segundos
-4. **Hashtags** — 3 relevantes (nao encher)
+4. **Hashtags** — 3 a 5 relevantes (nao encher)
 5. **Nome do perfil** — incluir nicho (ex: Luis Vanzer | Sobriedade Real)
 6. **Legendas/subtitulos** — ativar em todos os videos
 7. **Tag de localizacao** — adicionar em cada video
 
-### Palavras-chave Prioritarias do Nicho
+### Palavras-chave Prioritarias (ver lista completa em `/estrategia/palavras-chave-nicho.md`)
 
-- sobriedade
-- parar de beber
-- recuperacao do alcool
-- como parar de beber sozinho
-- vida sem alcool
-- dependencia quimica adulto
-- saude mental masculina
-- gatilho de recaida
-- identidade sobria
+**Alta intencao:** parar de beber, como parar de beber, primeiros dias sem beber, 30 dias sem alcool, recaida no alcool
+**Identidade:** sobrio, sobriedade, dia 1, jornada de sobriedade
+**Familiares:** familiar de alcoolista, codependencia, como ajudar quem bebe
+**Metodo:** guardiao sobrio, sobriedade sem religiao, estoicismo e sobriedade
 
 ---
 
-## Formatos de Video Recomendados
+## Frequencia e Consistencia (ver plano completo em `/estrategia/frequencia-e-consistencia.md`)
 
-| Formato | Duracao | Objetivo | Pilar |
-|---------|---------|----------|-------|
-| O Protocolo do Dia | 60s | Acao minima diaria | Todos os fundamentos |
-| Armadilha vs. Escudo | 90s | Educacional | Gatilhos, Perimetro |
-| Fundamento da Semana | 120-180s | Serie (13 episodios) | 13 Fundamentos |
-| Antes das 7h | 45s | Rotina do guardiao | Consistencia, Ciclos |
-| Resposta Real | 60s | Engajamento | Variado |
-| Live quinzenal | 30-60 min | Conexao direta | Todos |
+| Cenario | Videos/semana | Quando aplicar |
+|---|---|---|
+| Ideal | 6 | Semanas com energia e estabilidade |
+| Minimo nao-negociavel | 3 | Semanas dificeis, crise, gatilho forte |
+| Pausa emergencial | 0 + comunicado | So em crise aguda real — com aviso ao publico |
+
+**Domingo: sem postagem.** Dia de descanso inegociavel.
 
 ---
 
-## Frequencia e Consistencia
+## Formatos de Video por Pilar
 
-- **Minimo:** 4 videos/semana
-- **Ideal:** 5-6 videos/semana nos primeiros 90 dias
-- **Regra:** Consistencia supera volume
-- **Penalidade:** O algoritmo 2026 penaliza irregularidade de postagem
+| Formato | Duracao | Pilar | Objetivo |
+|---|---|---|---|
+| Fundamento da Semana | 90-120s | ESPELHO | Serie dos 13 fundamentos |
+| Tatica Minima | 60s | TATICA | Acao concreta executavel hoje |
+| Historia Real | 60-90s | ESPELHO | Conexao emocional, vulnerabilidade |
+| Protocolo Pratico | 90-120s | TATICA | Educacao e como fazer |
+| Escudo / Familia | 60-90s | ESCUDO | Conteudo para familiar e conjuge |
+| Engajamento Rapido | 30-60s | Variado | Resposta, tendencia, reflexao |
+| Live quinzenal | 30-60 min | Todos | Conexao direta com a comunidade |
 
 ---
 
 ## Tendencias TikTok 2026 Alinhadas ao Nicho
 
-### "Cha de Realidade" (TikTok Next 2026)
+### "Cha de Realidade"
 Conteudo sem filtro, autentico, vulneravel, com empatia e identificacao.
 > Alinhamento com O Guardiao Sobrio: **100%**
 
-### "ROI Emocional" (TikTok Next 2026)
+### "ROI Emocional"
 O publico busca conexao real, nao impulso de compra.
-> Implicacao: vender pelo valor percebido e pela identificacao, nao por pressao ou urgencia falsa.
+> Implicacao: vender pelo valor percebido e identificacao, nao por pressao ou urgencia falsa.
 
 ### Autoridade de Nicho
-Criadores que aparecem consistentemente em torno de um tema especifico constroem mais alcance confiavel do que quem caca tendencias.
-> Estrategia: manter os 13 Fundamentos como bussola editorial.
+Criadores consistentes em um tema especifico constroem mais alcance confiavel do que quem caca tendencias.
+> Estrategia: manter os 13 Fundamentos como bussola editorial. A serie dos 13 sozinha ja garante conteudo por 13 semanas.
 
 ---
 
 ## Configuracao do Perfil (SEO)
 
 | Elemento | Recomendacao |
-|----------|--------------|
+|---|---|
 | Nome de exibicao | `Luis Vanzer \| Sobriedade Real` |
 | Bio | 2-3 palavras-chave + CTA + link |
 | Foto de perfil | Fundo escuro, expressao firme |
@@ -97,7 +96,7 @@ Criadores que aparecem consistentemente em torno de um tema especifico constroem
 ## Metricas-Chave (monitorar toda segunda)
 
 | Metrica | Meta Minima | Meta Ideal |
-|---------|-------------|------------|
+|---|---|---|
 | Taxa de conclusao | 60% | 70%+ |
 | Rewatch rate | 10% | 15-20% |
 | Seguidores novos/semana | 50 | 200+ |
@@ -107,5 +106,5 @@ Criadores que aparecem consistentemente em torno de um tema especifico constroem
 
 ---
 
-*Fonte: 04_RECOMENDACOES_TIKTOK_GROWTH (arquivo original) + dados de mercado junho/2026*
+*Fonte: 04_RECOMENDACOES_TIKTOK_GROWTH (arquivo original) + revisao estrategica junho/2026*
 *Atualizado em: Junho 2026*

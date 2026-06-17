@@ -1,0 +1,96 @@
+# Plano de Frequencia e Consistencia
+> O Guardiao Sobrio — Luis Vanzer
+> Atualizado em: Junho 2026
+
+---
+
+## Premissa
+
+Consistencia supera volume. O algoritmo do TikTok em 2026 penaliza irregularidade mais do que baixa quantidade. O plano abaixo e construido para ser **sustentavel com sua energia real**, nao para um criador em tempo integral sem crises.
+
+> Regra de ouro: o minimo nao-negociavel e mais importante que o ideal inatingivel.
+
+---
+
+## Estrutura Semanal (6 videos/semana)
+
+| Dia | Tipo de Video | Pilar | Duracao | Objetivo |
+|---|---|---|---|---|
+| Segunda | Fundamento da Semana | ESPELHO | 90-120s | Abrir o ciclo com verdade e identidade |
+| Terca | Tatica Minima | TATICA | 60s | Acao concreta e executavel hoje |
+| Quarta | Historia Real / Vulnerabilidade | ESPELHO | 60-90s | Conexao emocional com o publico |
+| Quinta | Protocolo / "Como fazer" | TATICA | 90-120s | Educacao pratica |
+| Sexta | Escudo (Familia / Ambiente) | ESCUDO | 60-90s | Ampliar para familiar e conjuge |
+| Sabado | Livre / Engajamento | Variado | 30-60s | Resposta a comentario, tendencia ou reflexao rapida |
+| Domingo | **DESCANSO** | — | — | Nao postar. Recarregar. |
+
+---
+
+## Minimo Nao-Negociavel (semanas dificeis)
+
+Em semanas de crise, gatilho forte ou baixa energia: **3 videos**.
+
+| Video | Tipo |
+|---|---|
+| 1 | Fundamento ou verdade curta (ESPELHO) — 30-60s |
+| 2 | Uma tatica minima (TATICA) — 60s |
+| 3 | Uma frase de ancora com contexto pessoal (qualquer pilar) — 30-45s |
+
+> Postar 3 videos consistentes toda semana e infinitamente melhor que postar 10 numa semana e sumir por 2.
+
+---
+
+## Limite de Protecao Pessoal
+
+A marca existe para proteger outras pessoas. Nao pode destruir quem a cria.
+
+**Regras internas inegociaveis:**
+
+- Nao gravar em estado de crise aguda (impulso de usar presente)
+- Nao abrir camadas emocionais profundas que ainda nao foram processadas em terapia
+- Nao responder comentarios agressivos no mesmo dia — esperar 24h ou ignorar
+- Se a semana exigir pausa total: comunicar brevemente ao publico ("estou cuidando de mim") e voltar sem culpa
+- Bateria emocional abaixo de 3/10: ativar protocolo de minimo e buscar suporte antes de gravar
+
+---
+
+## Tipos de Video por Pilar (Referencias Rapidas)
+
+### ESPELHO — Ver a verdade
+- "O que o alcool me custou" (consequencias reais)
+- "O dia em que decidi parar" (narrativa pessoal)
+- "O que a negacao parece por dentro" (educacao)
+- "Minha recaida depois de 2 anos sobrio" (vulnerabilidade maxima)
+- Fundamento da semana (serie dos 13)
+
+### TATICA — Agir hoje
+- "O que faco quando o impulso aparece" (protocolo de crise)
+- "Mapa de gatilhos: como montar o seu" (tutorial)
+- "A rotina dos primeiros 30 dias" (guia pratico)
+- "Como dizer nao em festas" (situacao concreta)
+- "Design de ambiente: o que tirei de casa" (acao minima)
+
+### ESCUDO — Proteger relacoes
+- "O que minha esposa viu que eu nao via" (perspectiva do familiar)
+- "Como pedir ajuda sem se humilhar" (permissao emocional)
+- "O que o familiar nao deve fazer" (educacao para conjuge)
+- "Limite saudavel: o que e e como colocar" (pratico)
+- "Por que o isolamento e o maior acelerador de recaida" (educacao)
+
+---
+
+## Hook de Abertura por Tipo
+
+> Os primeiros 3 segundos decidem se o video sera assistido. Use estes modelos.
+
+| Tipo | Hook modelo |
+|---|---|
+| Choque de realidade | "Eu dirigi alcoolizado com meu filho no carro. Isso nao e confissao. E aviso." |
+| Tatica pratica | "Se voce quer parar de beber e nao sabe por onde comecar, faz isso agora:" |
+| Vulnerabilidade | "Depois de 2 anos sobrio eu recai. Aqui esta o que nao te contam sobre isso." |
+| Educacao | "Voce nao e fraco. Seu cerebro foi reprogramado. Deixa eu te mostrar." |
+| Familia | "Se voce ama alguem que bebe e nao sabe mais o que fazer, fica ate o final." |
+
+---
+
+_Atualizado em: Junho 2026_

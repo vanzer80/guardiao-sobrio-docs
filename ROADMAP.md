@@ -36,7 +36,7 @@
 |---|---|---|---|
 | 1.1 | `/fundamentos/13-fundamentos.md` | ✅ | Pilares, primeiros 30 dias, familia, estoicismo, mindfulness inseridos |
 | 1.2 | `/marca/manual-de-marca.md` | ✅ | Metodologia, voz da trincheira, estetica dual, limites eticos atualizados |
-| 1.3 | `/contexto/contexto-criador.md` | ⏳ | Atualizar com estado real: sobriedade, suporte terapeutico, narrativa do guerreiro em combate |
+| 1.3 | `/contexto/contexto-criador.md` | ✅ | Atualizado com estado real de sobriedade, suporte terapeutico e narrativa do guerreiro em combate |
 
 ---
 
@@ -58,10 +58,10 @@
 
 | # | Tarefa | Status | Observacao |
 |---|---|---|---|
-| 3.1 | Palavras-chave prioritarias do nicho | ✅ | Criado em `/estrategia/palavras-chave-nicho.md` — 4 niveis + hashtags por tipo de video |
-| 3.2 | Plano de frequencia e consistencia semanal | ⏳ | Estrutura Espelho / Tatica / Escudo para 6 videos/semana |
-| 3.3 | Validacao do nome "O Guardiao Sobrio" | ⏳ | Pesquisa de mercado + analise de posicionamento |
-| 3.4 | Fontes tecnicas e referencias do metodo | ⏳ | Estoicismo, mindfulness, ACT, psicoeducacao — lista curada para citar |
+| 3.1 | Palavras-chave prioritarias do nicho | ✅ | Criado em `/estrategia/palavras-chave-nicho.md` |
+| 3.2 | Plano de frequencia e consistencia semanal | ✅ | Criado em `/estrategia/frequencia-e-consistencia.md` |
+| 3.3 | Validacao do nome "O Guardiao Sobrio" | ✅ | Criado em `/estrategia/validacao-nome-marca.md` — veredicto: manter |
+| 3.4 | Fontes tecnicas e referencias do metodo | ✅ | Criado em `/estrategia/fontes-tecnicas-referencias.md` — 4 pilares: estoicismo, mindfulness, psicoeducacao, ACT |
 
 ---
 
@@ -69,8 +69,8 @@
 
 | # | Arquivo | Status | Observacao |
 |---|---|---|---|
-| 4.1 | `README.md` | ⏳ | Atualizar com tudo que evoluiu: metodologia, publico, protocolos, roadmap |
-| 4.2 | `/contexto/recomendacoes-tiktok.md` | ⏳ | Revisar com plano de frequencia e palavras-chave atualizados |
+| 4.1 | `README.md` | ✅ | Atualizado com estrutura completa, metodo, publico e decisoes pendentes |
+| 4.2 | `/contexto/recomendacoes-tiktok.md` | ✅ | Revisado com plano de frequencia e palavras-chave integrados |
 
 ---
 
@@ -78,10 +78,23 @@
 
 | # | Decisao | Status |
 |---|---|---|
-| D1 | O que fazer com os 4 protocolos extras nao solicitados | ⚠️ Aguardando |
+| D1 | O que fazer com os 4 protocolos extras nao solicitados (escudo-72h, insight-habito, perimetro-24h, seguranca-respeito-24h) | ⚠️ Aguardando |
 | D2 | Trocar frase de ancora "Um dia de cada vez" (tom de AA) por alternativa secular | ⚠️ Aguardando |
 | D3 | Destino do "Fundamento Bonus — Recuperacao/Ciclos" (sobreposicao com Fund. 10) | ⚠️ Aguardando |
 
 ---
 
-*Atualizado em: 17/06/2026 — item 3.1 concluido*
+## Resumo Executivo
+
+| Fase | Status | Itens |
+|---|---|---|
+| Fase 0 — Diagnostico | ✅ Completa | 8/8 |
+| Fase 1 — Arquivos de Marca | ✅ Completa | 3/3 |
+| Fase 2 — Protocolos | ⚠️ Parcial | 3/7 concluidos; 4 aguardam decisao |
+| Fase 3 — Estrategia | ✅ Completa | 4/4 |
+| Fase 4 — Documentacao | ✅ Completa | 2/2 |
+| Decisoes Pendentes | ⚠️ | 3 decisoes aguardam o criador |
+
+---
+
+*Atualizado em: 17/06/2026 — revisao estrategica completa. Pendente apenas decisoes D1, D2, D3 do criador.*
