@@ -2,13 +2,15 @@
 
 > Para quem ama alguem que bebe — e nao sabe mais o que fazer.
 
+Este protocolo foi construido por alguem que esta dos dois lados: como pessoa em recuperacao e como parceiro de uma pessoa que sofreu o impacto do vicio. Nao e teoria. E o que a gente precisava ler e ninguem disse a tempo.
+
 Este protocolo nao e sobre controlar o outro. E sobre voce: seu limite, sua saude, sua capacidade de ajudar sem se destruir.
 
 ---
 
 ## Objetivo
 
-Ofecer orientacao pratica para familiares (especialmente conjuge) de pessoas em processo de sobriedade, com foco em como apoiar sem se perder, estabelecer limites saudaveis e saber quando buscar ajuda propria.
+Oferecer orientacao pratica para familiares (especialmente conjuge) de pessoas em processo de sobriedade, com foco em como apoiar sem se perder, estabelecer limites saudaveis e saber quando buscar ajuda propria.
 
 ---
 
@@ -33,7 +35,7 @@ Ofecer orientacao pratica para familiares (especialmente conjuge) de pessoas em 
 
 ## Limites Saudaveis
 
-Um limite saudavel nao e puniçao. E uma regra que voce define para proteger voce e o ambiente.
+Um limite saudavel nao e punicao. E uma regra que voce define para proteger voce e o ambiente.
 
 Exemplos de limites concretos:
 

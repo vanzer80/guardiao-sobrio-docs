@@ -6,14 +6,14 @@
 
 ## Objetivo
 
-Ofecer um roteiro claro e sem julgamento para as primeiras horas apos uma recaida: o que fazer, o que nao fazer, como falar com a familia e como retomar o plano.
+Oferecer um roteiro claro e sem julgamento para as primeiras horas apos uma recaida: o que fazer, o que nao fazer, como falar com a familia e como retomar o plano.
 
 ---
 
 ## O Que a Recaida Nao E
 
 - Nao e prova de que voce nunca vai conseguir.
-- Nao e apagamento de todo o progresso anterior.
+- Nao e apagamento de todo o progresso anterior. Dois anos de sobriedade nao desaparecem por uma recaida — eles ficam no seu historico, na sua memoria, na prova de que voce ja conseguiu.
 - Nao e motivo para esconder, minimizar ou fingir que nao aconteceu.
 - Nao e justificativa para continuar bebendo ("ja que bebi um, vou beber mais").
 
@@ -29,7 +29,7 @@ Ofecer um roteiro claro e sem julgamento para as primeiras horas apos uma recaid
 
 ### 2. Nao fique sozinho
 - Chame alguem de confianca: conjuge, terapeuta, amigo sobrio.
-- Se nao tiver ninguem disponivel, vá para um lugar publico.
+- Se nao tiver ninguem disponivel, va para um lugar publico.
 
 ### 3. Nao tome decisoes grandes
 - Recaida e estado alterado. Nao e hora de resolver brigas, tomar decisoes financeiras ou fazer promessas.
@@ -53,7 +53,7 @@ Esta e uma das partes mais dificeis. Mas e necessaria.
 - Fale quando estiver sobrio, nao durante ou logo apos o consumo.
 - Seja direto: "Eu bebi. Estou ciente do que aconteceu. Quero retomar o plano."
 - Nao explique demais nem se justifique demais — fatos e proximos passos.
-- Ouva o que a pessoa sente. Nao defenda, nao contra-ataque.
+- Ouca o que a pessoa sente. Nao defenda, nao contra-ataque.
 - Pergunte: "O que voce precisa de mim agora?"
 
 **O que nao fazer:**

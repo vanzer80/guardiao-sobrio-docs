@@ -6,7 +6,7 @@
 
 ## Objetivo
 
-Ofeреcer uma estrutura diaria simples e executavel para atravessar os primeiros 30 dias de sobriedade sem depender de forca de vontade bruta ou de motivacao constante.
+Oferecer uma estrutura diaria simples e executavel para atravessar os primeiros 30 dias de sobriedade sem depender de forca de vontade bruta ou de motivacao constante.
 
 ---
 
@@ -58,7 +58,7 @@ Este e o horario de maior risco. Quando o impulso aparecer:
 
 ## O Que Nao Fazer Neste Periodo
 
-- Nao testar "so um copo para ver se consigo controlar".
+- Nao testar "so um copo para ver se consigo controlar". Para o dependente, nao existe beber social — existe o primeiro gole que abre a porta de volta.
 - Nao se isolar — especialmente nos fins de semana e feriados.
 - Nao cancelar consultas com psiquiatra ou terapeuta.
 - Nao usar a culpa do passado como combustivel — use o proposito do futuro.
