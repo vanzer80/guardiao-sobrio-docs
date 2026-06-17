@@ -1,7 +1,11 @@
-# Funil de Produtos — O Guardiao Sobrio (V2)
+# Funil de Produtos — O Guardiao Sobrio (V3)
 
-> Estrategia O Escudo. Versao 2 atualizada.
-> Todos os precos e nomes oficiais devem ser confirmados no arquivo original no Drive.
+> O Guardiao Sobrio — Luis Vanzer
+> Atualizado em: Junho 2026
+
+Arquitetura de monetizacao da marca. Organizada em torno dos tres pilares do metodo: **ESPELHO · TATICA · ESCUDO**. Os precos abaixo sao definitivos e validos neste repositorio como fonte de verdade — sem dependencia de arquivo externo.
+
+**Publicos contemplados no funil:** quem quer largar o alcool + familiares e conjuges de quem bebe
 
 ---
 
@@ -9,118 +13,155 @@
 
 ```
 TOPO — Conteudo gratuito TikTok (atracao e descoberta)
-         ↓
-MEIO — Isca digital gratuita (captura de leads)
-         ↓
-FUNDO — Produtos pagos (conversao)
-         ↓
-PREMIUM — Mentoria e Comunidade (retencao e LTV)
+          |
+         \|\/
+MEIO — Iscas digitais gratuitas (captura de leads)
+          |
+         \|\/
+ENTRADA — Produtos de entrada pagos (R$ 47) — conversao inicial
+          |
+         \|\/
+MEIO PAGO — Programa completo (R$ 197-297) — transformacao
+          |
+         \|\/
+PREMIUM — Mentoria individual + Comunidade (retencao e LTV)
 ```
 
 ---
 
-## TOPO DO FUNIL — Gratuito (Iscas Digitais)
+## TOPO — Conteudo Gratuito (TikTok)
 
-### 1. Checklist do Escudo
-**Formato:** PDF ou Notion publico
-**Conteudo:** Checklist de protecao diaria baseado no Protocolo do Escudo
-**Objetivo:** Capturar e-mail/contato em troca do material
-**Status:** Criar e ativar no link da bio
+Pilar de atracao. Todo conteudo e organizado pelos 3 pilares:
 
-### 2. Diario de Prompts
-**Formato:** PDF
-**Conteudo:** 30 perguntas diarias para processo de sobriedade
-**Objetivo:** Ferramenta de uso diario que mantém o lead engajado com a marca
+| Pilar | Objetivo no Funil | Frequencia |
+|---|---|---|
+| ESPELHO | Consciencia: "eu tenho um problema" | 2x/semana |
+| TATICA | Utilidade: "isso me ajuda agora" | 2x/semana |
+| ESCUDO | Alcance: familiar descobre a marca | 1x/semana |
 
-### 3. A Arte de Dizer Nao
-**Formato:** PDF
-**Conteudo:** Guia com frases prontas para situacoes de pressao social
-**Objetivo:** Resolve uma dor imediata do publico (como recusar sem explicar)
+> O pilar ESCUDO e a porta de entrada para o publico de familiares. Nao e conteudo secundario.
 
 ---
 
-## FUNDO DO FUNIL — Produtos de Entrada (R$ 47-97)
+## MEIO — Iscas Digitais (Captura de Leads)
+
+Entrega gratuita em troca de email. CTA presente em videos de todos os pilares.
+
+### Para quem bebe (pilares ESPELHO e TATICA)
+
+| Produto | Formato | Pilar |
+|---|---|---|
+| **Checklist do Escudo** | PDF (lista de verificacao de protecao diaria) | ESCUDO / TATICA |
+| **Diario de Prompts** | PDF (perguntas para reflexao diaria) | ESPELHO |
+
+### Para familiares e conjuges (pilar ESCUDO)
+
+| Produto | Formato | Pilar |
+|---|---|---|
+| **Guia do Familiar** | PDF (o que fazer, o que nao fazer, como proteger a relacao) | ESCUDO |
+
+> O Guia do Familiar e a isca especifica para o publico de familiares. Deve ser mencionado em todos os videos do pilar ESCUDO.
+
+---
+
+## ENTRADA — Produtos Pagos de Entrada (R$ 47)
+
+Primeira compra. Baixo risco, alta entrega de valor imediato. Decisao ja tomada.
 
 ### Protocolo do Escudo — 72h
-**Preco:** R$ 47 a R$ 97 (verificar nomenclatura oficial no arquivo original)
-**Formato:** Guia digital com roteiro hora a hora
-**Conteudo:** As 5 etapas do escudo expandidas + checklist de 72h + suporte por audio
-**Publico:** Pessoa em crise ou recaida iminente que precisa de roteiro agora
-**Diferencial:** Nao existe nada parecido no mercado brasileiro de sobriedade
+
+- **Pilar:** ESCUDO + TATICA
+- **Publico:** Quem esta em crise aguda ou logo apos uma recaida
+- **O que e:** Protocolo de emergencia em 3 dias para reconstruir o perimetro de protecao
+- **Preco:** R$ 47
+- **CTA nos videos:** ESCUDO e TATICA
+- **Referencia:** `protocolos/protocolo-escudo-72h.md`
 
 ### Mapa dos 13 Fundamentos
-**Preco:** R$ 47 a R$ 97
-**Formato:** Workbook digital (PDF interativo)
-**Conteudo:** Os 13 fundamentos com espacos para aplicacao pessoal, reflexoes e acoes
-**Publico:** Pessoa que quer estrutura metodologica para a jornada de sobriedade
+
+- **Pilar:** ESPELHO (base metodologica completa)
+- **Publico:** Quem quer entender o metodo antes de qualquer compromisso maior
+- **O que e:** Os 13 fundamentos do metodo em formato visual/workbook (PDF ou Notion)
+- **Preco:** R$ 47
+- **CTA nos videos:** ESPELHO (fundamentos da serie semanal)
+- **Referencia:** `fundamentos/13-fundamentos.md`
 
 ---
 
-## MEIO DO FUNIL — Produtos Medios (R$ 197-497)
+## MEIO PAGO — Programa Completo
 
-### Programa O Guardiao — 90 Dias
-**Preco:** R$ 197 a R$ 497 (verificar nomenclatura oficial)
-**Formato:** Curso/programa com videos, protocolos e acompanhamento assíncrono
-**Conteudo:** Os 3 fases do Action Plan 90 Dias em formato guiado
-**Publico:** Pessoa comprometida com processo estruturado de 90 dias
-**Bonus:** Acesso ao grupo de suporte por 90 dias
+### Programa O Guardiao — 30 Dias
+
+- **Pilar:** ESPELHO + TATICA + ESCUDO (programa integrado)
+- **Publico primario:** Quem quer atravessar os primeiros 30 dias com estrutura
+- **Publico secundario:** Familiar que quer apoiar sem sufocar
+- **O que e:** Programa estruturado com os 3 pilares, protocolos diarios, mapa de fundamentos e suporte de conteudo
+- **Preco:** R$ 197
+- **CTA nos videos:** Apos primeiras vendas dos produtos de entrada (Fase 2 do action-plan)
 
 ### Plano de Correcao — 14 Dias
-**Preco:** R$ 197
-**Formato:** Sprint intensivo com video diario + checklist + suporte
-**Conteudo:** Os 14 dias de reposicionamento em formato acompanhado
-**Publico:** Pessoa que teve recaida ou pausa e quer retomar com estrutura
+
+- **Pilar:** TATICA + ESPELHO
+- **Publico:** Quem parou, recaiu ou perdeu o ritmo e precisa reconstruir rapido
+- **O que e:** Sprint de retomada com checklist diario, protocolos e acompanhamento do metodo
+- **Preco:** R$ 97
+- **CTA nos videos:** Videos de recaida, retomada, honestidade (pilar ESPELHO)
+- **Referencia:** `planos/plano-correcao-14-dias.md`
 
 ---
 
-## TOPO PREMIUM — Retencao e LTV (R$ 997+)
+## PREMIUM — Retencao e LTV
 
 ### Mentoria Individual
-**Preco:** R$ 997 a R$ 2.497/mes
-**Formato:** Sessoes 1:1 mensais (video ou audio)
-**Publico:** Pessoa que quer acompanhamento personalizado e direto
-**Capacidade:** Maxima 5 mentorados simultaneos para manter qualidade
+
+- **Pilar:** Todos os tres (sessao personalizada)
+- **Publico:** Quem ja passou pelos produtos de entrada e quer acompanhamento direto
+- **Preco:** R$ 997/mes
+- **Limite:** Vagas controladas pelo criador conforme disponibilidade real
+- **Nota:** Nao abrir lista enquanto a marca nao tiver base de leads acima de 300 contatos
 
 ### Comunidade O Escudo
-**Preco:** R$ 39,90/mes ou R$ 299/ano
-**Formato:** Grupo fechado com:
-  - Suporte entre pares
-  - Lives mensais com Luis
-  - Acesso a todos os protocolos atualizados
-  - Diario de progresso compartilhado
-**Publico:** Pessoa que quer comunidade de suporte continuo
+
+- **Pilar:** ESCUDO (protecao coletiva, suporte mutuo)
+- **Publico:** Quem esta em processo + familiares que querem pertencer a uma rede de apoio
+- **Preco:** R$ 39,90/mes ou R$ 299/ano
+- **Status:** Lista de espera a ser aberta na Fase 3 do action-plan (Dias 61-90)
 
 ---
 
-## Plataformas de Venda Recomendadas (Brasil 2026)
+## Mapa de Conexao: Pilar x Produto
 
-| Plataforma | Uso | Taxa |
-|------------|-----|------|
-| **Hotmart** | Cursos e programas | 9,9% + R$1 por venda |
-| **Gumroad** | PDFs e guias digitais | 10% |
-| **Pagar.me** | Pagamentos customizados | 2,49% + R$0,09 |
-| **Stripe** | Internacional | 2,9% + US$0,30 |
-| **Kirvano** | Alternativa brasileira | Verificar taxa atual |
+| Pilar | Isca Gratuita | Produto de Entrada | Programa | Premium |
+|---|---|---|---|---|
+| ESPELHO | Diario de Prompts | Mapa dos 13 Fundamentos | Programa O Guardiao 30 Dias | Mentoria Individual |
+| TATICA | Checklist do Escudo | Protocolo Escudo 72h | Plano de Correcao 14 Dias | Mentoria Individual |
+| ESCUDO | Guia do Familiar | Protocolo Escudo 72h | Programa O Guardiao 30 Dias | Comunidade O Escudo |
 
 ---
 
-## Jornada do Cliente no Funil
+## Publico de Familiares no Funil
 
-```
-Ve video no TikTok
-    ↓
-Baixa isca gratuita (entra na lista)
-    ↓
-Recebe sequencia de e-mails (nurturing)
-    ↓
-Compra produto de entrada (R$47-97)
-    ↓
-Experiencia positiva -> Upsell para produto medio
-    ↓
-Resultados sustentados -> Mentoria ou Comunidade
-```
+Familiares e conjuges entram pelo pilar ESCUDO e percorrem o funil de forma propria:
+
+1. **Descoberta:** Video ESCUDO no TikTok ("O que o familiar nao deve fazer", "Como pedir ajuda")
+2. **Captura:** Guia do Familiar (PDF gratuito)
+3. **Compra inicial:** Protocolo do Escudo — 72h (como suporte ao processo do parceiro)
+4. **Programa:** Programa O Guardiao 30 Dias (modulo de familiares)
+5. **Comunidade:** Comunidade O Escudo (suporte continuo)
 
 ---
 
-*Fonte: FUNIL DE PRODUTOS - LUIS VANZER (Atualizado V2 - Estrategia O Escudo) (arquivo original)*
-*Atualizado em: Junho 2026*
+## Regras do Funil
+
+- Nenhum produto promete cura ou resultado milagroso
+- Todos os precos sao definitivos neste documento — nao ha dependencia de arquivo externo
+- O tom das paginas de venda segue o manual de marca: direto, sem jargao de coach, sem promessas exageradas
+- A marca nao substitui psiquiatras, psicologos ou grupos de apoio — isso deve constar em todos os produtos
+- Familiares sao publico de primeira classe no funil, nao audiencia secundaria
+
+---
+
+> "Sobriedade nao e abstinencia. E construcao."
+> Luis Vanzer — O Guardiao Sobrio
+
+Atualizado em: Junho 2026
