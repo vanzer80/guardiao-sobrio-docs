@@ -80,6 +80,25 @@ O metodo se sustenta em tres pilares praticos, seculares e complementares. Nao e
 
 ---
 
+## Sistema de Cores por Pilar
+
+Cada pilar tem uma cor de referencia para uso em materiais visuais (site, PDFs, app, carrosseis). As cores sao complementares a paleta noir principal — nao a substituem. O fundo continua escuro; a cor do pilar e usada em titulos, bordas, icones e destaques.
+
+| Pilar | Cor | Hex | Uso |
+|---|---|---|---|
+| **ESPELHO** | Prata Espelho | `#d4d0ca` | Titulos e destaques em conteudo de identidade, consciencia e verdade |
+| **TATICA** | Ouro Fosco | `#c8a84b` | CTAs, destaques em conteudo de acao, protocolo e rotina |
+| **ESCUDO** | Aco Ardosia | `#6b8fa3` | Marcadores e bordas em conteudo de familia, perimetro e protecao |
+| **Marca Geral** | Cinza Chumbo | `#3a3835` | Base de superficies e backgrounds complementares |
+
+**Aplicacao pratica:**
+- Em PDFs: rodape e cabecalho da cor do pilar correspondente ao conteudo
+- Em carrosseis: borda ou fundo de slide na cor do pilar do video
+- No app: icones de navegacao e marcadores de progresso seguem o sistema de cores por pilar (ver `/app/04-design-system.md`)
+- Em thumbnails: usar cor do pilar como elemento de destaque no texto ou borda
+
+---
+
 ## Frases de Ancora da Marca
 
 | Tema | Frase |
@@ -109,4 +128,34 @@ O metodo se sustenta em tres pilares praticos, seculares e complementares. Nao e
 
 ---
 
-Atualizado em: Junho 2026 — frases de ancora revisadas (D2: troca de "Um dia de cada vez" por frase secular propria)
+## Como o Criador Comunica Seus Proprios Limites
+
+Luis esta em processo de sobriedade — isso e parte da proposta de valor, nao uma fragilidade. Mas precisa ser comunicado com precisao para nao gerar expectativas incorretas no publico e nos familiares.
+
+### O que comunicar com clareza
+
+- Luis e um criador de conteudo que compartilha sua propria experiencia — nao um terapeuta, conselheiro clinico ou especialista em dependencia quimica
+- Estar em tratamento ativo (psiquiatra, terapia individual, terapia de casal) e parte da credibilidade da marca, nao uma contradicao
+- A marca nao oferece atendimento de crise 1:1 — para isso ha profissionais de saude e linhas de apoio como o CVV (188)
+- O metodo O Guardiao Sobrio e baseado em experiencia pessoal, estoicismo e psicoeducacao — nao substitui diagnostico ou prescricao medica
+
+### Como dizer em conteudo (modelos de script)
+
+> "Eu nao sou psicologo. Sou alguem que passou por isso e escolheu documentar o processo em tempo real."
+
+> "O que funciona para mim pode nao funcionar para voce da mesma forma — leve para o seu psicologo ou psiquiatra e veja o que faz sentido para o seu caso."
+
+> "Se voce esta em crise aguda agora, o lugar certo nao e meu perfil. E o 188 ou o seu profissional de saude. Depois que voce estiver seguro, volte aqui."
+
+> "Eu ainda estou em tratamento. Isso e o que me da autoridade para falar sobre isso — nao um certificado."
+
+### Frequencia recomendada
+
+- **Em todo produto pago:** disclaimer escrito na pagina de vendas e dentro do produto (primeira pagina ou slide inicial)
+- **Em conteudo de crise ou protocolo:** mencionar no video ou na legenda do TikTok
+- **Na bio:** manter tagline que comunica posicionamento claro (nao e coach, nao e medico, esta no processo)
+- **Em emails de produto:** incluir linha de disclaimer no rodape de toda comunicacao comercial
+
+---
+
+Atualizado em: Junho 2026 — frases de ancora revisadas (D2: troca de "Um dia de cada vez" por frase secular propria); sistema de cores por pilar e comunicacao de limites do criador adicionados (Analise Estrategica jun/2026)

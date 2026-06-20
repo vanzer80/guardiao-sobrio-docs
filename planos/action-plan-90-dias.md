@@ -53,6 +53,17 @@ Estrutura semanal por pilar:
 - Capturar primeiros 50-100 leads
 - Identificar os 3 formatos com maior retencao
 
+### KPIs de Conversao — Fase 1
+
+| Metrica | Meta Minima | Meta Ideal |
+|---|---|---|
+| Visualizacoes totais no mes | 10.000 | 50.000+ |
+| Cliques no link bio (CTR) | 200 | 1.000 |
+| Leads capturados | 50 | 150 |
+| Taxa de abertura dos emails | 30% | 40%+ |
+
+> Consulte: `/estrategia/metricas-de-funil.md` para benchmarks de conversao e estrutura de UTMs.
+
 ---
 
 ## FASE 2 — TATICA (Dias 31-60)
@@ -80,6 +91,17 @@ Estrutura semanal por pilar:
 - Atingir primeiras vendas do produto de entrada
 - Lista de leads acima de 200 contatos
 
+### KPIs de Conversao — Fase 2
+
+| Metrica | Meta Minima | Meta Ideal |
+|---|---|---|
+| Novos leads no mes | 80 | 250 |
+| Vendas Protocolo 72h | 5 | 20+ |
+| Taxa de clique no email (CTA) | 5% | 10%+ |
+| Depoimentos coletados | 2 | 5+ |
+
+> Ativar sequencia de email para leads (ver `/estrategia/estrategia-multicanal.md`). Configurar UTMs em todos os links de produto.
+
 ---
 
 ## FASE 3 — ESCUDO (Dias 61-90)
@@ -96,7 +118,7 @@ Estrutura semanal por pilar:
 ### Acoes de Produto
 
 - [ ] Lancar **Mapa dos 13 Fundamentos** (produto de entrada — R$ 47)
-- [ ] Apresentar **Programa O Guardiao — 90 Dias** para lista de leads (produto medio)
+- [ ] Apresentar **Programa O Guardiao — 30 Dias** para lista de leads (produto medio)
 - [ ] Estruturar pagina de vendas do programa com copy em tom de trincheira — sem promessas milagrosas
 - [ ] Avaliar abertura de lista de espera para **Comunidade O Escudo**
 
@@ -106,6 +128,44 @@ Estrutura semanal por pilar:
 - Primeiras vendas do produto medio
 - Base de leads acima de 500 contatos
 - Marca reconhecida nos dois segmentos: quem bebe + quem ama quem bebe
+
+### KPIs de Conversao — Fase 3
+
+| Metrica | Meta Minima | Meta Ideal |
+|---|---|---|
+| Total de leads acumulados | 300 | 700 |
+| Vendas Mapa 13 Fundamentos | 5 | 15+ |
+| Vendas Programa 30 Dias (R$ 197) | 3 | 10+ |
+| MRR estimado | R$ 500 | R$ 2.000+ |
+| Lista de espera Comunidade | 10 | 30+ |
+
+> Avaliar abertura de canais complementares (YouTube, Instagram) se a base de TikTok estiver estabilizada. Ver `/estrategia/estrategia-multicanal.md`.
+
+---
+
+## Ciclos Trimestrais de Revisao Estrategica
+
+Apos o primeiro ciclo de 90 dias, o plano deve ser revisado trimestralmente. Nao e pausa — e recalibracao.
+
+### O Que Revisar a Cada 90 Dias
+
+| Area | O Que Avaliar |
+|---|---|
+| Conteudo | Quais pilares e formatos geraram mais leads e vendas (ver metricas-de-funil.md) |
+| Produtos | Qual produto de entrada esta convertendo melhor; se ha demanda por novo produto |
+| Canal | Se TikTok continua sendo o motor principal ou se YouTube/email esta crescendo em participacao |
+| Saude do criador | Nivel de energia, qualidade do suporte terapeutico, se o ritmo esta sustentavel |
+| Funil | Onde os leads estao parando (lead que nao compra: problema de email? De produto? De pricing?) |
+
+### Protocolo de Pausa Estrategica
+
+A cada ciclo de 90 dias, reservar 1 semana intencional de:
+- Zero gravacao de conteudo
+- Revisao dos documentos do repositorio (o que ficou desatualizado?)
+- Revisao das metricas de funil (planilha de cohort mensal)
+- Decisao sobre o proximo ciclo: manter, acelerar ou simplificar
+
+> Essa pausa nao e opcional. E parte do sistema. Criador esgotado produz conteudo ruim e toma decisoes ruins.
 
 ---
 

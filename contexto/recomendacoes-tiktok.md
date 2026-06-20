@@ -106,5 +106,10 @@ Criadores consistentes em um tema especifico constroem mais alcance confiavel do
 
 ---
 
+---
+
+> **TikTok e o motor principal de aquisicao — nao o unico canal.** Para a estrategia de diversificacao (email, YouTube, Instagram), consulte `/estrategia/estrategia-multicanal.md`.
+> Para metricas integradas do funil (leads, conversao, UTMs), consulte `/estrategia/metricas-de-funil.md`.
+
 *Fonte: 04_RECOMENDACOES_TIKTOK_GROWTH (arquivo original) + revisao estrategica junho/2026*
 *Atualizado em: Junho 2026*

@@ -10,6 +10,10 @@ Oferecer um roteiro claro e sem julgamento para as primeiras horas apos uma reca
 
 ---
 
+> **Aviso de seguranca:** Se apos uma recaida voce estiver com pensamentos de se machucar ou de suicidio — ligue agora para o **CVV: 188** (24h, gratuito e anonimo) ou va ao pronto-socorro mais proximo. A recaida e reversivel. Uma crise de risco de vida precisa de atendimento imediato. Siga este protocolo somente quando estiver fora de perigo fisico.
+
+---
+
 ## O Que a Recaida Nao E
 
 - Nao e prova de que voce nunca vai conseguir.

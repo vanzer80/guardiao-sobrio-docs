@@ -53,6 +53,7 @@ Este e o horario de maior risco. Quando o impulso aparecer:
 6. **RELEIA**: O proposito. O nome das pessoas que voce esta protegendo.
 
 > Se o impulso persistir e voce sentir que nao consegue conter: ligue para o terapeuta ou psiquiatra. Isso e parte do protocolo, nao fraqueza.
+> Se o impulso vier acompanhado de pensamentos de se machucar: ligue para o **CVV: 188** (24h, gratuito e anonimo) antes de qualquer outra acao.
 
 ---
 

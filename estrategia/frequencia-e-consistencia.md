@@ -79,6 +79,28 @@ A marca existe para proteger outras pessoas. Nao pode destruir quem a cria.
 
 ---
 
+## Formatos Alternativos para Temas Pesados
+
+Nem todo video precisa ser em primeira pessoa diante da camera. Alternar formatos reduz o desgaste emocional do criador em temas de alta carga sem perder profundidade — e ainda melhora retencao para conteudo educativo.
+
+| Formato | Quando Usar | Vantagem Principal |
+|---|---|---|
+| **Camera direta (rosto)** | Historia pessoal, vulnerabilidade, resposta a comentario, lancamento de produto | Presenca do criador e o diferencial — alta conexao emocional |
+| **Narracao sobre B-roll** | Temas de alta carga (recaida, crise, consequencias, caos) | Transmite o conteudo sem expor o criador em momento fragil; temas pesados sem performance de dor |
+| **Texto na tela com voz off** | Frases de ancora, reflexoes curtas, fundamentos isolados | Producao rapida; alto indice de salvamento; bom para pilar ESPELHO |
+| **Diagrama ou animacao simples** | Explicacao de mecanismos (como o vicio funciona, mapa de gatilhos, ciclo de habito) | Educativo, retencao alta, reaproveitavel em YouTube e carrossel |
+| **Carrossel (texto + visual)** | Protocolos em passos, checklists, comparativos (antes/depois de comportamento) | Salvamento e compartilhamento altos; conteudo evergreen |
+
+### Regra de Uso
+
+Reservar **camera direta** para conteudo onde a presenca do criador e o diferencial: historia pessoal, vulnerabilidade autentica, resposta ao publico, anuncio de produto.
+
+Usar **formatos alternativos** para conteudo educativo, mecanismos de vicio e protocolos — especialmente quando o tema e pesado emocionalmente ou o criador esta com bateria baixa.
+
+> Isso nao e desonestidade com o publico. E protecao do criador: nao e necessario estar em estado emocional alto para gravar sobre temas pesados quando o formato nao exige presenca direta.
+
+---
+
 ## Hook de Abertura por Tipo
 
 > Os primeiros 3 segundos decidem se o video sera assistido. Use estes modelos.

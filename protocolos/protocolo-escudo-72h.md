@@ -4,6 +4,8 @@
 
 > **Limite claro:** Este protocolo complementa — nao substitui — o acompanhamento de psiquiatra ou psicologo. Se voce esta em crise aguda, contate seu profissional de saude.
 
+> **Situacao de emergencia:** Se voce estiver com pensamentos de se machucar ou de suicidio, ou se a crise envolver risco fisico imediato — este protocolo nao e o lugar certo. Ligue agora para o **CVV: 188** (24h, gratuito e anonimo) ou va ao pronto-socorro mais proximo. A sobriedade pode esperar 72h. Sua vida, nao.
+
 ---
 
 ## Quando Usar

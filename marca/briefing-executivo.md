@@ -40,11 +40,16 @@ Construir identidade de pessoa sobria sem precisar de rotulos ou dramatizacao.
 
 ## Plataformas
 
-| Plataforma | Papel |
-|------------|-------|
-| **TikTok** | Principal — atracao e descoberta |
-| **App Mobile** | Em desenvolvimento — retencao e monetizacao |
-| **Telegram/Comunidade** | Futuro — suporte entre pares |
+| Plataforma | Papel | Status |
+|------------|-------|--------|
+| **TikTok** | Principal — atracao e descoberta | Ativo |
+| **Email** | Nurture, ativacao de produtos, retencao de leads | Ativar na Fase 1 |
+| **App Mobile** | Retencao e monetizacao com protocolos guiados | Em desenvolvimento |
+| **Instagram** | Reaproveitamento de conteudo TikTok (reels, carrosseis) | Ativar na Fase 1-2 |
+| **YouTube** | Conteudo educativo longo, SEO de busca | Ativar na Fase 2-3 |
+| **Comunidade (O Escudo)** | Suporte entre pares, retencao, LTV | Abrir na Fase 3 |
+
+> Ver detalhes de ativacao por canal em `/estrategia/estrategia-multicanal.md`
 
 ---
 

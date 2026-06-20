@@ -84,7 +84,7 @@
 
 ---
 
-## Resumo Final
+## Resumo — Revisao Estrategica (17/06/2026)
 
 | Fase | Status | Itens |
 |---|---|---|
@@ -95,9 +95,68 @@
 | Fase 4 — Documentacao | ✅ Completa | 2/2 |
 | Decisoes Pendentes | ✅ Todas resolvidas | 3/3 |
 
+> **Revisao estrategica concluida em 17/06/2026.**
+
 ---
 
-> **Revisao estrategica concluida em 17/06/2026.**
-> Repositorio pronto para uso como base operacional da marca O Guardiao Sobrio.
+## Fase 5 — Expansao Estrategica (Analise jun/2026)
 
-*Proximo passo sugerido: responder a entrevista de diagnostico (Fase 0) para personalizar ainda mais os documentos com sua realidade atual.*
+> Iniciada em: 20/06/2026
+> Baseada em: Analise Estrategica do Guardiao Sobrio (documento externo)
+
+### Novos Arquivos Criados
+
+| # | Arquivo | Status | Observacao |
+|---|---|---|---|
+| 5.1 | `/marca/manifesto.md` | ✅ | Manifesto de 8-10 linhas + versao reduzida para bio/legenda |
+| 5.2 | `/estrategia/estrategia-multicanal.md` | ✅ | Email (prioridade alta), YouTube (fase 2), Instagram (reaproveitamento) |
+| 5.3 | `/estrategia/metricas-de-funil.md` | ✅ | KPIs por etapa, benchmarks, UTMs, cohort, ferramentas minimas |
+| 5.4 | `/estrategia/series-tematicas.md` | ✅ | 10 series x 3 videos baseadas nas frases de ancora do manual |
+| 5.5 | `/produtos/bundles-e-pacotes.md` | ✅ | 3 bundles com precos, copys e momentos de ativacao |
+| 5.6 | `/estrategia/estrategia-b2b.md` | ✅ | Licenciamento para clinicas — roadmap futuro com criterios de ativacao |
+
+### Arquivos Atualizados
+
+| # | Arquivo | Status | O que mudou |
+|---|---|---|---|
+| 5.7 | `/protocolos/familiares.md` | ✅ | Bloco de emergencia com CVV (188), SAMU (192), Ligue 180 e CAPS |
+| 5.8 | `/protocolos/protocolo-escudo-72h.md` | ✅ | Disclaimer de seguranca expandido com CVV e orientacao de urgencia |
+| 5.9 | `/marca/manual-de-marca.md` | ✅ | Sistema de cores por pilar + secao de comunicacao de limites do criador |
+| 5.10 | `/produtos/funil-de-produtos-v2.md` | ✅ | Naming publico simplificado, jornadas por produto, sumario de bundles |
+| 5.11 | `/planos/action-plan-90-dias.md` | ✅ | KPIs de conversao por fase, ciclos trimestrais de revisao estrategica |
+| 5.12 | `/README.md` | ✅ | Estrutura atualizada com todos os novos arquivos + tabela de naming publico |
+| 5.13 | `/ROADMAP.md` | ✅ | Este arquivo — Fase 5 adicionada |
+| 5.14 | `/estrategia/frequencia-e-consistencia.md` | ✅ | Secao "Formatos Alternativos para Temas Pesados" — camera direta, narracao, texto, diagrama, carrossel |
+| 5.15 | `/planos/checklist-operacional.md` | ✅ | Checklist Mensal expandido com metricas de funil (leads, vendas, email) e referencia a metricas-de-funil.md |
+| 5.16 | `/protocolos/recaida.md` | ✅ | Aviso de seguranca com CVV 188 no topo — risco de crise pos-recaida exige disclaimer imediato |
+| 5.17 | `/protocolos/primeiros-30-dias.md` | ✅ | CVV 188 adicionado ao Protocolo de Crise para casos de pensamentos de automaltrato |
+| 5.18 | `/marca/briefing-executivo.md` | ✅ | Tabela de Plataformas expandida: Email, Instagram, YouTube e Comunidade com status de ativacao |
+| 5.19 | `/contexto/recomendacoes-tiktok.md` | ✅ | Referencia cruzada para estrategia-multicanal.md e metricas-de-funil.md adicionada ao rodape |
+
+---
+
+## Decisoes Pendentes — Fase 5
+
+| # | Decisao | Status |
+|---|---|---|
+| D4 | Escolher plataforma de email (MailerLite vs Brevo) e configurar sequencia de onboarding | ⏳ Pendente |
+| D5 | Definir plataforma de venda de infoprodutos (Hotmart vs Kiwify) e publicar primeiro produto | ⏳ Pendente |
+| D6 | Definir quando abrir canal do YouTube (criterio: base consolidada + primeiras vendas) | ⏳ Pendente |
+| D7 | Revisar e configurar bundles na plataforma de vendas (precos e composicao validados) | ⏳ Pendente |
+| D8 | Definir profissional de saude para revisao clinica do metodo (criterio para B2B — Fase futura) | ⏳ Pendente |
+
+---
+
+## Resumo Geral — Status do Repositorio
+
+| Fase | Status | Itens |
+|---|---|---|
+| Fase 0 — Diagnostico | ✅ Completa | 8/8 |
+| Fase 1 — Arquivos de Marca | ✅ Completa | 3/3 |
+| Fase 2 — Protocolos | ✅ Completa | 7/7 |
+| Fase 3 — Estrategia | ✅ Completa | 4/4 |
+| Fase 4 — Documentacao | ✅ Completa | 2/2 |
+| Fase 5 — Expansao Estrategica | ✅ Implementada | 19/19 |
+| Decisoes D4-D8 | ⏳ Aguardando criador | 5 itens |
+
+*Atualizado em: 20/06/2026 — Analise Estrategica externa aplicada ao repositorio*

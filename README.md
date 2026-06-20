@@ -38,35 +38,74 @@ Nao e religioso. Nao e coach. E baseado em estoicismo, mindfulness, psicoeducaca
 
 ```
 guardiao-sobrio-docs/
-├── README.md                          # Este arquivo
-├── ROADMAP.md                         # Status de todas as tarefas da revisao estrategica
+├── README.md                              # Este arquivo
+├── ROADMAP.md                             # Status de tarefas — historico e proximos passos
 ├── fundamentos/
-│   └── 13-fundamentos.md              # Os 13 fundamentos com pilares, estoicismo e mindfulness
+│   └── 13-fundamentos.md                  # Os 13 fundamentos com pilares, estoicismo e mindfulness
 ├── marca/
-│   └── manual-de-marca.md             # Identidade, metodologia, voz, estetica, frases de ancora
+│   ├── manual-de-marca.md                 # Identidade, metodologia, voz, estetica, cores, limites do criador
+│   └── manifesto.md                       # Manifesto curto da marca (para site, landing e onboarding)
 ├── protocolos/
-│   ├── primeiros-30-dias.md           # Guia pratico para os primeiros 30 dias
-│   ├── familiares.md                  # Orientacao para conjuge e familia
-│   ├── recaida.md                     # Roteiro para as primeiras 24h pos-recaida
-│   ├── protocolo-escudo-72h.md        # (Aguarda revisao — ver ROADMAP D1)
-│   ├── protocolo-insight-habito.md    # (Aguarda revisao — ver ROADMAP D1)
-│   ├── protocolo-perimetro-24h.md     # (Aguarda revisao — ver ROADMAP D1)
-│   └── seguranca-e-respeito-24h.md    # (Aguarda revisao — ver ROADMAP D1)
+│   ├── primeiros-30-dias.md               # Guia pratico para os primeiros 30 dias
+│   ├── familiares.md                      # Orientacao para conjuge e familia + recursos de emergencia
+│   ├── recaida.md                         # Roteiro para as primeiras 24h pos-recaida
+│   ├── protocolo-escudo-72h.md            # Protocolo de emergencia de 72h + disclaimer de seguranca
+│   ├── protocolo-insight-habito.md        # Protocolo de insight e habito
+│   ├── protocolo-perimetro-24h.md         # Protocolo de perimetro diario
+│   └── seguranca-e-respeito-24h.md        # Protocolo de seguranca e respeito
+├── produtos/
+│   ├── funil-de-produtos-v2.md            # Arquitetura de monetizacao + naming publico + jornadas
+│   └── bundles-e-pacotes.md               # Pacotes combinados com precos e momento de ativacao
 ├── estrategia/
-│   ├── palavras-chave-nicho.md        # Lista curada em 4 niveis + hashtags por tipo de video
-│   ├── frequencia-e-consistencia.md   # Plano semanal de 6 videos com estrutura por pilar
-│   ├── validacao-nome-marca.md        # Analise do nome "O Guardiao Sobrio" no mercado
-│   └── fontes-tecnicas-referencias.md # Estoicismo, mindfulness, ACT, psicoeducacao — como citar
+│   ├── palavras-chave-nicho.md            # Lista curada em 4 niveis + hashtags por tipo de video
+│   ├── frequencia-e-consistencia.md       # Plano semanal de 6 videos com estrutura por pilar
+│   ├── validacao-nome-marca.md            # Analise do nome "O Guardiao Sobrio" no mercado
+│   ├── fontes-tecnicas-referencias.md     # Estoicismo, mindfulness, ACT, psicoeducacao — como citar
+│   ├── estrategia-multicanal.md           # Diversificacao: email, YouTube, Instagram + roadmap de ativacao
+│   ├── metricas-de-funil.md               # KPIs por etapa, metas por fase, UTMs, cohort tracking
+│   ├── series-tematicas.md                # 10 series de 3 videos cada baseadas nas frases de ancora
+│   └── estrategia-b2b.md                  # Licenciamento para clinicas e terapeutas (roadmap futuro)
+├── planos/
+│   ├── action-plan-90-dias.md             # Plano de 90 dias com KPIs por fase e ciclos de revisao
+│   ├── plano-correcao-14-dias.md          # Sprint de 14 dias de retomada
+│   └── checklist-operacional.md           # Checklist operacional
 ├── contexto/
-│   ├── contexto-criador.md            # Perfil atualizado do criador (estado real de sobriedade)
-└──     └── recomendacoes-tiktok.md    # Estrategia e crescimento no TikTok 2026
+│   ├── contexto-criador.md                # Perfil atualizado do criador (estado real de sobriedade)
+│   └── recomendacoes-tiktok.md            # Estrategia e crescimento no TikTok 2026
+└── app/
+    ├── README.md                          # Indice da documentacao tecnica do app
+    ├── 01-PRD.md                          # Product Requirements Document
+    ├── 02-arquitetura.md                  # Stack, backend, banco de dados
+    ├── 03-funcionalidades.md              # Features por fase
+    ├── 04-design-system.md                # Tokens visuais, paleta, componentes
+    ├── 05-fluxos-e-telas.md               # Mapa de telas e navegacao
+    ├── 06-modelo-de-dados.md              # Schema do banco, entidades, relacoes
+    ├── 07-regras-de-negocio.md            # Logica de negocio e limites eticos
+    └── 08-roadmap-tecnico.md              # Fases de desenvolvimento e MVPs
 ```
+
+---
+
+## Naming Publico dos Produtos
+
+Para copy de video, paginas de venda e email — usar os nomes simplificados abaixo:
+
+| Nome Interno | Nome Publico |
+|---|---|
+| Protocolo do Escudo — 72h | "Primeiras 72h" / "Protocolo de Crise" |
+| Mapa dos 13 Fundamentos | "Mapa do Metodo" |
+| Programa O Guardiao — 30 Dias | "Primeiros 30 Dias" |
+| Plano de Correcao — 14 Dias | "Recomeco em 14 Dias" |
+| Comunidade O Escudo | "Comunidade" / "O Escudo" |
+| Guia do Familiar | "Escudo da Familia" |
+
+Ver detalhes em `/produtos/funil-de-produtos-v2.md`.
 
 ---
 
 ## Decisoes Pendentes
 
-Ver `ROADMAP.md` — secao "Decisoes Pendentes do Criador" (itens D1, D2, D3).
+Ver `ROADMAP.md` — historico de decisoes e proximos passos estrategicos.
 
 ---
 

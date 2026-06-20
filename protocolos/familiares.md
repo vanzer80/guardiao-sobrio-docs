@@ -72,6 +72,23 @@ Voce tambem precisa de suporte. Nao e fraqueza — e estrategia.
 
 ---
 
+## Situacoes de Emergencia — Numeros e Recursos Imediatos
+
+Este protocolo oferece orientacao de suporte emocional. Mas ha situacoes que estao alem do que qualquer material digital pode resolver. Se voce ou a pessoa que ama estiver em risco imediato, use os recursos abaixo:
+
+| Situacao | Recurso | Contato |
+|---|---|---|
+| Ideacao suicida ou crise emocional aguda | **CVV — Centro de Valorizacao da Vida** | **188** (24h, gratuito e anonimo) |
+| Emergencia medica (overdose, acidente, crise fisica) | **SAMU** | **192** |
+| Violencia domestica | **Ligue 180** | **180** (24h, anonimo) |
+| Acompanhamento de saude mental (fora do pronto-socorro) | **CAPS — Centro de Atencao Psicossocial** | Buscar unidade mais proxima pelo municipio |
+
+> **Importante:** Se a pessoa que voce ama estiver falando em se machucar ou demonstrar sinais de risco de vida — ligue para o 188 ou va ao pronto-socorro mais proximo. Nao espere. Nao tente resolver sozinho.
+
+> Este protocolo nao oferece atendimento de crise. Em emergencia, os numeros acima sao o caminho certo.
+
+---
+
 ## Sinais de Que o Processo Esta Indo Bem
 
 - A pessoa esta mantendo acompanhamento profissional (psiquiatra, psicologo).

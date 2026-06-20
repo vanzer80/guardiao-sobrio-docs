@@ -63,12 +63,23 @@ Todo inicio de semana (segunda, antes de gravar):
 
 No ultimo dia de cada mes:
 
-- [ ] Total de videos publicados no mes (meta: 24)
+**Conteudo:**
+- [ ] Total de videos publicados no mes (meta por fase — ver `/estrategia/metricas-de-funil.md`)
 - [ ] Top 3 videos por retencao: qual pilar, qual formato, qual tema
 - [ ] Videos de familiares publicados no mes (meta: ao menos 4)
-- [ ] Crescimento de seguidores e leads capturados
-- [ ] Revisar e ajustar pauta do mes seguinte com base nos dados
-- [ ] Estado emocional do criador: o processo esta sustentavel?
+- [ ] Formato mais usado (camera direta / narracao / texto) — equilibrar se necessario
+
+**Metricas de funil:**
+- [ ] Novos leads capturados no mes (meta por fase — ver `/estrategia/metricas-de-funil.md`)
+- [ ] Vendas de produtos no mes: qual produto, quantas unidades, receita total
+- [ ] Taxa de abertura dos emails (meta: acima de 30%)
+- [ ] Cliques em CTAs de email (meta: acima de 5%)
+- [ ] Atualizar planilha de cohort (canal de origem x produto comprado)
+
+**Planejamento:**
+- [ ] Revisar e ajustar pauta do mes seguinte com base nos dados de retencao
+- [ ] Verificar se ha produto ou bundle a lancar no proximo mes (ver `/produtos/funil-de-produtos-v2.md`)
+- [ ] Estado emocional do criador: o ritmo esta sustentavel para o proximo mes?
 
 ---
 
