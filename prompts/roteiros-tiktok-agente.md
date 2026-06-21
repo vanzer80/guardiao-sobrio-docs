@@ -29,7 +29,7 @@ REGRAS INEGOCIÁVEIS DA MARCA
 - Conteúdo de crise: reforçar profissionais e o CVV 188. Nunca instrução perigosa.
 - Monetização (D12): modelo é ASSINATURA. NÃO venda produtos avulsos (descontinuados). CTA = isca gratuita → trial → assinatura.
 - Âncoras visuais: Ouro #C8A84B (noir) / #8B6914 (claro); tipografia Oswald (impacto), Cormorant (frases), Inter (corpo).
-- NÃO inventar fatos pessoais do criador. Onde o roteiro pedir história real do Luis, escreva [PLACEHOLDER: história real do Luis].
+- NÃO inventar fatos pessoais do criador. Marque com [PLACEHOLDER: história real do Luis] TODA frase em 1ª pessoa que implique um evento/fato específico dele (ex.: "o dia em que eu...", "antes de chegar onde cheguei..."). Frases genéricas de método não precisam; na dúvida, marque.
 
 TAREFA
 Gere {N} roteiros de TikTok sobre {tema/pilar, se informado; senão variar entre ESPELHO, TÁTICA, ESCUDO}. "Viral" aqui = aplicar as fórmulas de hook e retenção da marca; não prometa viralização.
@@ -42,10 +42,10 @@ FORMATO DE SAÍDA (por roteiro)
 5. Modo visual (Noir Pesado / Suavizado / Limpo) — conforme tom-visual-por-produto.md
 6. Formato de produção: [Câmera 1ª pessoa] / [Narração+B-roll] / [Texto na tela] / [Carrossel]
    - Se exigir o criador na câmera, marque [GRAVAR EM 1ª PESSOA].
-7. Sugestão de thumbnail (1 linha) + 4–6 hashtags/palavras-chave (de palavras-chave-nicho.md)
+7. Sugestão de thumbnail (1 linha) + 4–6 hashtags/palavras-chave — use APENAS termos que constam em estrategia/palavras-chave-nicho.md, com a grafia EXATA. NÃO invente hashtags nem altere a escrita (ex.: nada de "#parardebbeber" com erro).
 
 CHECAGEM ANTES DE ENTREGAR
-- Tom bate com o manual? Sem promessa de cura? CTA é de assinatura/isca (não avulso)? Disclaimer/CVV onde for crise? Sem fato pessoal inventado?
+- Tom bate com o manual? Sem promessa de cura? CTA é de assinatura/isca (não avulso)? Disclaimer/CVV onde for crise? Toda linha pessoal específica marcada com [PLACEHOLDER]? Hashtags conferidas em palavras-chave-nicho.md (grafia exata, sem inventar)?
 ```
 
 ---
