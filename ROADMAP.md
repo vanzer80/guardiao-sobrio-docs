@@ -136,6 +136,31 @@
 
 ---
 
+## Fase 6 — Identidade Visual (Analise jun/2026)
+
+> Iniciada em: 20/06/2026
+> Baseada em: Analise Completa — Identidade Visual da Marca O Guardiao Sobrio (documento externo)
+
+### Novos Arquivos Criados
+
+| # | Arquivo | Status | Observacao |
+|---|---|---|---|
+| 6.1 | `/marca/assets/paleta.md` | ✅ | Paleta completa com HEX e RGB para Canva, CapCut e PDFs — hierarquia por modo visual |
+| 6.2 | `/marca/assets/tipografia.md` | ✅ | Fontes por contexto: Oswald (impacto), Cormorant (frases), Inter (corpo) — com tabela de decisao rapida |
+| 6.3 | `/marca/assets/logo-guidelines.md` | ✅ | Spec para criacao do logo do Escudo — versoes obrigatorias, estilo, paleta, regras de uso e entrega |
+| 6.4 | `/marca/diretrizes-video.md` | ✅ | Legenda, hook visual, templates de thumbnail por pilar, ritmo de corte e formatos alternativos |
+| 6.5 | `/marca/tom-visual-por-produto.md` | ✅ | Modo visual (Noir Pesado / Suavizado / Limpo) mapeado para cada produto, pilar e tipo de conteudo |
+
+### Arquivos Atualizados
+
+| # | Arquivo | Status | O que mudou |
+|---|---|---|---|
+| 6.6 | `/marca/manual-de-marca.md` | ✅ | Secao "Ancora Visual" adicionada — define os tres elementos invariaveis entre modos Noir e Limpo |
+| 6.7 | `/README.md` | ✅ | Estrutura atualizada com novos arquivos de `/marca/assets/` e novos arquivos de marca |
+| 6.8 | `/ROADMAP.md` | ✅ | Este arquivo — Fase 6 e decisoes D9-D11 adicionadas |
+
+---
+
 ## Decisoes Pendentes — Fase 5
 
 | # | Decisao | Status |
@@ -145,6 +170,9 @@
 | D6 | Definir quando abrir canal do YouTube (criterio: base consolidada + primeiras vendas) | ⏳ Pendente |
 | D7 | Revisar e configurar bundles na plataforma de vendas (precos e composicao validados) | ⏳ Pendente |
 | D8 | Definir profissional de saude para revisao clinica do metodo (criterio para B2B — Fase futura) | ⏳ Pendente |
+| D9 | Avaliar separacao de entidade: "O Guardiao Sobrio" como marca principal e "Luis Vanzer" como criador/fundador — revisao em 12-18 meses quando base estiver consolidada e primeiras vendas recorrentes | ⏳ Pendente |
+| D10 | Criar logo do Escudo — contratar designer ou usar IA (Midjourney, Adobe Firefly, Looka) — 3 versoes de escudo geometrico para escolha; exportar SVG + PNG transparente conforme spec em `/marca/assets/logo-guidelines.md` | ⏳ Pendente |
+| D11 | Quando logo criado: adicionar SVGs em `/marca/assets/` e criar kit de mockups (thumbnails, stories, capas de produto) em `/marca/assets/mockups/` | ⏳ Aguarda D10 |
 
 ---
 
@@ -158,6 +186,7 @@
 | Fase 3 — Estrategia | ✅ Completa | 4/4 |
 | Fase 4 — Documentacao | ✅ Completa | 2/2 |
 | Fase 5 — Expansao Estrategica | ✅ Implementada | 20/20 |
-| Decisoes D4-D8 | ⏳ Aguardando criador | 5 itens |
+| Fase 6 — Identidade Visual | ✅ Implementada | 8/8 |
+| Decisoes D4-D11 | ⏳ Aguardando criador | 8 itens |
 
-*Atualizado em: 20/06/2026 — Analise Estrategica externa aplicada ao repositorio + prova-social.md adicionado*
+*Atualizado em: 20/06/2026 — Analise de Identidade Visual externa aplicada ao repositorio*

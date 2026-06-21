@@ -78,6 +78,47 @@ O metodo se sustenta em tres pilares praticos, seculares e complementares. Nao e
 | **Simbolo** | Escudo — protecao, perimetro, identidade sobria |
 | **Foto de perfil** | Fundo escuro, rosto visivel, expressao seria e firme |
 
+> Especificacao tecnica completa — cores em HEX/RGB: `/marca/assets/paleta.md`
+> Especificacao tecnica completa — fontes por contexto de uso: `/marca/assets/tipografia.md`
+> Especificacao do simbolo e logo: `/marca/assets/logo-guidelines.md`
+
+---
+
+## Interface Digital — App
+
+O app O Guardiao Sobrio e uma extensao direta dos tres pilares do metodo. Os principios de marca definidos neste manual — tom noir, ouro como ancora, escudo como simbolo — se traduzem em interface digital conforme documentado em `/app/04-design-system.md`.
+
+Resumo das decisoes visuais do app:
+
+| Elemento | Decisao | Referencia |
+|---|---|---|
+| Paleta de cores (tokens CSS) | Noir escuro padrao; modo claro opcional para modulo de familiares | `/app/04-design-system.md` — secao 2 |
+| Tipografia do app | Cormorant Garamond (display/ancora), General Sans (corpo funcional), JetBrains Mono (contadores) | `/app/04-design-system.md` — secao 3 |
+| Icone do app | Simbolo do escudo — 512x512px PNG; ainda nao criado (ver D10 no ROADMAP.md) | `/marca/assets/logo-guidelines.md` |
+| Botao SOS | Sempre visivel; fundo emergencia `#E07B2A`; icone de escudo ou raio | `/app/04-design-system.md` — secao 6 |
+| Tom visual por tela | Noir pesado para protocolo de emergencia; noir suavizado para checklist; limpo para modulo familiar | `/app/04-design-system.md` — secao 9 |
+
+> Qualquer decisao de UI que nao esteja em `/app/04-design-system.md` deve ser validada contra os principios deste manual antes de implementar.
+
+---
+
+## Ancora Visual — O Que Nao Muda Entre os Dois Modos
+
+O Guardiao Sobrio opera em dois modos visuais: **Noir** (choque, realidade, crise) e **Limpo** (acolhimento, familia, onboarding). Para que os dois modos sejam reconhecidos como a mesma marca ao scroll rapido no TikTok ou em qualquer plataforma, tres elementos sao obrigatorios em todos os modos:
+
+| Ancora | Elemento | Como aplicar |
+|---|---|---|
+| **1. Cor de destaque** | Ouro Fosco — sempre presente | Modo Noir: `#C8A84B`. Modo Limpo: `#8B6914` (ouro com contraste sobre fundo claro). A cor muda de HEX; o ouro nao some. |
+| **2. Simbolo ou nome da marca** | Escudo (quando logo existir) ou nome "O Guardiao Sobrio" | Presente em toda peca — thumbnail, capa de produto, PDF, story. Ate o logo estar criado: nome em Oswald Bold no canto da peca. |
+| **3. Tipografia de headline** | Oswald Bold para impacto; Cormorant Garamond para frases de ancora e programas | Nao variar a familia tipografica entre os dois modos — a fonte e identidade tao importante quanto a cor. |
+
+**Regra pratica:** Fundo, contraste e nivel de tensao visual podem variar entre os modos. As tres ancoras acima nao variam. Quem assiste um video de crise (Noir Pesado) e depois ve um post de familia (Visual Limpo) precisa reconhecer a mesma marca antes de ler qualquer palavra.
+
+> Ver especificacao de cores: `/marca/assets/paleta.md`
+> Ver especificacao de tipografia: `/marca/assets/tipografia.md`
+> Ver especificacao de logo e simbolo: `/marca/assets/logo-guidelines.md`
+> Ver aplicacao por produto: `/marca/tom-visual-por-produto.md`
+
 ---
 
 ## Sistema de Cores por Pilar

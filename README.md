@@ -43,8 +43,15 @@ guardiao-sobrio-docs/
 ├── fundamentos/
 │   └── 13-fundamentos.md                  # Os 13 fundamentos com pilares, estoicismo e mindfulness
 ├── marca/
-│   ├── manual-de-marca.md                 # Identidade, metodologia, voz, estetica, cores, limites do criador
-│   └── manifesto.md                       # Manifesto curto da marca (para site, landing e onboarding)
+│   ├── manual-de-marca.md                 # Identidade, metodologia, voz, estetica, ancora visual, limites
+│   ├── manifesto.md                       # Manifesto curto da marca (para site, landing e onboarding)
+│   ├── briefing-executivo.md              # Resumo executivo da marca — plataformas e status de ativacao
+│   ├── diretrizes-video.md                # Legenda, hook visual, thumbnails por pilar, ritmo de corte
+│   ├── tom-visual-por-produto.md          # Modo visual (Noir Pesado/Suavizado/Limpo) por produto do funil
+│   └── assets/
+│       ├── paleta.md                      # Paleta completa com HEX e RGB para Canva, CapCut e PDFs
+│       ├── tipografia.md                  # Fontes por contexto de uso (impacto, frases, corpo)
+│       └── logo-guidelines.md             # Spec do logo do Escudo — versoes, estilo e regras de uso
 ├── protocolos/
 │   ├── primeiros-30-dias.md               # Guia pratico para os primeiros 30 dias
 │   ├── familiares.md                      # Orientacao para conjuge e familia + recursos de emergencia
