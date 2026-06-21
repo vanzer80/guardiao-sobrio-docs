@@ -1,6 +1,6 @@
 # ROADMAP — Revisao Estrategica O Guardiao Sobrio
 > Iniciado em: 17/06/2026
-> **Status: Fases 0–6 concluídas; Fase 7 (Auditoria do App) registrada — ver abaixo**
+> **Status: Fases 0–6 concluídas; Fase 7 (Auditoria do App) — documentação reconciliada e aplicada (jun/2026)**
 
 ---
 
