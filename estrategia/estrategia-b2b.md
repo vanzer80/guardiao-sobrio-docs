@@ -5,6 +5,7 @@
 > **Status: Roadmap Futuro — Ativar pos-Fase 3**
 
 Licenciamento de conteudos e protocolos para clinicas, psicologos e psiquiatras que atendem pacientes com dependencia de alcool. A logica e complementar: a marca nao substitui o profissional — oferece material de suporte que o profissional pode recomendar ao paciente.
+> **Reconciliação (D12 — jun/2026):** roadmap futuro mantido. Onde a Modalidade 3 (B2B2C) cita indicar o **Programa 30 Dias / Comunidade** como produtos avulsos, releia como **indicação da assinatura** (afiliação sobre o plano Guardião). Avulsos descontinuados; as demais modalidades (licença de materiais, kit clínico) não mudam.
 
 ---
 

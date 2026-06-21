@@ -22,7 +22,7 @@
 - Apos meia-noite: checklist do dia anterior e bloqueado para edicao
 - `completed = true` quando todos os 5 itens estao marcados
 - Sem calculo de streak punitivo: o app nao exibe "Sequencia perdida" em nenhuma tela
-- Historico: free = 7 dias. Essential e Guardiao = ilimitado.
+- Historico: free = 7 dias. Essential e Guardiao = ilimitado. — ⚠️ auditoria jun/2026: este corte NÃO está imposto no app hoje (o histórico mostra ~90 dias para todos os planos). Impor o corte no código ou revisar a regra (decisão pendente).
 
 ---
 

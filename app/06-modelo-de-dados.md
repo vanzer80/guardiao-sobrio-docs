@@ -1,191 +1,269 @@
-# Modelo de Dados
-# App: O Guardiao Sobrio
+# Modelo de Dados — App O Guardião Sóbrio
 
-> Versao: 1.0 — Junho 2026
+> Versão: 2.0 — Junho 2026 (regenerado da fonte real na auditoria)
 > Banco: PostgreSQL via Supabase
+> **Fonte deste documento:** `lib/database.types.ts` do repo `guardiao-sobrio-app` (tipos gerados por
+> `supabase gen types`, refletem o schema vivo) + `supabase/migrations/*.sql`. Tipos PostgreSQL exatos,
+> defaults e constraints são definidos nas migrations; esta página é a referência de entidades e campos.
+>
+> O modelo conceitual v1 (com `daily_checklists`, `journal_entries`, `triggers_map`, `emergency_log`,
+> view `family_day_status`) foi **substituído** — permanece no histórico do Git para rastreabilidade.
 
 ---
 
-## 1. Entidades Principais
+## 1. Visão geral
 
-### users (gerenciado pelo Supabase Auth)
-```sql
-id            uuid PRIMARY KEY  -- auth.users.id
-email         text
-full_name     text
-avatar_url    text
-created_at    timestamptz
-```
+Schema normalizado, multiusuário, com **RLS por `user_id`** em todas as tabelas de dados do usuário.
+14 tabelas + 4 funções (RPC, `SECURITY DEFINER`). O plano de assinatura é resolvido pela função
+`effective_plan(uid)` (honra o trial). O cálculo de dias de sobriedade é feito no cliente (`lib/sobriety.ts`).
+
+| Domínio | Tabelas |
+|---|---|
+| Conta/usuário | `profiles`, `user_settings`, `push_tokens` |
+| Sobriedade | `sobriety_records`, `sos_activations` |
+| Rotina diária | `checklist_items`, `checklist_completions`, `diary_entries` |
+| Gatilhos | `trigger_categories`, `user_triggers` |
+| Família | `family_connections`, `emergency_contacts` |
+| Monetização | `subscriptions`, `subscription_audit_log` (+ `profiles.plan`) |
+
+---
+
+## 2. Tabelas
 
 ### profiles
-```sql
-id              uuid PRIMARY KEY REFERENCES auth.users
-sobriety_start  date              -- data de inicio da sobriedade (editavel)
-onboarding_goal text              -- 'stop_drinking' | 'maintain' | 'family_support'
-onboarding_time text              -- 'today' | '1-7d' | '8-30d' | '30d+'
-onboarding_challenge text         -- 'start' | 'triggers' | 'lonely' | 'relapse'
-plan            text DEFAULT 'free' -- 'free' | 'essential' | 'guardiao'
-plan_expires_at timestamptz
-notif_checklist time              -- horario do lembrete diario
-notif_risk      time              -- horario do alerta de risco
-pin_enabled     boolean DEFAULT false
-biometric_enabled boolean DEFAULT false
-created_at      timestamptz
-updated_at      timestamptz
-```
+Perfil do usuário (1:1 com `auth.users`).
 
-**RLS:** usuario so pode ler e escrever o proprio perfil.
+| Campo | Tipo | Nulo | Observação |
+|---|---|---|---|
+| id | uuid | não | PK, referencia `auth.users` |
+| full_name | text | sim | |
+| avatar_url | text | sim | |
+| plan | text | sim | plano atual (`free`/`essential`/`guardian`) |
+| is_premium | boolean | não | flag derivada |
+| trial_end | timestamptz | sim | fim do trial |
+| trial_activated_at | timestamptz | sim | |
+| is_anonymous | boolean | não | modo "explorar sem cadastro" |
+| anonymous_created_at | timestamptz | sim | |
+| substance_focus | text | sim | foco do usuário |
+| sobriety_start_date | date | sim | |
+| stripe_customer_id | text | sim | |
+| timezone | text | não | |
+| onboarding_completed | boolean | não | |
+| onboarding_motivo | text | sim | resposta de onboarding |
+| onboarding_tempo | text | sim | resposta de onboarding |
+| onboarding_desafio | text | sim | resposta de onboarding |
+| created_at / updated_at | timestamptz | não | |
 
-### daily_checklists
-```sql
-id          uuid PRIMARY KEY
-user_id     uuid REFERENCES profiles
-date        date
-item_1      boolean DEFAULT false  -- sono
-item_2      boolean DEFAULT false  -- agua
-item_3      boolean DEFAULT false  -- alimentacao
-item_4      boolean DEFAULT false  -- movimento
-item_5      boolean DEFAULT false  -- conexao
-completed   boolean DEFAULT false  -- todos os 5 marcados
-completed_at timestamptz
-created_at  timestamptz
+### user_settings
+Configurações por usuário (1:1).
 
-UNIQUE(user_id, date)
-```
+| Campo | Tipo | Nulo |
+|---|---|---|
+| user_id | uuid | não (PK) |
+| theme | text | não |
+| language | text | não |
+| notification_enabled | boolean | não |
+| daily_reminder_time | time | não |
+| quiet_hours_start | time | não |
+| quiet_hours_end | time | não |
+| biometric_lock | boolean | não |
+| share_anonymous_data | boolean | não |
+| updated_at | timestamptz | não |
 
-**RLS:** usuario so pode ler e escrever seus proprios checklists.
+### push_tokens
+Tokens de push notification.
 
-### journal_entries
-```sql
-id          uuid PRIMARY KEY
-user_id     uuid REFERENCES profiles
-date        date
-prompt_text text              -- texto do prompt exibido
-entry_text  text              -- resposta do usuario
-pillar      text              -- 'espelho' | 'tatica' | 'escudo'
-created_at  timestamptz
-updated_at  timestamptz
-```
+| Campo | Tipo | Nulo |
+|---|---|---|
+| id | uuid | não (PK) |
+| user_id | uuid | não |
+| token | text | não |
+| platform | text | sim |
+| is_active | boolean | não |
+| created_at / updated_at | timestamptz | não |
 
-**RLS:** usuario so pode ler e escrever suas proprias entradas.
+### sobriety_records
+Histórico de períodos de sobriedade (recaída = `end_date` preenchido).
 
-### triggers_map
-```sql
-id          uuid PRIMARY KEY
-user_id     uuid REFERENCES profiles
-trigger_name text             -- nome do gatilho (ex: "final da tarde")
-trigger_time time             -- horario de risco
-trigger_place text            -- lugar (opcional)
-trigger_emotion text          -- emocao associada
-response_plan text            -- o que farei quando aparecer
-notif_enabled boolean DEFAULT false
-created_at  timestamptz
-```
+| Campo | Tipo | Nulo |
+|---|---|---|
+| id | uuid | não (PK) |
+| user_id | uuid | não |
+| start_date | date | não |
+| end_date | date | sim (null = ativo) |
+| relapse_notes | text | sim |
+| created_at | timestamptz | não |
 
-**RLS:** privado por usuario.
+### sos_activations
+Registro de ativações do Protocolo SOS.
 
-### emergency_log
-```sql
-id          uuid PRIMARY KEY
-user_id     uuid REFERENCES profiles
-started_at  timestamptz
-completed   boolean DEFAULT false
-step_reached int DEFAULT 1    -- ate qual etapa chegou (1-5)
-created_at  timestamptz
-```
+| Campo | Tipo | Nulo |
+|---|---|---|
+| id | uuid | não (PK) |
+| user_id | uuid | não |
+| triggered_at | timestamptz | não |
+| resolved_at | timestamptz | sim |
+| trigger_description | text | sim |
+| craving_level | integer | sim |
+| actions_taken | text[] | sim |
+| notes | text | sim |
 
-**RLS:** privado por usuario. Sem conteudo sensivel — apenas metrica de uso.
+### checklist_items
+Itens do checklist diário (por usuário).
+
+| Campo | Tipo | Nulo |
+|---|---|---|
+| id | uuid | não (PK) |
+| user_id | uuid | não |
+| title | text | não |
+| description | text | sim |
+| category | text | sim |
+| icon | text | sim |
+| sort_order | integer | não |
+| is_active | boolean | não |
+| created_at | timestamptz | não |
+
+### checklist_completions
+Marcações diárias de cada item (substitui o antigo `daily_checklists` com item_1..5).
+
+| Campo | Tipo | Nulo | Observação |
+|---|---|---|---|
+| id | uuid | não (PK) | |
+| user_id | uuid | não | |
+| item_id | uuid | não | FK → `checklist_items.id` |
+| completed_date | date | não | |
+| completed_at | timestamptz | não | |
+
+### diary_entries
+Diário (substitui `journal_entries`).
+
+| Campo | Tipo | Nulo |
+|---|---|---|
+| id | uuid | não (PK) |
+| user_id | uuid | não |
+| entry_date | date | não |
+| content | jsonb | não |
+| mood_score | integer | sim |
+| craving_level | integer | sim |
+| created_at / updated_at | timestamptz | não |
+
+### trigger_categories
+Categorias de gatilho (sistema + do usuário).
+
+| Campo | Tipo | Nulo | Observação |
+|---|---|---|---|
+| id | uuid | não (PK) | |
+| user_id | uuid | sim | null = categoria de sistema |
+| name | text | não | |
+| icon | text | sim | |
+| color | text | sim | |
+| is_system | boolean | não | |
+| created_at | timestamptz | não | |
+
+### user_triggers
+Mapa de gatilhos do usuário (substitui `triggers_map`).
+
+| Campo | Tipo | Nulo | Observação |
+|---|---|---|---|
+| id | uuid | não (PK) | |
+| user_id | uuid | não | |
+| category_id | uuid | sim | FK → `trigger_categories.id` |
+| title | text | não | |
+| description | text | sim | |
+| risk_level | integer | não | |
+| coping_strategies | text[] | sim | |
+| people_involved | text[] | sim | |
+| location_name | text | sim | |
+| location_lat / location_lng | numeric | sim | |
+| is_active | boolean | não | |
+| created_at / updated_at | timestamptz | não | |
 
 ### family_connections
-```sql
-id          uuid PRIMARY KEY
-owner_id    uuid REFERENCES profiles   -- usuario principal
-family_id   uuid REFERENCES profiles   -- familiar conectado
-status      text DEFAULT 'active'       -- 'active' | 'revoked'
-code        text UNIQUE                 -- codigo de convite de 6 chars
-created_at  timestamptz
-revoked_at  timestamptz
-```
+Conexão dono ↔ familiar (substitui o desenho antigo + view).
 
-**RLS:** owner pode criar, ler e revogar. Familiar pode apenas ler o status do dia (via view segura).
+| Campo | Tipo | Nulo | Observação |
+|---|---|---|---|
+| id | uuid | não (PK) | |
+| user_id | uuid | não | dono da conta |
+| family_name | text | não | |
+| family_email | text | sim | |
+| family_user_id | uuid | sim | preenchido quando o familiar aceita |
+| relationship | text | sim | |
+| invitation_token | text | sim | token do convite |
+| invitation_status | text | não | status do convite |
+| invitation_expires_at | timestamptz | sim | validade do convite |
+| can_see_checklist | boolean | não | permissão granular |
+| can_see_diary | boolean | não | permissão granular |
+| can_see_sos | boolean | não | permissão granular |
+| can_see_triggers | boolean | não | permissão granular |
+| created_at / updated_at | timestamptz | não | |
 
-### sobriety_milestones
-```sql
-id          uuid PRIMARY KEY
-user_id     uuid REFERENCES profiles
-days        int                         -- 7, 14, 30, 60, 90, 180, 365
-reached_at  timestamptz
-shared      boolean DEFAULT false
-created_at  timestamptz
-```
+### emergency_contacts
+Contatos de confiança (tabela existe; a UI ainda é stub — ver auditoria FN-25).
 
-**RLS:** privado por usuario.
+| Campo | Tipo | Nulo |
+|---|---|---|
+| id | uuid | não (PK) |
+| user_id | uuid | não |
+| name | text | não |
+| phone | text | não |
+| relationship | text | sim |
+| is_primary | boolean | não |
+| sort_order | integer | não |
+| created_at | timestamptz | não |
 
----
+### subscriptions
+Assinatura do usuário (Stripe).
 
-## 2. Views e Funcoes
+| Campo | Tipo | Nulo |
+|---|---|---|
+| id | uuid | não (PK) |
+| user_id | uuid | não |
+| plan | text | não |
+| status | text | não |
+| provider | text | sim |
+| provider_subscription_id | text | sim |
+| stripe_subscription_id | text | sim |
+| current_period_start | timestamptz | sim |
+| current_period_end | timestamptz | sim |
+| trial_end | timestamptz | sim |
+| created_at / updated_at | timestamptz | não |
 
-### family_day_status (view)
-```sql
--- Expoe apenas: owner_id, date, completed
--- Familiar acessa via esta view, nunca diretamente na daily_checklists
-CREATE VIEW family_day_status AS
-  SELECT dc.user_id as owner_id, dc.date, dc.completed
-  FROM daily_checklists dc
-  JOIN family_connections fc ON fc.owner_id = dc.user_id
-  WHERE fc.status = 'active';
-```
+### subscription_audit_log
+Trilha de auditoria das mudanças de plano (idempotência via `stripe_event_id`).
 
-### calculate_sobriety_days (funcao)
-```sql
--- Retorna numero de dias desde sobriety_start
-CREATE FUNCTION calculate_sobriety_days(user_uuid uuid)
-RETURNS int AS $$
-  SELECT EXTRACT(EPOCH FROM (NOW() - sobriety_start))::int / 86400
-  FROM profiles WHERE id = user_uuid;
-$$ LANGUAGE sql SECURITY DEFINER;
-```
-
-### check_milestone_trigger
-```sql
--- Trigger que verifica marcos e insere em sobriety_milestones
--- Executado via Edge Function no momento do login diario
-```
-
----
-
-## 3. Indices de Performance
-
-```sql
-CREATE INDEX idx_daily_checklists_user_date ON daily_checklists(user_id, date DESC);
-CREATE INDEX idx_journal_entries_user_date ON journal_entries(user_id, date DESC);
-CREATE INDEX idx_triggers_user ON triggers_map(user_id);
-CREATE INDEX idx_family_connections_owner ON family_connections(owner_id);
-CREATE INDEX idx_family_connections_family ON family_connections(family_id);
-```
+| Campo | Tipo | Nulo |
+|---|---|---|
+| id | uuid | não (PK) |
+| user_id | uuid | não |
+| action | text | não |
+| old_plan | text | sim |
+| new_plan | text | sim |
+| stripe_event_id | text | sim |
+| details | jsonb | sim |
+| created_at | timestamptz | sim |
 
 ---
 
-## 4. Politicas RLS (exemplos)
+## 3. Funções (RPC, SECURITY DEFINER)
 
-```sql
--- profiles: leitura e edicao somente do proprio perfil
-CREATE POLICY "profiles_own" ON profiles
-  USING (auth.uid() = id)
-  WITH CHECK (auth.uid() = id);
-
--- daily_checklists: leitura e edicao somente dos proprios
-CREATE POLICY "checklists_own" ON daily_checklists
-  USING (auth.uid() = user_id)
-  WITH CHECK (auth.uid() = user_id);
-
--- journal_entries: privado
-CREATE POLICY "journal_own" ON journal_entries
-  USING (auth.uid() = user_id)
-  WITH CHECK (auth.uid() = user_id);
-```
+| Função | Args | Retorno | Papel |
+|---|---|---|---|
+| `effective_plan(uid)` | `uid` (uuid) | text | Plano efetivo do usuário; retorna `guardian` durante o trial (`trial_end > now()`). É a base das políticas de RLS. |
+| `activate_trial()` | — | text | Ativa o trial de 5 dias para o usuário autenticado. |
+| `accept_family_invite(p_token)` | `p_token` (text) | json | Familiar aceita o convite e vincula `family_user_id`. |
+| `get_family_day_status()` | — | json | Status do dia que o familiar pode ver ("Dia guardado" / "Em jornada") — substitui a view `family_day_status` planejada. |
 
 ---
 
-> Nenhum dado de sobriedade e exposto sem RLS explicita.
-> Toda consulta de familiar passa pela view family_day_status — nunca pela tabela direta.
+## 4. RLS e segurança
+
+- Todas as tabelas de dados do usuário têm **RLS por `user_id`** (cada um lê/escreve apenas o próprio).
+- O acesso do **familiar** é mediado pelas RPCs `SECURITY DEFINER` (`get_family_day_status`, `accept_family_invite`) e pelas flags `can_see_*` em `family_connections` — o familiar **não** lê as tabelas do dono diretamente.
+- A política de INSERT em `family_connections` exige plano elegível via `effective_plan()` (que honra o trial), evitando recursão de RLS (lição da auditoria: erro `42P17`).
+- Defaults, checks e índices exatos: ver `supabase/migrations/*.sql`.
+
+---
+
+> Documento vivo — regenerar (`supabase gen types`) e revisar a cada mudança de schema.
+> Fonte de verdade do schema: migrations do repo `guardiao-sobrio-app`.

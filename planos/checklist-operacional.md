@@ -5,6 +5,7 @@
 
 Rotina semanal do criador. Alinhar com `estrategia/frequencia-e-consistencia.md`.
 O basico repetido toda semana supera qualquer semana heroica isolada.
+> **Reconciliação (D12 — jun/2026):** nos checklists mensais, os itens "vendas de produtos" e "produto/bundle a lançar" assumem o modelo de **avulsos descontinuado**. Releia como **métricas de assinatura** (novos assinantes, MRR, churn, conversão de trial). O restante da rotina operacional permanece.
 
 ---
 

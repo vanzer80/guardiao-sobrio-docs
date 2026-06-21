@@ -3,6 +3,10 @@
 
 > Versao: 1.0 — Junho 2026
 
+> Estado real (auditoria jun/2026): fases iniciais majoritariamente entregues. Pendências: lado do familiar
+> (deploy/e2e), Comunidade (Fase 3), Contatos de Confiança, fonte General Sans (D15), cortes free×pago.
+> Processo a adicionar: checagem anti-migration-drift no CI; manter `database.types.ts` ↔ migrations ↔ banco sincronizados.
+
 ---
 
 ## Fase 0 — Preparacao (Semana 1-2)

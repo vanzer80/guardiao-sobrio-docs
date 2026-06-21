@@ -65,7 +65,7 @@ Mas o noir e modulado:
 | Uso | Fonte | Fonte CDN | Peso |
 |---|---|---|---|
 | **Display** (titulos grandes, macros, frases de ancora) | Cormorant Garamond | Google Fonts | 400, 500, 600 italic |
-| **Body** (todo texto funcional, botoes, labels) | General Sans | Fontshare | 400, 500, 600 |
+| **Body** (todo texto funcional, botoes, labels) | General Sans | Fontshare | 400, 500, 600 — ⚠️ ainda NÃO embarcada no app (corpo cai para a fonte do sistema); ver D15 |
 | **Mono** (contadores, numeros, dias) | JetBrains Mono | Google Fonts | 400, 500 |
 
 ### Escala (Mobile)
@@ -130,7 +130,7 @@ Base 4px. Todos os espacamentos sao multiplos:
 - Peso: 600
 
 ### Botao SOS
-- Flutuante, posicionado no canto inferior direito
+- Implementado como **botão central da barra de abas** (sempre visível, com destaque). (A spec original previa botão flutuante no canto inferior direito.)
 - Circulo: 56px de diametro
 - Fundo: `--color-emergency`
 - Icone: escudo ou raio
@@ -176,7 +176,7 @@ Base 4px. Todos os espacamentos sao multiplos:
 
 ## 8. Icones
 
-- Biblioteca: **Phosphor Icons** (consistente, estilo robusto, disponivel para React Native)
+- Biblioteca: **Ionicons** (`@expo/vector-icons`) — biblioteca realmente usada no app. (A spec original previa Phosphor; padronizar caso se troque no futuro.)
 - Tamanho padrao: 24px para acao, 20px para nav, 16px para inline
 - Cor: `--color-text-muted` por padrao, `--color-primary` quando ativo/selecionado
 

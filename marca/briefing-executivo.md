@@ -44,7 +44,7 @@ Construir identidade de pessoa sobria sem precisar de rotulos ou dramatizacao.
 |------------|-------|--------|
 | **TikTok** | Principal — atracao e descoberta | Ativo |
 | **Email** | Nurture, ativacao de produtos, retencao de leads | Ativar na Fase 1 |
-| **App Mobile** | Retencao e monetizacao com protocolos guiados | Em desenvolvimento |
+| **App Mobile** | Retencao e monetizacao com protocolos guiados | Em produção (auditado jun/2026) |
 | **Instagram** | Reaproveitamento de conteudo TikTok (reels, carrosseis) | Ativar na Fase 1-2 |
 | **YouTube** | Conteudo educativo longo, SEO de busca | Ativar na Fase 2-3 |
 | **Comunidade (O Escudo)** | Suporte entre pares, retencao, LTV | Abrir na Fase 3 |
@@ -61,7 +61,7 @@ Construir identidade de pessoa sobria sem precisar de rotulos ou dramatizacao.
 | Posicionamento | Sobriedade adulta real, sem filtro, sem julgamento |
 | Publico | Homens/mulheres 36-54 anos, Brasil |
 | Estetica | Noir Realista |
-| Funil | Gratuito → Entrada (R$47-97) → Medio (R$197-497) → Premium (R$997+) |
+| Funil | Assinatura (D12): Free → trial de 5 dias → Essential (R$ 19,90/mês) / Guardião (R$ 39,90/mês). Avulsos e bundles descontinuados. |
 | KPI critico | 70% de completion rate nos videos TikTok |
 | Meta 90 dias | Base de leads + serie 13 fundamentos + 1 produto vendido |
 

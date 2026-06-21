@@ -3,6 +3,8 @@
 > Define qual modo visual usar em cada produto e tipo de conteudo.
 > Tres modos: Noir Pesado / Noir Suavizado / Visual Limpo.
 > Ancora obrigatoria em todos os modos: Ouro Fosco (HEX conforme modo — ver `/marca/assets/paleta.md`).
+>
+> **Reconciliação de monetização (D12 — jun/2026):** o modelo oficial é **assinatura** (Free / Essential R$ 19,90 / Guardião R$ 39,90). Os "produtos" citados abaixo (72h, Mapa, Programa 30, Plano 14, Mentoria, bundles) são **conteúdos/módulos entregues no app por plano** — os preços avulsos e os bundles estão **descontinuados**. O **mapeamento de modo visual por conteúdo permanece válido**.
 > Atualizado em: Junho 2026
 
 ---
@@ -39,7 +41,7 @@
 
 ---
 
-## ENTRADA — Produtos Pagos (R$ 47)
+## ENTRADA — Conteúdos do app (legado: avulsos R$ 47 — descontinuado, D12)
 
 | Produto | Landing Page | Capa do Produto | Conteudo Interno | Justificativa |
 |---|---|---|---|---|

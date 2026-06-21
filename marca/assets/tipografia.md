@@ -11,7 +11,7 @@
 
 Duas familias de fonte por peca. Uma para impacto (headlines, frases de ancora), uma para leitura (corpo, instrucoes). Consistencia entre plataformas supera variedade — fonte errada destroi a diferenciacao visual mais rapido do que qualquer erro de cor.
 
-**Nota sobre o app:** O aplicativo usa Cormorant Garamond (display), General Sans (corpo) e JetBrains Mono (contador). Essas fontes sao adequadas para interface digital. Para producao de conteudo offline (Canva, CapCut, PDFs), este arquivo define o sistema correto.
+**Nota sobre o app:** O aplicativo usa Cormorant Garamond (display), General Sans (corpo) e JetBrains Mono (contador). ⚠️ Auditoria jun/2026: a **General Sans ainda não está embarcada** no app — o corpo cai para a fonte do sistema (ver D15). Essas fontes sao adequadas para interface digital. Para producao de conteudo offline (Canva, CapCut, PDFs), este arquivo define o sistema correto.
 
 ---
 

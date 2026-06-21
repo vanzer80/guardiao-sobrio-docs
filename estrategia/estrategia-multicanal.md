@@ -6,6 +6,7 @@
 A estrategia atual de aquisicao esta 100% concentrada no TikTok. Isso e uma fragilidade real: volatilidade de algoritmo, risco de suspensao de conta, dependencia de energia constante do criador em formato de alta intensidade emocional. Este documento estrutura a diversificacao de canais para aumentar resiliencia do negocio sem sobrecarregar o criador.
 
 **Principio:** TikTok continua sendo o motor de aquisicao. Os canais abaixo sao complementares — nao concorrentes.
+> **Reconciliação (D12 — jun/2026):** os CTAs de e-mail abaixo apontam para produtos avulsos (R$ 47 nos Dias 7/14; Programa R$ 197 no Dia 30) — modelo **descontinuado**. Releia esses CTAs como **ativar o trial de 5 dias** e **converter em assinatura** (Essential/Guardião). A estrutura de canais e a sequência permanecem válidas.
 
 ---
 

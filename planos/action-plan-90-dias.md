@@ -4,6 +4,7 @@
 > Atualizado em: Junho 2026
 
 Plano completo de retomada e crescimento no TikTok com lancamento do funil de produtos. Dividido em 3 fases de 30 dias cada. Estruturado em torno dos tres pilares do metodo: **ESPELHO · TATICA · ESCUDO**.
+> **Reconciliação (D12 — jun/2026):** as **ações de produto** e os **KPIs de vendas** abaixo assumem os **avulsos descontinuados** (lançar 72h/Mapa R$ 47, Programa R$ 197). Releia a frente de produto como **ativar a assinatura**: configurar planos no Stripe, trial de 5 dias, e medir **conversão free→assinante**, **MRR** e **churn**. A cadência de conteúdo (6 vídeos/semana, pilares) e as regras de proteção do criador **permanecem válidas**.
 
 **Frequencia padrao:** 6 videos/semana (domingo = descanso obrigatorio)
 **Minimo nao-negociavel em semanas dificeis:** 3 videos

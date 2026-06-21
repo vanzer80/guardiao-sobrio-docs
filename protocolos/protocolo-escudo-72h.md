@@ -72,7 +72,9 @@ Siga esta estrutura hora a hora:
 
 ## Nota sobre Produto
 
-Este protocolo e a base do produto **Protocolo do Escudo — 72h**: guia digital com roteiro hora a hora, checklist e suporte.
+> Reconciliação (D12 — jun/2026): este protocolo continua sendo a base do conteúdo **Protocolo do Escudo — 72h**, agora disponibilizado **no app via assinatura** (não mais como produto avulso pago). O conteúdo do protocolo permanece válido.
+>
+> Observação de implementação (auditoria FN-12): no app, a etapa **CONTATO** foi implementada como grounding 5-4-3-2-1, em vez de acionar contatos de confiança.
 
 ---
 

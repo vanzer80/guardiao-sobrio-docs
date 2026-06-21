@@ -3,7 +3,15 @@
 > O Guardiao Sobrio — Luis Vanzer
 > Atualizado em: Junho 2026
 
-Arquitetura de monetizacao da marca. Organizada em torno dos tres pilares do metodo: **ESPELHO · TATICA · ESCUDO**. Os precos abaixo sao definitivos e validos neste repositorio como fonte de verdade — sem dependencia de arquivo externo.
+Arquitetura de monetizacao da marca, organizada em torno dos tres pilares do metodo: **ESPELHO · TATICA · ESCUDO**.
+
+> ⚠️ **DOCUMENTO EM TRANSIÇÃO — monetização revisada (D12, jun/2026).**
+> O modelo **oficial e vigente é ASSINATURA**: **Free** · **Essential R$ 19,90/mês** · **Guardião R$ 39,90/mês**
+> (trial de 5 dias; pagamento via Stripe). Os **produtos avulsos** (R$ 47/97/197), a **mentoria individual**
+> (R$ 997) e os **bundles** descritos abaixo estão **DESCONTINUADOS** — mantidos apenas como **histórico/legado**.
+> As **iscas gratuitas** (Checklist do Escudo, Diário de Prompts, Guia do Familiar) **permanecem válidas**.
+> A **Comunidade O Escudo** passa a ser benefício do plano **Guardião**.
+> Matriz de recursos por plano: `/app/07-regras-de-negocio.md`. (As seções abaixo descrevem o funil de avulsos antigo.)
 
 **Publicos contemplados no funil:** quem quer largar o alcool + familiares e conjuges de quem bebe
 
@@ -201,7 +209,7 @@ Familiares e conjuges entram pelo pilar ESCUDO e percorrem o funil de forma prop
 ## Regras do Funil
 
 - Nenhum produto promete cura ou resultado milagroso
-- Todos os precos sao definitivos neste documento — nao ha dependencia de arquivo externo
+- ⚠️ Os preços de avulsos abaixo são **LEGADO/descontinuado** (D12). Modelo vigente = **assinatura** (ver banner no topo e `/app/07-regras-de-negocio.md`)
 - O tom das paginas de venda segue o manual de marca: direto, sem jargao de coach, sem promessas exageradas
 - A marca nao substitui psiquiatras, psicologos ou grupos de apoio — isso deve constar em todos os produtos
 - Familiares sao publico de primeira classe no funil, nao audiencia secundaria

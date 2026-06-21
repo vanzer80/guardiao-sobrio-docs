@@ -6,6 +6,7 @@
 Cada frase de ancora do manual de marca e o nucleo de uma minisserie de 3 videos. O formato e fixo: Video 1 explica o conceito (o que e), Video 2 mostra um exemplo real (como parece na vida), Video 3 da um exercicio concreto (o que fazer hoje). Isso gera consistencia tematica, facilita planejamento de pauta e ajuda o algoritmo a associar a marca a temas especificos.
 
 **Total: 10 series x 3 videos = 30 videos estruturados** — aproximadamente 5 semanas de conteudo planejado.
+> **Reconciliação (D12 — jun/2026):** onde os CTAs apontam para **produtos pagos avulsos** (Mapa, Protocolo 72h, Plano 14 Dias, Programa 30 Dias), releia como **isca gratuita → trial → assinatura** (avulsos descontinuados). As **iscas gratuitas** citadas (Diário de Prompts, Checklist do Escudo, Guia do Familiar) permanecem válidas. As 30 ideias de vídeo não mudam.
 
 ---
 
