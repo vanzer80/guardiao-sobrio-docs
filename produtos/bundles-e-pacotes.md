@@ -3,6 +3,8 @@
 > O Guardiao Sobrio — Luis Vanzer
 > Atualizado em: Junho 2026
 
+> ⚠️ **DOCUMENTO LEGADO — DESCONTINUADO (D12, jun/2026).** Os bundles abaixo pertencem ao **modelo de produtos avulsos**, que foi **descontinuado**. O modelo oficial é **assinatura** (Free / Essential R$ 19,90 / Guardião R$ 39,90 — ver `/produtos/funil-de-produtos-v2.md` e `/app/07-regras-de-negocio.md`). Este arquivo é mantido apenas como **histórico**.
+
 Pacotes combinados para aumentar o ticket medio sem criar novos produtos. O principio e simples: o usuario ja ia comprar os dois — o bundle facilita a decisao e da desconto real (nao simulado). O tom das ofertas segue o manual de marca: direto, sem urgencia falsa, sem contador manipulativo.
 
 **Regra geral:** Nenhum bundle usa linguagem de escassez artificial. O desconto e fixo e genuino.

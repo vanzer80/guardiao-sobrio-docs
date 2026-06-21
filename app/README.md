@@ -1,7 +1,7 @@
 # Documentacao do App — O Guardiao Sobrio
 
 > Versao: 1.0 — Junho 2026
-> Status: Fase de Planejamento
+> Status: App EM PRODUCAO — auditado jun/2026 (este conteudo reflete o estado real)
 
 Esta pasta contem a documentacao tecnica completa para desenvolvimento do aplicativo **O Guardiao Sobrio**.
 

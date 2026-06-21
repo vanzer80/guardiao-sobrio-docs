@@ -2,7 +2,7 @@
 
 > Product Requirements Document
 > Versão: 2.0
-> Stack: Next.js 15 (App Router) · Supabase · Vercel
+> Stack: Expo / React Native (Expo Router) · Supabase · Vercel
 > Atualizado em: Junho 2026
 > Fonte de verdade: este arquivo + repositório guardiao-sobrio-docs
 
@@ -60,15 +60,13 @@ O app não é um substituto para psiquiatras, psicólogos ou grupos de apoio. Es
 ### 2.2 Jornada Principal (Pedro → Marcos → Comunidade)
 
 ```
-TikTok → Landing Page → Cadastro Gratuito → Ferramenta Diária
-                                                    |
-                              Compra produto de entrada (R$ 47)
-                                                    |
-                              Programa 30 Dias (R$ 197) ou Plano 14 Dias (R$ 97)
-                                                    |
-                              Comunidade O Escudo (R$ 39,90/mês)
-                                                    |
-                              Mentoria Individual (R$ 997/mês)
+Explora sem cadastro (modo anônimo) ou cria conta
+|
+Ativa o trial de 5 dias (acesso Guardião completo)
+|
+Assina Essential (R$ 19,90/mês) ou Guardião (R$ 39,90/mês) via Stripe
+|
+Renova a assinatura (retenção) — Comunidade O Escudo inclusa no plano Guardião
 ```
 
 ---
@@ -111,8 +109,8 @@ TikTok → Landing Page → Cadastro Gratuito → Ferramenta Diária
 
 | Camada | Tecnologia | Justificativa |
 |---|---|---|
-| **Frontend** | Next.js 15 (App Router) | SSR/SSG para SEO da landing, RSC para performance |
-| **Auth** | Supabase Auth (email + magic link) | Sem fricção — sem senha na primeira entrada |
+| **Frontend** | Expo / React Native (Expo Router) | App iOS/Android + web via react-native-web (deploy no Vercel) |
+| **Auth** | Supabase Auth (e-mail/senha + OAuth Google/Apple + modo anônimo) | Cadastro/login com senha; OAuth; "explorar sem cadastro" com trial de 5 dias |
 | **Banco de dados** | Supabase PostgreSQL | RLS nativo por usuário/produto |
 | **Storage** | Supabase Storage | PDFs, assets de produto, fotos de perfil |
 | **Edge Functions** | Supabase Edge Functions | Webhooks de pagamento, notificações |
@@ -124,6 +122,8 @@ TikTok → Landing Page → Cadastro Gratuito → Ferramenta Diária
 ---
 
 ## 5. Funcionalidades por Módulo
+
+> ⚠️ NÃO IMPLEMENTADA no app (auditoria jun/2026): o app entra em welcome → onboarding; não há landing pública/SSR. Especificação mantida como referência para um site futuro.
 
 ### 5.1 Landing Page (público)
 
@@ -150,7 +150,7 @@ TikTok → Landing Page → Cadastro Gratuito → Ferramenta Diária
 
 ### 5.2 Autenticação
 
-- **Magic link** por email (sem senha) — menor fricção possível
+- **E-mail e senha** (cadastro/login) + **OAuth Google/Apple** + **modo anônimo** ("explorar sem cadastro"), com confirmação de e-mail
 - Confirmação de email obrigatória
 - Ao primeiro login: tela de boas-vindas com disclaimer obrigatório (não substituição de profissionais) + pergunta: "Você está começando sua jornada ou é familiar de alguém em processo?"
 - A resposta define a `persona` do usuário: `user_type: 'self' | 'family'` — personaliza a home
@@ -202,12 +202,16 @@ Essa funcionalidade é **sempre gratuita**. Nunca bloqueada por paywall.
 
 Cada produto comprado desbloqueia um conjunto de conteúdo:
 
-| Produto | Preço | Conteúdo desbloqueado no app |
+> **Modelo vigente: ASSINATURA (D12).** O conteúdo é liberado por plano, não por compra avulsa.
+
+| Plano | Preço | Acesso |
 |---|---|---|
-| Protocolo do Escudo — 72h | R$ 47 | Módulo 72h completo: roteiro hora a hora, checklist, áudio guiado |
-| Mapa dos 13 Fundamentos | R$ 47 | Os 13 fundamentos interativos com workbook e reflexões |
-| Plano de Correção — 14 Dias | R$ 97 | Sprint 14 dias: checklist diário, módulos por fase, tracking |
-| Programa O Guardião — 30 Dias | R$ 197 | Programa completo: os 3 pilares, protocolos, módulo familiares |
+| Free | R$ 0 | Acesso básico (limites definidos em `07-regras-de-negocio.md`) |
+| Essential | R$ 19,90/mês | Recursos do plano Essential (ver matriz em `07-regras-de-negocio.md`) |
+| Guardião | R$ 39,90/mês | Tudo do Essential + Programa 30 Dias + Módulo Familiar + Comunidade |
+
+> A matriz detalhada de recursos por plano é a de `07-regras-de-negocio.md` (fonte única).
+> Produtos avulsos (Protocolo 72h, Mapa, Plano 14 Dias, Programa 30) e mentoria individual: **descontinuados** (D12).
 
 **Regras de acesso:**
 - Compra via Stripe — webhook confirma compra no Supabase → linha em `user_purchases`
@@ -238,6 +242,8 @@ Fase 3 — abrir quando a base de leads ultrapassar 300 contatos.
 **Preços:**
 - R$ 39,90/mês ou R$ 299/ano (Stripe Subscription)
 - Acesso encerrado automaticamente ao cancelar (webhook Supabase)
+
+> ⚠️ NÃO IMPLEMENTADO (auditoria jun/2026): não existe rota `/admin` no app. Item de fase futura; a especificação abaixo é referência.
 
 ### 5.6 Painel Admin (Luis)
 

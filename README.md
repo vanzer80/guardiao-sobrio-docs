@@ -10,6 +10,7 @@
 Base de conhecimento centralizada da marca **O Guardiao Sobrio**: metodologia, protocolos, estrategia de conteudo, manual de marca e documentacao de crescimento.
 
 Tudo aqui e documento vivo — atualizado conforme a marca, o metodo e a sobriedade evoluem.
+> **Estado do app (auditoria jun/2026):** o aplicativo está em produção (Expo / React Native + Supabase + Stripe). A reconciliação entre esta documentação e o app real está em `AUDITORIA-RECONCILIACAO.md` (raiz).
 
 ---
 
@@ -108,6 +109,7 @@ Para copy de video, paginas de venda e email — usar os nomes simplificados aba
 | Guia do Familiar | "Escudo da Familia" |
 
 Ver detalhes em `/produtos/funil-de-produtos-v2.md`.
+> **Monetização (D12 — jun/2026):** o modelo oficial é **assinatura** — Free / Essential (R$ 19,90/mês) / Guardião (R$ 39,90/mês). Os nomes acima referem-se a **conteúdos/módulos entregues no app por plano**, não a produtos avulsos. Produtos avulsos e bundles: **descontinuados** (ver `produtos/funil-de-produtos-v2.md`).
 
 ---
 
@@ -127,4 +129,4 @@ Ver `ROADMAP.md` — historico de decisoes e proximos passos estrategicos.
 
 ---
 
-*Atualizado em: Junho 2026 — revisao estrategica completa*
+*Atualizado em: Junho 2026 — revisao estrategica + reconciliacao pos-auditoria do app (jun/2026)*

@@ -97,9 +97,15 @@
 | **Gratuito** | Checklist diario, Protocolo emergencia (3 usos/mes), Diario (7 dias) | R$ 0 | Supabase role: `free` |
 | **Essencial** | Tudo do gratuito + Diario ilimitado + 13 Fundamentos + historico completo | R$ 19,90/mes | Supabase role: `essential` |
 | **Guardiao** | Tudo do Essencial + Programa 30 Dias + modulo familiares + protocolo escudo ilimitado | R$ 39,90/mes | Supabase role: `guardiao` |
-| **Anual Guardiao** | Igual ao mensal com desconto | R$ 299/ano | |
+| **Anual Guardiao** | Igual ao mensal com desconto | R$ 299/ano (⚠️ código usa R$ 399/ano — D14 a decidir) | |
 
 **Gateway de pagamento:** Stripe (global) ou Pagar.me (Brasil) — integrado via Supabase Edge Function webhook.
+
+> **Fonte de verdade do plano (auditoria jun/2026):** `profiles.plan`; a função `effective_plan(uid)`
+> (SECURITY DEFINER) retorna `guardian` durante o trial (`trial_end > now()`). O webhook do Stripe
+> escreve `profiles.plan` e `subscriptions.plan`. RPCs do módulo familiar: `accept_family_invite(token)`
+> e `get_family_day_status()` (SECURITY DEFINER). Lições registradas: confirmar execução real de cada
+> migration (houve *migration drift*) e evitar recursão de RLS (erro 42P17) usando SECURITY DEFINER.
 
 ---
 

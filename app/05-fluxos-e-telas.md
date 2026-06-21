@@ -15,6 +15,7 @@ App Launch
   |-- [Autenticado] --> Home (Tab Principal)
 
 Home (Bottom Tab Nav — 4 tabs)
+Abas reais (auditoria jun/2026): HOJE · MÉTODO · [SOS = Protocolo, botão central] · ESCUDO · PERFIL
   |
   |-- Tab 1: HOJE (Home)
   |       |- Contador de Dias
@@ -199,4 +200,7 @@ Familiar instala app ou acessa web:
 
 Privacidade:
   Usuario pode revogar acesso do familiar a qualquer momento em Configuracoes
+
+> Implementação real (jun/2026): o familiar aceita o convite via RPC `accept_family_invite(token)` e
+> vê apenas o status do dia via RPC `get_family_day_status()` ("Dia guardado" / "Em jornada").
 ```

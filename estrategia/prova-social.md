@@ -6,6 +6,7 @@
 No nicho de sobriedade, o publico e cetico por definicao. Ja viram promessas de cura, metodos milagrosos e coaches que falam de quem "chegou no outro lado". A prova social aqui nao e marketing — e evidencia de que o metodo funciona para pessoas reais em situacoes reais. Depoimentos autenticos reduzem o atrito na decisao de compra e reforçam o posicionamento de marca: sem exagero, sem milagre, com resultado verificavel.
 
 **Principio:** Qualidade supera quantidade. Um depoimento especifico e honesto vale mais do que dez genericos.
+> **Reconciliação (D12 — jun/2026):** os produtos citados (72h, Mapa, Programa 30, Plano 14, Mentoria) são, no modelo vigente, **conteúdos/módulos da assinatura** (avulsos descontinuados). A metodologia de coleta, prompts, filtros e metas **permanece válida** — remapeie os "momentos pós-compra" para os marcos de uso no app/assinatura.
 
 ---
 

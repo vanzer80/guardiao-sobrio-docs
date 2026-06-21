@@ -1,6 +1,6 @@
 # ROADMAP — Revisao Estrategica O Guardiao Sobrio
 > Iniciado em: 17/06/2026
-> **Status: CONCLUIDO** ✅
+> **Status: Fases 0–6 concluídas; Fase 7 (Auditoria do App) registrada — ver abaixo**
 
 ---
 
@@ -166,9 +166,9 @@
 | # | Decisao | Status |
 |---|---|---|
 | D4 | Escolher plataforma de email (MailerLite vs Brevo) e configurar sequencia de onboarding | ⏳ Pendente |
-| D5 | Definir plataforma de venda de infoprodutos (Hotmart vs Kiwify) e publicar primeiro produto | ⏳ Pendente |
+| D5 | Definir plataforma de venda de infoprodutos (Hotmart vs Kiwify) e publicar primeiro produto | ⚠️ Superado por D12 (modelo agora é assinatura via Stripe; venda de avulsos descontinuada) |
 | D6 | Definir quando abrir canal do YouTube (criterio: base consolidada + primeiras vendas) | ⏳ Pendente |
-| D7 | Revisar e configurar bundles na plataforma de vendas (precos e composicao validados) | ⏳ Pendente |
+| D7 | Revisar e configurar bundles na plataforma de vendas (precos e composicao validados) | ⚠️ Superado por D12 (bundles descontinuados) |
 | D8 | Definir profissional de saude para revisao clinica do metodo (criterio para B2B — Fase futura) | ⏳ Pendente |
 | D9 | Avaliar separacao de entidade: "O Guardiao Sobrio" como marca principal e "Luis Vanzer" como criador/fundador — revisao em 12-18 meses quando base estiver consolidada e primeiras vendas recorrentes | ⏳ Pendente |
 | D10 | Criar logo do Escudo — contratar designer ou usar IA (Midjourney, Adobe Firefly, Looka) — 3 versoes de escudo geometrico para escolha; exportar SVG + PNG transparente conforme spec em `/marca/assets/logo-guidelines.md` | ⏳ Pendente |
@@ -190,3 +190,43 @@
 | Decisoes D4-D11 | ⏳ Aguardando criador | 8 itens |
 
 *Atualizado em: 20/06/2026 — Analise de Identidade Visual externa aplicada ao repositorio*
+
+---
+
+## Fase 7 — Auditoria Forense do App (jun/2026)
+
+> Iniciada em: 21/06/2026
+> Auditoria de 3 vias (DOCS × CODE × LIVE) do `guardiao-sobrio-app`. Relatórios completos em
+> `docs/auditoria/` (repo do app). Reconciliação desta documentação: `AUDITORIA-RECONCILIACAO.md`.
+
+### Achados
+| # | Achado | Status | Evidência |
+|---|---|---|---|
+| 7.1 | "Gerar código" do Módulo Familiar | ✅ Resolvido | Migration drift (coluna `invitation_expires_at`) + recursão de RLS (42P17); corrigido via `effective_plan()` SECURITY DEFINER (PR #6) |
+| 7.2 | Paywall em cold-load (`/escudo`, `/programa30`) | ✅ Resolvido | PR #5 |
+| 7.3 | DRIFT-01 — migration drift | ✅ Corrigido | Colunas `profiles.plan`, `profiles.stripe_customer_id`, `subscriptions.stripe_subscription_id` + tabela `subscription_audit_log`; histórico 11/11 (PR #8) |
+| 7.4 | MO-07 — fonte de verdade do plano | 🟡 Schema corrigido; e2e pendente | Opção A (ADR 0001) |
+| 7.5 | Módulo Familiar — lado do familiar | 🟡 Construído; deploy/e2e pendentes | RPCs `accept_family_invite` / `get_family_day_status` |
+
+### Divergências doc × app a refletir nesta documentação
+- Stack real: **Expo / React Native + Supabase + Stripe** (não "Next.js"); landing/admin do PRD não existem.
+- Monetização real: **assinatura** (não avulsos) → ver D12.
+- Schema real diverge de `app/06-modelo-de-dados.md` → regenerar a partir das migrations.
+- Identidade: ícones **Ionicons**, botão **SOS central**, fonte **General Sans** ainda não embarcada.
+
+### Pendências de produto (backlog)
+General Sans (D15) · Contatos de Confiança (stub) · Comunidade O Escudo (Fase 3) · cortes free×pago não impostos · preço anual R$ 299 × R$ 399 (D14) · notificação ainda usa "Um dia de cada vez" (contraria D2) · landing/admin fora do escopo do app.
+
+---
+
+## Decisões — Fase 7 (D12–D16)
+
+| # | Decisão | Status |
+|---|---|---|
+| D12 | **Monetização = assinatura** (Free / Essential R$ 19,90 / Guardião R$ 39,90) é o modelo OFICIAL; avulsos (R$ 47/97/197), mentoria e bundles **descontinuados/legado** | ✅ Decidido |
+| D13 | Fonte de verdade do plano: `profiles.plan` + `effective_plan()` (honra trial) — Opção A (ADR 0001) | ✅ Decidido |
+| D14 | Preço anual: padronizar (doc R$ 299 × código R$ 399) | ⚠️ Pendente |
+| D15 | Embarcar a fonte **General Sans** no app (hoje o corpo cai p/ fonte do sistema) | ⏳ Pendente |
+| D16 | Prevenção de migration drift: checagem no CI antes de marcar migration como concluída | ⏳ Pendente |
+
+> Atualizado em: 21/06/2026 — Fase 7 (Auditoria do App) e decisões D12–D16 adicionadas.

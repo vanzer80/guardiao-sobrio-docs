@@ -4,6 +4,7 @@
 > Atualizado em: Junho 2026
 
 Sem medicao, nao ha otimizacao. Este documento define os KPIs do funil de monetizacao, metas por fase do action-plan e a estrutura minima de rastreamento. O objetivo nao e burocracia — e saber quais pilares e formatos de video estao gerando receita real, nao so engajamento.
+> **Reconciliação (D12 — jun/2026):** o modelo de monetização passou a **assinatura** (Free → trial de 5 dias → Essential R$ 19,90 / Guardião R$ 39,90, via **Stripe**). As etapas, UTMs, benchmarks e cohort abaixo **permanecem válidos como método**, mas releia os KPIs de "venda de avulsos (R$ 47/197)" e de "Hotmart/Kiwify" como **conversão free→trial→assinante**, **MRR** e **churn**. Avulsos: descontinuados.
 
 ---
 

@@ -88,6 +88,8 @@ O metodo se sustenta em tres pilares praticos, seculares e complementares. Nao e
 
 O app O Guardiao Sobrio e uma extensao direta dos tres pilares do metodo. Os principios de marca definidos neste manual — tom noir, ouro como ancora, escudo como simbolo — se traduzem em interface digital conforme documentado em `/app/04-design-system.md`.
 
+> **Reconciliação (auditoria jun/2026):** no app real, os ícones são **Ionicons** (não Phosphor), o **botão SOS é o botão central da barra de abas**, e a fonte **General Sans ainda não está embarcada** (o corpo cai para a fonte do sistema; ver D15). Ver `/app/04-design-system.md` (corrigido).
+
 Resumo das decisoes visuais do app:
 
 | Elemento | Decisao | Referencia |

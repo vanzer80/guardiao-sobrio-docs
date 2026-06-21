@@ -3,6 +3,12 @@
 
 > Versao: 1.0 — Junho 2026
 
+> Status real (auditoria jun/2026):
+> ENTREGUES — contador de sobriedade, checklist diário, Protocolo SOS, diário, 13 fundamentos,
+>   Mapa de Gatilhos, Programa 30 Dias, estatísticas (com exportação).
+> PARCIAL — Módulo Familiar (lado do dono funcional; lado do familiar recém-construído, deploy/e2e pendentes).
+> NÃO IMPLEMENTADO — Comunidade O Escudo (Fase 3); Contatos de Confiança (tela ainda é stub).
+
 ---
 
 ## Fase 1 — MVP (Dias 1-60)
