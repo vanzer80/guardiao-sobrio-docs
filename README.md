@@ -11,6 +11,7 @@ Base de conhecimento centralizada da marca **O Guardiao Sobrio**: metodologia, p
 
 Tudo aqui e documento vivo — atualizado conforme a marca, o metodo e a sobriedade evoluem.
 > 👉 **É colaborador (designer, editor, social media)?** Comece pelo `GUIA-DO-COLABORADOR.md` (raiz).
+> 🤖 **É um agente/automação?** Leia o `AGENTS.md` (raiz). Prompts prontos em `prompts/`.
 > **Estado do app (auditoria jun/2026):** o aplicativo está em produção (Expo / React Native + Supabase + Stripe). A reconciliação entre esta documentação e o app real está em `AUDITORIA-RECONCILIACAO.md` (raiz).
 
 ---
