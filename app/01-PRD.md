@@ -23,10 +23,10 @@ Grupos como AA existem mas têm barreira religiosa e de anonimato. Terapeutas s�
 
 ### 1.2 Solução
 
-Uma plataforma web progressiva (PWA-friendly) que entrega:
+Um aplicativo (Expo / React Native, com versão web via react-native-web) que entrega:
 
 1. **Ferramenta diária gratuita** — contador de sobriedade, checklist e protocolo de crise (conversão de leads e prova de valor)
-2. **Conteúdo pago por produto** — protocolos, fundamentos e programas desbloqueados por compra individual
+2. **Conteúdo por plano de assinatura** — protocolos, fundamentos e programas liberados conforme o plano (Free / Essential / Guardião)
 3. **Comunidade fechada** — O Escudo (assinatura mensal/anual)
 4. **Painel de criador** — dashboard para Luis gerenciar conteúdo, leads e receita
 
@@ -52,8 +52,8 @@ O app não é um substituto para psiquiatras, psicólogos ou grupos de apoio. Es
 
 | Persona | Quem é | Dor central | Entrada no app |
 |---|---|---|---|
-| **Pedro, 38 anos** | Homem que quer parar de beber, ainda na negação ou nos primeiros dias | "Não sei como atravessar hoje" | Vídeo TikTok → landing → cadastro gratuito |
-| **Marcos, 42 anos** | Em processo, já parou mas frágil — medo de recaída | "Preciso de estrutura para não cair" | Produto de entrada (R$ 47) |
+| **Pedro, 38 anos** | Homem que quer parar de beber, ainda na negação ou nos primeiros dias | "Não sei como atravessar hoje" | Vídeo TikTok → onboarding → cadastro gratuito (ou modo anônimo) |
+| **Marcos, 42 anos** | Em processo, já parou mas frágil — medo de recaída | "Preciso de estrutura para não cair" | Assinatura (trial de 5 dias → Essential/Guardião) |
 | **Ana, 35 anos** | Cônjuge/familiar de quem bebe | "Não sei como ajudar sem me destruir" | Pilar ESCUDO no TikTok → Guia do Familiar → app |
 | **Luis (Admin)** | Criador da marca | Gerenciar conteúdo, leads, receita e comunidade | Painel admin protegido |
 
@@ -101,7 +101,7 @@ Renova a assinatura (retenção) — Comunidade O Escudo inclusa no plano Guardi
 |---|---|---|
 | **Landing Page** | Público | Apresentação da marca, CTA para cadastro e produtos |
 | **Ferramenta Diária** | Gratuito (autenticado) | Contador, checklist, protocolo de crise |
-| **Biblioteca de Conteúdo** | Por produto desbloqueado | Protocolos, fundamentos, programas |
+| **Biblioteca de Conteúdo** | Por plano de assinatura | Protocolos, fundamentos, programas |
 | **Comunidade O Escudo** | Assinatura ativa | Feed, comentários, suporte mútuo |
 | **Painel Admin** | Luis apenas | Gestão de conteúdo, usuários, produtos, métricas |
 
@@ -117,7 +117,7 @@ Renova a assinatura (retenção) — Comunidade O Escudo inclusa no plano Guardi
 | **Pagamentos** | Stripe (via Supabase webhook) | PIX + cartão; gerenciamento de assinaturas |
 | **Deploy** | Vercel | Preview deploys, Edge Network, CI/CD automático |
 | **Email** | Resend | Transacional: confirmação, acesso ao produto, boas-vindas |
-| **Estética** | Tailwind CSS v4 + shadcn/ui | Design system noir realista — paleta escura |
+| **Estética** | NativeWind (Tailwind para React Native) | Design system noir realista — paleta escura |
 
 ---
 
@@ -200,7 +200,7 @@ Essa funcionalidade é **sempre gratuita**. Nunca bloqueada por paywall.
 
 ### 5.4 Biblioteca de Conteúdo (desbloqueio por compra)
 
-Cada produto comprado desbloqueia um conjunto de conteúdo:
+Cada plano de assinatura libera um conjunto de conteúdo:
 
 > **Modelo vigente: ASSINATURA (D12).** O conteúdo é liberado por plano, não por compra avulsa.
 
@@ -214,10 +214,10 @@ Cada produto comprado desbloqueia um conjunto de conteúdo:
 > Produtos avulsos (Protocolo 72h, Mapa, Plano 14 Dias, Programa 30) e mentoria individual: **descontinuados** (D12).
 
 **Regras de acesso:**
-- Compra via Stripe — webhook confirma compra no Supabase → linha em `user_purchases`
-- RLS: `SELECT` em conteúdo restrito exige `user_purchases.product_id = content.product_id`
-- Compra não expira — acesso vitalício ao produto
-- Programa 30 Dias inclui módulo específico para familiares (visível se `user_type = 'family'`)
+- Assinatura via Stripe Checkout — webhook confirma o plano no Supabase (`profiles.plan` + `subscriptions`)
+- RLS: o acesso a conteúdo restrito é decidido pelo plano efetivo (`effective_plan()`, que honra o trial)
+- O acesso vale enquanto a assinatura estiver ativa (não é compra vitalícia)
+- Programa 30 Dias e Módulo Familiar fazem parte do plano Guardião
 
 **Estrutura de conteúdo:**
 - Cada módulo: texto (MDX renderizado), checklist interativo, campo de reflexão pessoal
@@ -261,6 +261,8 @@ Rota protegida: `/admin` — acesso restrito por `user_role = 'admin'` no Supaba
 ---
 
 ## 6. Modelo de Dados (Supabase)
+
+> ⚠️ LEGADO/CONCEITUAL (auditoria jun/2026): o schema abaixo (`daily_logs`, `products`, `user_purchases`, `modules`, `community_posts`, `user_type`/`role` em `profiles`) **NÃO corresponde ao banco real**. Fonte de verdade: **`app/06-modelo-de-dados.md`** (regenerado das migrations reais — `profiles.plan/trial_end`, `checklist_items`+`checklist_completions`, `diary_entries`, `user_triggers`, `sos_activations`, `family_connections`, `subscriptions`, `subscription_audit_log`, RPCs `effective_plan`/`accept_family_invite`/`get_family_day_status`). Tabelas abaixo mantidas como histórico do desenho conceitual.
 
 ### 6.1 Tabelas principais
 
@@ -419,7 +421,9 @@ create policy "active subscribers" on community_posts
 
 ---
 
-## 7. Estrutura de Rotas (Next.js App Router)
+## 7. Estrutura de Rotas (LEGADO — conceitual em Next.js)
+
+> ⚠️ LEGADO/CONCEITUAL (auditoria jun/2026): o app real **não usa Next.js**. Usa **Expo Router** (file-based), abas **HOJE · MÉTODO · [SOS=Protocolo, central] · ESCUDO · PERFIL**. Estrutura real: **`app/05-fluxos-e-telas.md`**. A árvore abaixo (Next.js, `/login` magic link, `/admin`) é histórico do desenho conceitual.
 
 ```
 app/
@@ -492,7 +496,9 @@ Webhook: Supabase Edge Function `/functions/v1/stripe-webhook`
 
 ---
 
-## 9. Fluxo de Compra
+## 9. Fluxo de Compra (assinatura)
+
+> ⚠️ Reconciliação (D12, jun/2026): o modelo é **assinatura** (não compra avulsa vitalícia). Leia "compra do produto / acesso vitalício" abaixo como "ativação do plano (Essential/Guardião) enquanto a assinatura estiver ativa".
 
 ```
 1. Usuário clica "Comprar" na página do produto
@@ -532,11 +538,11 @@ Baseado em `/marca/manual-de-marca.md`.
 - **Botão de crise (ATIVAR ESCUDO):** fundo `--color-danger`, texto branco, sempre visível na home
 - **CTA principal:** fundo `--color-accent`, texto `#0e0e0e`, bold — único elemento dourado por tela
 - **Cards de conteúdo:** borda `--color-border`, fundo `--color-surface-2`, sombra sutil
-- **Tipografia display:** fonte serifada bold para headlines (ex: Instrument Serif ou Playfair Display)
-- **Corpo:** sans-serif limpa (Inter ou Satoshi), `--text-base` mínimo
+- **Tipografia display:** Cormorant Garamond (serifada) para headlines e frases de âncora
+- **Corpo:** General Sans (⚠️ ainda não embarcada no app — corpo cai p/ fonte do sistema; ver D15)
 - **Sem emojis como elementos de design**
 - **Sem gradientes coloridos**
-- **Ícones:** Lucide React — monocromáticos, tamanho consistente
+- **Ícones:** Ionicons (`@expo/vector-icons`) — monocromáticos, tamanho consistente. (A spec original citava Lucide React.)
 
 ---
 
@@ -581,6 +587,8 @@ Estes itens devem aparecer em tela nas seguintes situações:
 ---
 
 ## 14. Fases de Lançamento
+
+> ⚠️ Reconciliação (jun/2026): os itens de produto/preço abaixo refletem o **plano original com avulsos (descontinuado — D12)** e auth por magic link (substituída). Estado real e atual: ver `ROADMAP.md` (Fase 7) e `app/03-funcionalidades.md`. Mantido como histórico de planejamento.
 
 ### Fase 1 — MVP (Dias 1–30)
 
@@ -643,7 +651,7 @@ Objetivo: validar o produto e capturar os primeiros leads e compradores.
 
 ## 16. Próximos Passos
 
-1. Criar repositório `guardiao-sobrio-app` (Next.js 15 + Supabase)
+1. ✅ Repositório `guardiao-sobrio-app` criado (Expo / React Native + Supabase) — já em produção (auditoria jun/2026)
 2. Configurar projeto Supabase (tabelas + RLS conforme seção 6)
 3. Configurar projeto Vercel + variáveis de ambiente
 4. Criar conta Stripe + configurar produtos e webhooks
