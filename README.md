@@ -64,7 +64,8 @@ guardiao-sobrio-docs/
 │   ├── estrategia-multicanal.md           # Diversificacao: email, YouTube, Instagram + roadmap de ativacao
 │   ├── metricas-de-funil.md               # KPIs por etapa, metas por fase, UTMs, cohort tracking
 │   ├── series-tematicas.md                # 10 series de 3 videos cada baseadas nas frases de ancora
-│   └── estrategia-b2b.md                  # Licenciamento para clinicas e terapeutas (roadmap futuro)
+│   ├── estrategia-b2b.md                  # Licenciamento para clinicas e terapeutas (roadmap futuro)
+│   └── prova-social.md                    # Quando/como coletar depoimentos, prompts, filtros eticos e metas
 ├── planos/
 │   ├── action-plan-90-dias.md             # Plano de 90 dias com KPIs por fase e ciclos de revisao
 │   ├── plano-correcao-14-dias.md          # Sprint de 14 dias de retomada

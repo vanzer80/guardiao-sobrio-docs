@@ -114,6 +114,7 @@
 | 5.4 | `/estrategia/series-tematicas.md` | ✅ | 10 series x 3 videos baseadas nas frases de ancora do manual |
 | 5.5 | `/produtos/bundles-e-pacotes.md` | ✅ | 3 bundles com precos, copys e momentos de ativacao |
 | 5.6 | `/estrategia/estrategia-b2b.md` | ✅ | Licenciamento para clinicas — roadmap futuro com criterios de ativacao |
+| 5.20 | `/estrategia/prova-social.md` | ✅ | Quando/como coletar, prompts por produto, formatos, filtros eticos e metas por fase |
 
 ### Arquivos Atualizados
 
@@ -156,7 +157,7 @@
 | Fase 2 — Protocolos | ✅ Completa | 7/7 |
 | Fase 3 — Estrategia | ✅ Completa | 4/4 |
 | Fase 4 — Documentacao | ✅ Completa | 2/2 |
-| Fase 5 — Expansao Estrategica | ✅ Implementada | 19/19 |
+| Fase 5 — Expansao Estrategica | ✅ Implementada | 20/20 |
 | Decisoes D4-D8 | ⏳ Aguardando criador | 5 itens |
 
-*Atualizado em: 20/06/2026 — Analise Estrategica externa aplicada ao repositorio*
+*Atualizado em: 20/06/2026 — Analise Estrategica externa aplicada ao repositorio + prova-social.md adicionado*
