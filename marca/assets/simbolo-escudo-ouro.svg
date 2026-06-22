@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  O Guardiao Sobrio — Simbolo Escudo (versao ouro / principal)
+
+  DECISOES GEOMETRICAS
+  · Forma: pentagono heater shield (5 vertices, topologia mais reconhecivel como escudo)
+  · Proporcao: 60 x 80 unidades, ratio 3:4, centrado no canvas 100x100
+  · Secao superior retangular: de y=10 a y=55 (45u de altura) — estabilidade e solidez
+  · Secao inferior triangular: converge de (20,55) e (80,55) ao ponto (50,90) — 30u horiz x 35u vert por lado
+  · Sem ornamentos, sem linhas internas, sem letras — forma pura
+  · Zero curvas: geometria totalmente linear, coerente com noir realista
+  · Funciona de 30px (app icon) a 400px+ sem perda de leitura
+
+  USO: fundo preto (#0a0a0a), simbolo ouro fosco (#c8a84b)
+-->
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 100 100"
+     width="100" height="100"
+     role="img"
+     aria-label="O Guardiao Sobrio — Simbolo Escudo">
+
+  <!-- Fundo preto -->
+  <rect width="100" height="100" fill="#0a0a0a"/>
+
+  <!--
+    Escudo: pentagono geometrico
+    Vertices (sentido horario):
+      (20,10) — canto superior esquerdo
+      (80,10) — canto superior direito
+      (80,55) — cintura direita (inicio do taper)
+      (50,90) — ponta inferior central
+      (20,55) — cintura esquerda (inicio do taper)
+  -->
+  <path
+    d="M 20,10 L 80,10 L 80,55 L 50,90 L 20,55 Z"
+    fill="#c8a84b"
+    stroke="none"
+  />
+
+</svg>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  O Guardiao Sobrio — Simbolo Escudo (versao preta)
+
+  DECISOES GEOMETRICAS
+  · Mesma geometria da versao principal (pentagono 60x80, ratio 3:4)
+  · Fundo: transparente (sem <rect>) — para sobreposicao em fundos claros
+  · Cor do simbolo: #0a0a0a (quase preto, coerente com a paleta noir)
+  · Uso tipico: sobre fundos brancos, papeis, fundos dourados, impressao clara
+
+  USO: fundo transparente, simbolo preto (#0a0a0a)
+-->
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 100 100"
+     width="100" height="100"
+     role="img"
+     aria-label="O Guardiao Sobrio — Simbolo Escudo (preto)">
+
+  <!-- Sem fundo — transparente por design -->
+
+  <path
+    d="M 20,10 L 80,10 L 80,55 L 50,90 L 20,55 Z"
+    fill="#0a0a0a"
+    stroke="none"
+  />
+
+</svg>

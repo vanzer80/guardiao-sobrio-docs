@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  O Guardiao Sobrio — Simbolo Escudo (versao branca)
+
+  DECISOES GEOMETRICAS
+  · Mesma geometria da versao principal (pentagono 60x80, ratio 3:4)
+  · Fundo: transparente (sem <rect>) — para sobreposicao em fundos escuros
+  · Cor do simbolo: #ffffff (branco puro)
+  · Uso tipico: sobre fundos pretos, fotografias escuras, fundos ouro
+
+  USO: fundo transparente, simbolo branco (#ffffff)
+-->
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 100 100"
+     width="100" height="100"
+     role="img"
+     aria-label="O Guardiao Sobrio — Simbolo Escudo (branco)">
+
+  <!-- Sem fundo — transparente por design -->
+
+  <path
+    d="M 20,10 L 80,10 L 80,55 L 50,90 L 20,55 Z"
+    fill="#ffffff"
+    stroke="none"
+  />
+
+</svg>
