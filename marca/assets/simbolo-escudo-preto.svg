@@ -3,12 +3,11 @@
   O Guardiao Sobrio — Simbolo Escudo (versao preta)
   viewBox: 0 0 100 100
 
-  Mesma geometria da versao principal (frame evenodd, ratio 2:3, cantos r=3).
-  Fundo: transparente — para uso sobre fundos claros (branco, creme, papel).
-  Interior do recorte: transparente (fundo claro do host aparece).
-  Cor da moldura: #0a0a0a
+  Mesma geometria da versao ouro: moldura (evenodd) + anel r=16 + eixo vertical.
+  Fundo: transparente — para sobreposicao em fundos claros.
+  Todos os elementos: #0a0a0a
 
-  USO: fundo transparente, moldura preta (#0a0a0a) — sobreposicao em fundos claros
+  USO: fundo transparente, simbolo preto (#0a0a0a) — fundos claros (branco, creme, papel)
 -->
 <svg xmlns="http://www.w3.org/2000/svg"
      viewBox="0 0 100 100"
@@ -16,16 +15,29 @@
      role="img"
      aria-label="O Guardiao Sobrio — Simbolo Escudo (preto)">
 
-  <!-- Sem fundo — transparente por design -->
-
   <path
     fill-rule="evenodd"
     fill="#0a0a0a"
     stroke="none"
     d="
       M 26,8 L 74,8 Q 77,8 77,11 L 77,48 L 50,92 L 23,48 L 23,11 Q 23,8 26,8 Z
-      M 32,15 L 68,15 Q 70,15 70,17 L 70,46 L 50,79 L 30,46 L 30,17 Q 30,15 32,15 Z
+      M 31,14 L 69,14 Q 71,14 71,16 L 71,46 L 50,81 L 29,46 L 29,16 Q 29,14 31,14 Z
     "
+  />
+
+  <circle
+    cx="50" cy="30" r="16"
+    fill="none"
+    stroke="#0a0a0a"
+    stroke-width="2"
+  />
+
+  <line
+    x1="50" y1="14"
+    x2="50" y2="46"
+    stroke="#0a0a0a"
+    stroke-width="1.5"
+    stroke-linecap="square"
   />
 
 </svg>

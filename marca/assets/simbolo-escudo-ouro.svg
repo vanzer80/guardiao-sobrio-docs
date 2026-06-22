@@ -3,22 +3,29 @@
   O Guardiao Sobrio — Simbolo Escudo (versao ouro / principal)
   viewBox: 0 0 100 100
 
-  DECISOES GEOMETRICAS
-  · Proporcao: 54 x 84 unidades (ratio ~2:3, mais esbelta que o classico 3:4)
-  · Cantos superiores: raio 3u (apenas no topo — mantém rigidez na cintura e ponta)
-  · Tecnica "frame": dois subcaminhos com fill-rule="evenodd"
-      — externo preenchido, interno recortado (negativo)
-      — cria moldura dourada de ~7u de espessura em todos os lados
-  · Taper: cintura em y=48, ponto inferior y=92 — taper mais longo que a secao reta,
-    gerando silhueta mais moderna e dinamica
-  · Sem ornamentos, sem letras — forma pura
+  CONCEITO: "O Guardian que observa com precisao"
+  Tres elementos no mesmo eixo X=50 (simetria perfeita):
 
-  VERSOES POR TAMANHO
-  · 30–40px  (app icon)   : frame se comprime mas ainda le como escudo solido
-  · 80–120px (thumb/UI)   : frame + espaco interno visiveis, alto contraste
-  · 400px+   (hero/print) : moldura plena, leitura maxima de sofisticacao
+  1. MOLDURA DO ESCUDO (frame evenodd)
+     Borda dourada de ~6u, forma externa esbelta (ratio ~54:84, quase 2:3).
+     Cantos superiores r=3 (externo) e r=2 (interno) — modernidade sem suavidade excessiva.
+     Cintura em y=48, ponta em y=92 — taper mais longo que a secao reta.
 
-  USO: fundo preto (#0a0a0a), moldura ouro fosco (#c8a84b)
+  2. ANEL (circulo perfeito inscrito no espaco negativo interno)
+     Raio 16u, centro (50, 30).
+     O circulo TANGENCIA a borda superior interna (y=14) e a borda da cintura (y=46):
+     matematicamente inscrito no espaco retangular — relacao de precisao geometrica.
+     Simbolo: o ciclo das 24h (janela de sobriedade), completude, renovacao diaria.
+
+  3. EIXO VERTICAL (linha de foco)
+     De y=14 (borda interna superior) ate y=46 (cintura interna).
+     Passa exatamente pelo centro do anel (50, 30).
+     Simbolo: direcao, foco, o guardiao que aponta para o proximo passo.
+
+  Os tres elementos criam a leitura de um visor/reticulo — precisao e vigilancia do guardian.
+
+  USO: fundo preto (#0a0a0a), simbolo ouro fosco (#c8a84b)
+  Funciona em 30px (app icon) e 400px+ (hero / branding)
 -->
 <svg xmlns="http://www.w3.org/2000/svg"
      viewBox="0 0 100 100"
@@ -30,25 +37,11 @@
   <rect width="100" height="100" fill="#0a0a0a"/>
 
   <!--
-    MOLDURA DO ESCUDO (fill-rule="evenodd")
-
-    Subcaminho 1 — forma externa:
-      (26, 8)  linha para (74, 8)         — topo (54u largura)
-      curva Q (77,8)  para (77,11)        — canto superior direito, r=3
-      linha para (77, 48)                 — lado direito (37u)
-      linha para (50, 92)                 — diagonal direita do taper
-      linha para (23, 48)                 — diagonal esquerda do taper
-      linha para (23, 11)                 — lado esquerdo
-      curva Q (23,8)  para (26, 8)        — canto superior esquerdo, r=3
-
-    Subcaminho 2 — recorte interno (~7u inset em todos os lados):
-      (32, 15) linha para (68, 15)        — topo interno
-      curva Q (70,15) para (70,17)        — canto interno direito, r=2
-      linha para (70, 46)                 — lado interno direito
-      linha para (50, 79)                 — ponta interna (calculada por offset perpendicular)
-      linha para (30, 46)                 — lado interno esquerdo
-      linha para (30, 17)                 — fechando
-      curva Q (30,15) para (32, 15)       — canto interno esquerdo, r=2
+    ELEMENTO 1: MOLDURA DO ESCUDO
+    Dois subcaminhos com fill-rule="evenodd":
+    Externo: M 26,8 → cantos r=3 → cintura (77,48) → ponta (50,92) → fecha
+    Interno:  M 31,14 → cantos r=2 → cintura interna (71,46) → ponta interna (50,81) → fecha
+    Espessura da borda: ~6u em todos os lados (calculado por offset perpendicular)
   -->
   <path
     fill-rule="evenodd"
@@ -56,8 +49,35 @@
     stroke="none"
     d="
       M 26,8 L 74,8 Q 77,8 77,11 L 77,48 L 50,92 L 23,48 L 23,11 Q 23,8 26,8 Z
-      M 32,15 L 68,15 Q 70,15 70,17 L 70,46 L 50,79 L 30,46 L 30,17 Q 30,15 32,15 Z
+      M 31,14 L 69,14 Q 71,14 71,16 L 71,46 L 50,81 L 29,46 L 29,16 Q 29,14 31,14 Z
     "
+  />
+
+  <!--
+    ELEMENTO 2: ANEL — ciclo das 24h
+    cx=50, cy=30, r=16
+    Tangencia: topo em y=14 (borda interna superior), base em y=46 (cintura interna)
+    Matematicamente inscrito no retangulo 42x32u do espaco negativo
+  -->
+  <circle
+    cx="50" cy="30" r="16"
+    fill="none"
+    stroke="#c8a84b"
+    stroke-width="2"
+  />
+
+  <!--
+    ELEMENTO 3: EIXO VERTICAL — linha de foco do guardian
+    De borda interna superior (y=14) ate cintura interna (y=46)
+    Passa pelo centro exato do anel (50, 30)
+    Ligeiramente mais fino que o anel para nao dominar
+  -->
+  <line
+    x1="50" y1="14"
+    x2="50" y2="46"
+    stroke="#c8a84b"
+    stroke-width="1.5"
+    stroke-linecap="square"
   />
 
 </svg>
