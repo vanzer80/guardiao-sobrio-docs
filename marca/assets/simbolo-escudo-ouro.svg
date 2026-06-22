@@ -1,17 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
   O Guardiao Sobrio — Simbolo Escudo (versao ouro / principal)
+  viewBox: 0 0 100 100
 
   DECISOES GEOMETRICAS
-  · Forma: pentagono heater shield (5 vertices, topologia mais reconhecivel como escudo)
-  · Proporcao: 60 x 80 unidades, ratio 3:4, centrado no canvas 100x100
-  · Secao superior retangular: de y=10 a y=55 (45u de altura) — estabilidade e solidez
-  · Secao inferior triangular: converge de (20,55) e (80,55) ao ponto (50,90) — 30u horiz x 35u vert por lado
-  · Sem ornamentos, sem linhas internas, sem letras — forma pura
-  · Zero curvas: geometria totalmente linear, coerente com noir realista
-  · Funciona de 30px (app icon) a 400px+ sem perda de leitura
+  · Proporcao: 54 x 84 unidades (ratio ~2:3, mais esbelta que o classico 3:4)
+  · Cantos superiores: raio 3u (apenas no topo — mantém rigidez na cintura e ponta)
+  · Tecnica "frame": dois subcaminhos com fill-rule="evenodd"
+      — externo preenchido, interno recortado (negativo)
+      — cria moldura dourada de ~7u de espessura em todos os lados
+  · Taper: cintura em y=48, ponto inferior y=92 — taper mais longo que a secao reta,
+    gerando silhueta mais moderna e dinamica
+  · Sem ornamentos, sem letras — forma pura
 
-  USO: fundo preto (#0a0a0a), simbolo ouro fosco (#c8a84b)
+  VERSOES POR TAMANHO
+  · 30–40px  (app icon)   : frame se comprime mas ainda le como escudo solido
+  · 80–120px (thumb/UI)   : frame + espaco interno visiveis, alto contraste
+  · 400px+   (hero/print) : moldura plena, leitura maxima de sofisticacao
+
+  USO: fundo preto (#0a0a0a), moldura ouro fosco (#c8a84b)
 -->
 <svg xmlns="http://www.w3.org/2000/svg"
      viewBox="0 0 100 100"
@@ -23,18 +30,34 @@
   <rect width="100" height="100" fill="#0a0a0a"/>
 
   <!--
-    Escudo: pentagono geometrico
-    Vertices (sentido horario):
-      (20,10) — canto superior esquerdo
-      (80,10) — canto superior direito
-      (80,55) — cintura direita (inicio do taper)
-      (50,90) — ponta inferior central
-      (20,55) — cintura esquerda (inicio do taper)
+    MOLDURA DO ESCUDO (fill-rule="evenodd")
+
+    Subcaminho 1 — forma externa:
+      (26, 8)  linha para (74, 8)         — topo (54u largura)
+      curva Q (77,8)  para (77,11)        — canto superior direito, r=3
+      linha para (77, 48)                 — lado direito (37u)
+      linha para (50, 92)                 — diagonal direita do taper
+      linha para (23, 48)                 — diagonal esquerda do taper
+      linha para (23, 11)                 — lado esquerdo
+      curva Q (23,8)  para (26, 8)        — canto superior esquerdo, r=3
+
+    Subcaminho 2 — recorte interno (~7u inset em todos os lados):
+      (32, 15) linha para (68, 15)        — topo interno
+      curva Q (70,15) para (70,17)        — canto interno direito, r=2
+      linha para (70, 46)                 — lado interno direito
+      linha para (50, 79)                 — ponta interna (calculada por offset perpendicular)
+      linha para (30, 46)                 — lado interno esquerdo
+      linha para (30, 17)                 — fechando
+      curva Q (30,15) para (32, 15)       — canto interno esquerdo, r=2
   -->
   <path
-    d="M 20,10 L 80,10 L 80,55 L 50,90 L 20,55 Z"
+    fill-rule="evenodd"
     fill="#c8a84b"
     stroke="none"
+    d="
+      M 26,8 L 74,8 Q 77,8 77,11 L 77,48 L 50,92 L 23,48 L 23,11 Q 23,8 26,8 Z
+      M 32,15 L 68,15 Q 70,15 70,17 L 70,46 L 50,79 L 30,46 L 30,17 Q 30,15 32,15 Z
+    "
   />
 
 </svg>
