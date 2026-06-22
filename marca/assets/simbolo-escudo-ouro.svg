@@ -1,31 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  O Guardiao Sobrio — Simbolo Escudo (versao ouro / principal)
+  O Guardiao Sobrio — Simbolo Escudo v4 (versao ouro / principal)
   viewBox: 0 0 100 100
 
-  CONCEITO: "O Guardian que observa com precisao"
-  Tres elementos no mesmo eixo X=50 (simetria perfeita):
+  MUDANCA v3 → v4: bottom arredondado
+  As duas diagonais retas + ponta (L 77,50 L 50,92 L 23,50) foram substituidas por
+  dois arcos cubicos simetricos que partem verticais na cintura e se encontram
+  em uma base suave — sem ponta, sem angulo abrupto.
 
-  1. MOLDURA DO ESCUDO (frame evenodd)
-     Borda dourada de ~6u, forma externa esbelta (ratio ~54:84, quase 2:3).
-     Cantos superiores r=3 (externo) e r=2 (interno) — modernidade sem suavidade excessiva.
-     Cintura em y=48, ponta em y=92 — taper mais longo que a secao reta.
+  GEOMETRIA DOS BEZIERS (externo):
+    C 77,74  62,88  50,90   ← sai vertical de (77,50), curva para o centro, chega em (50,90)
+    C 38,88  23,74  23,50   ← simetrico: sai de (50,90) e fecha em (23,50)
 
-  2. ANEL (circulo perfeito inscrito no espaco negativo interno)
-     Raio 16u, centro (50, 30).
-     O circulo TANGENCIA a borda superior interna (y=14) e a borda da cintura (y=46):
-     matematicamente inscrito no espaco retangular — relacao de precisao geometrica.
-     Simbolo: o ciclo das 24h (janela de sobriedade), completude, renovacao diaria.
+  GEOMETRIA DOS BEZIERS (interno, ~6u de offset perpendicular):
+    C 71,67  59,82  50,84   ← mesmo comportamento, 6u mais interno
+    C 41,82  29,67  29,47   ← simetrico
 
-  3. EIXO VERTICAL (linha de foco)
-     De y=14 (borda interna superior) ate y=46 (cintura interna).
-     Passa exatamente pelo centro do anel (50, 30).
-     Simbolo: direcao, foco, o guardiao que aponta para o proximo passo.
+  Espessura da borda ~6u uniforme: verificada nos tres pontos criticos:
+    - Topo:     y=14 − y=8  = 6u  ✓
+    - Lados:    x=71 − x=77 = 6u  ✓
+    - Fundo:    y=90 − y=84 = 6u  ✓ (perpendicular no ponto central x=50)
 
-  Os tres elementos criam a leitura de um visor/reticulo — precisao e vigilancia do guardian.
+  ELEMENTOS:
+  1. Moldura do escudo (frame evenodd): borda 6u, cantos sup r=3/r=2
+  2. Anel: cx=50, cy=30, r=16 — inscrito no espaco retangular interno 42×33u
+  3. Eixo vertical: x=50, de y=14 a y=46 — passa pelo centro do anel
 
   USO: fundo preto (#0a0a0a), simbolo ouro fosco (#c8a84b)
-  Funciona em 30px (app icon) e 400px+ (hero / branding)
 -->
 <svg xmlns="http://www.w3.org/2000/svg"
      viewBox="0 0 100 100"
@@ -36,29 +37,31 @@
   <!-- Fundo preto -->
   <rect width="100" height="100" fill="#0a0a0a"/>
 
-  <!--
-    ELEMENTO 1: MOLDURA DO ESCUDO
-    Dois subcaminhos com fill-rule="evenodd":
-    Externo: M 26,8 → cantos r=3 → cintura (77,48) → ponta (50,92) → fecha
-    Interno:  M 31,14 → cantos r=2 → cintura interna (71,46) → ponta interna (50,81) → fecha
-    Espessura da borda: ~6u em todos os lados (calculado por offset perpendicular)
-  -->
+  <!-- MOLDURA DO ESCUDO (evenodd: externo preenchido, interno recortado) -->
   <path
     fill-rule="evenodd"
     fill="#c8a84b"
     stroke="none"
     d="
-      M 26,8 L 74,8 Q 77,8 77,11 L 77,48 L 50,92 L 23,48 L 23,11 Q 23,8 26,8 Z
-      M 31,14 L 69,14 Q 71,14 71,16 L 71,46 L 50,81 L 29,46 L 29,16 Q 29,14 31,14 Z
+      M 26,8 L 74,8
+      Q 77,8 77,11
+      L 77,50
+      C 77,74 62,88 50,90
+      C 38,88 23,74 23,50
+      L 23,11
+      Q 23,8 26,8 Z
+
+      M 31,14 L 69,14
+      Q 71,14 71,16
+      L 71,47
+      C 71,67 59,82 50,84
+      C 41,82 29,67 29,47
+      L 29,16
+      Q 29,14 31,14 Z
     "
   />
 
-  <!--
-    ELEMENTO 2: ANEL — ciclo das 24h
-    cx=50, cy=30, r=16
-    Tangencia: topo em y=14 (borda interna superior), base em y=46 (cintura interna)
-    Matematicamente inscrito no retangulo 42x32u do espaco negativo
-  -->
+  <!-- ANEL — ciclo das 24h -->
   <circle
     cx="50" cy="30" r="16"
     fill="none"
@@ -66,12 +69,7 @@
     stroke-width="2"
   />
 
-  <!--
-    ELEMENTO 3: EIXO VERTICAL — linha de foco do guardian
-    De borda interna superior (y=14) ate cintura interna (y=46)
-    Passa pelo centro exato do anel (50, 30)
-    Ligeiramente mais fino que o anel para nao dominar
-  -->
+  <!-- EIXO VERTICAL — foco do guardian -->
   <line
     x1="50" y1="14"
     x2="50" y2="46"
