@@ -58,9 +58,13 @@
   Secao ogiva:        y=61 a y=95  (34u ≈ 56/φ)
 
   Cantos superiores:  raio 5u (Q 78,5 78,10 / Q 22,5 27,5)
-  Ogiva direita:      Q 78,82 50,95  — saida vertical, arco convexo, ponta suave
-  Ogiva esquerda:     Q 22,82 22,61  — simetrica, encontra a direita em (50,95)
-  Angulo da ponta:    ~50 graus (firme, nao agressivo)
+  Ogiva direita:      C 78,73 60,93 50,95
+                        CP1=(78,73): saida VERTICAL (mesmo x do ombro) — sem quebra
+                        CP2=(60,93): chega na ponta quase horizontalmente
+                        Curva convex no meio, degrada suave no final
+  Ogiva esquerda:     C 40,93 22,73 22,61  — simetrica perfeita
+  Angulo da ponta:    ~22 graus (cusp suavissimo — elegante, intencional, nao agressivo)
+  Continuidade:       G1 nas juncoes ombro/lado (tangente vertical) e C1 no corpo da curva
 
   USO: fundo #0E0D0C (Fundo Principal da marca), escudo #C8A84B (Ouro Fosco)
   Leitura perfeita de 30px (icone de app) a 400px+ (hero / branding)
@@ -88,7 +92,7 @@
     Z                fecha
   -->
   <path
-    d="M 27,5 L 73,5 Q 78,5 78,10 L 78,61 Q 78,82 50,95 Q 22,82 22,61 L 22,10 Q 22,5 27,5 Z"
+    d="M 27,5 L 73,5 Q 78,5 78,10 L 78,61 C 78,73 60,93 50,95 C 40,93 22,73 22,61 L 22,10 Q 22,5 27,5 Z"
     fill="#C8A84B"
     stroke="none"
   />
