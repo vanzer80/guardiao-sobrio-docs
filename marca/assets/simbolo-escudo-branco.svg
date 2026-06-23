@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  O Guardiao Sobrio — Simbolo Escudo v4 (branca)
-  Mesma geometria da versao ouro. Fundo transparente, cor #ffffff.
+  O Guardiao Sobrio — Simbolo Escudo v5 (versao branca / padrao)
+  viewBox: 0 0 100 100
+
+  NOTA: Esta e a versao PADRAO da marca (nao a ouro).
+  Manual de marca: "Padrao (uso mais comum): Branco #E8E6E2 sobre escuro #0E0D0C."
+  O ouro e a versao premium/destaque. O branco e o uso corriqueiro.
+
+  Mesma geometria v5: proporcoes aureas, ogiva suave, cantos r=5.
+  Fundo: transparente — para sobreposicao em qualquer fundo escuro da marca.
+  Cor: #E8E6E2 (Texto Principal da marca — branco quente, nao branco puro).
+
+  USO: fundo transparente, escudo #E8E6E2 — sobre fundos escuros (#0E0D0C, fotos noir)
 -->
 <svg xmlns="http://www.w3.org/2000/svg"
      viewBox="0 0 100 100"
@@ -9,30 +19,12 @@
      role="img"
      aria-label="O Guardiao Sobrio — Simbolo Escudo (branco)">
 
+  <!-- Sem fundo — transparente por design -->
+
   <path
-    fill-rule="evenodd"
-    fill="#ffffff"
+    d="M 27,5 L 73,5 Q 78,5 78,10 L 78,61 Q 78,82 50,95 Q 22,82 22,61 L 22,10 Q 22,5 27,5 Z"
+    fill="#E8E6E2"
     stroke="none"
-    d="
-      M 26,8 L 74,8
-      Q 77,8 77,11
-      L 77,50
-      C 77,74 62,88 50,90
-      C 38,88 23,74 23,50
-      L 23,11
-      Q 23,8 26,8 Z
-
-      M 31,14 L 69,14
-      Q 71,14 71,16
-      L 71,47
-      C 71,67 59,82 50,84
-      C 41,82 29,67 29,47
-      L 29,16
-      Q 29,14 31,14 Z
-    "
   />
-
-  <circle cx="50" cy="30" r="16" fill="none" stroke="#ffffff" stroke-width="2"/>
-  <line x1="50" y1="14" x2="50" y2="46" stroke="#ffffff" stroke-width="1.5" stroke-linecap="square"/>
 
 </svg>
