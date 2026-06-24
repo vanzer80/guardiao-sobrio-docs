@@ -171,8 +171,8 @@
 | D7 | Revisar e configurar bundles na plataforma de vendas (precos e composicao validados) | ⚠️ Superado por D12 (bundles descontinuados) |
 | D8 | Definir profissional de saude para revisao clinica do metodo (criterio para B2B — Fase futura) | ⏳ Pendente |
 | D9 | Avaliar separacao de entidade: "O Guardiao Sobrio" como marca principal e "Luis Vanzer" como criador/fundador — revisao em 12-18 meses quando base estiver consolidada e primeiras vendas recorrentes | ⏳ Pendente |
-| D10 | Criar logo do Escudo — contratar designer ou usar IA (Midjourney, Adobe Firefly, Looka) — 3 versoes de escudo geometrico para escolha; exportar SVG + PNG transparente conforme spec em `/marca/assets/logo-guidelines.md` | ⏳ Pendente |
-| D11 | Quando logo criado: adicionar SVGs em `/marca/assets/` e criar kit de mockups (thumbnails, stories, capas de produto) em `/marca/assets/mockups/` | ⏳ Aguarda D10 |
+| D10 | Criar logo do Escudo — contratar designer ou usar IA (Midjourney, Adobe Firefly, Looka) — 3 versoes de escudo geometrico para escolha; exportar SVG + PNG transparente conforme spec em `/marca/assets/logo-guidelines.md` | ✅ Símbolo criado (3 SVG: ouro/branco/preto em `/marca/assets/`); PNG/variações conforme necessidade |
+| D11 | Quando logo criado: adicionar SVGs em `/marca/assets/` e criar kit de mockups (thumbnails, stories, capas de produto) em `/marca/assets/mockups/` | 🟡 SVGs adicionados em `/marca/assets/` ✅; kit de mockups (`/marca/assets/mockups/`) ⏳ pendente |
 
 ---
 
@@ -215,7 +215,7 @@
 - Identidade: ícones **Ionicons**, botão **SOS central**, fonte **General Sans** ainda não embarcada.
 
 ### Pendências de produto (backlog)
-General Sans (D15) · Contatos de Confiança (stub) · Comunidade O Escudo (Fase 3) · cortes free×pago não impostos · preço anual R$ 299 × R$ 399 (D14) · notificação ainda usa "Um dia de cada vez" (contraria D2) · landing/admin fora do escopo do app.
+General Sans (D15) · Contatos de Confiança (stub) · Comunidade O Escudo (Fase 3) · cortes free×pago não impostos · preço anual definido: R$ 299 (D14 — alinhar código) · notificação ainda usa "Um dia de cada vez" (contraria D2) · landing/admin fora do escopo do app.
 
 ---
 
@@ -225,7 +225,7 @@ General Sans (D15) · Contatos de Confiança (stub) · Comunidade O Escudo (Fase
 |---|---|---|
 | D12 | **Monetização = assinatura** (Free / Essential R$ 19,90 / Guardião R$ 39,90) é o modelo OFICIAL; avulsos (R$ 47/97/197), mentoria e bundles **descontinuados/legado** | ✅ Decidido |
 | D13 | Fonte de verdade do plano: `profiles.plan` + `effective_plan()` (honra trial) — Opção A (ADR 0001) | ✅ Decidido |
-| D14 | Preço anual: padronizar (doc R$ 299 × código R$ 399) | ⚠️ Pendente |
+| D14 | Preço anual: **R$ 299/ano é o oficial**; alinhar código (399 → 299) | ✅ Decidido |
 | D15 | Embarcar a fonte **General Sans** no app (hoje o corpo cai p/ fonte do sistema) | ⏳ Pendente |
 | D16 | Prevenção de migration drift: checagem no CI antes de marcar migration como concluída | ⏳ Pendente |
 
