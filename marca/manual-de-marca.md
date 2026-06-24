@@ -18,7 +18,7 @@ O metodo se sustenta em tres pilares praticos, seculares e complementares. Nao e
 
 ### ESPELHO — Ver a verdade sem anestesia
 
-> _Fundamentos associados: Identidade, Consciencia, Emocao, Proposito_
+> _Temas do pilar: Identidade, Consciencia, Emocao, Proposito_
 
 - Sair da negacao: ver o estrago real sem se destruir.
 - Nomear o padrao (comportamento, gatilho, emocao) como primeiro ato de poder.
@@ -27,7 +27,7 @@ O metodo se sustenta em tres pilares praticos, seculares e complementares. Nao e
 
 ### TATICA — Micro-acoes para atravessar hoje
 
-> _Fundamentos associados: Gatilhos, Corpo, Ambiente, Consistencia, Ciclos, Repeticao_
+> _Temas do pilar: Gatilhos, Corpo, Ambiente, Consistencia, Ciclos, Repeticao_
 
 - Acoes executaveis em 5 a 10 minutos, sem heroismo.
 - Respiracao consciente como intervencao imediata (mindfulness): inspirar 4s, segurar 4s, expirar 6s.
@@ -37,7 +37,7 @@ O metodo se sustenta em tres pilares praticos, seculares e complementares. Nao e
 
 ### ESCUDO — Proteger ambiente e relacoes
 
-> _Fundamentos associados: Perimetro, Comunidade, Expressao, Familia_
+> _Temas do pilar: Perimetro, Comunidade, Expressao, Familia_
 
 - Fronteiras claras com alcool, eventos de risco, pessoas que nao respeitam o processo.
 - A familia como parte ativa do sistema de protecao — nao como expectadora ou vitima passiva.

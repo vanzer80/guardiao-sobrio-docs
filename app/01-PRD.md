@@ -518,6 +518,8 @@ Baseado em `/marca/manual-de-marca.md`.
 
 ### 10.1 Paleta (noir realista)
 
+> ⚠️ Reconciliação: a paleta canônica do app está em `marca/assets/paleta.md` e `app/04-design-system.md`. Os valores abaixo são de uma versão anterior, mantidos como referência — em caso de divergência, vale a paleta canônica.
+
 ```css
 :root {
   --color-bg:       #0e0e0e;   /* preto base */
@@ -542,7 +544,7 @@ Baseado em `/marca/manual-de-marca.md`.
 - **Corpo:** General Sans (⚠️ ainda não embarcada no app — corpo cai p/ fonte do sistema; ver D15)
 - **Sem emojis como elementos de design**
 - **Sem gradientes coloridos**
-- **Ícones:** Ionicons (`@expo/vector-icons`) — monocromáticos, tamanho consistente. (A spec original citava Lucide React.)
+- **Ícones:** Ionicons (`@expo/vector-icons`) — monocromáticos, tamanho consistente. (Histórico da biblioteca de ícones em `app/04-design-system.md`.)
 
 ---
 

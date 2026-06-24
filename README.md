@@ -21,7 +21,7 @@ Tudo aqui e documento vivo — atualizado conforme a marca, o metodo e a sobried
 O metodo O Guardiao Sobrio se sustenta em tres pilares praticos, seculares e complementares.
 Nao e religioso. Nao e coach. E baseado em estoicismo, mindfulness, psicoeducacao sobre vicio e experiencia pessoal vivida.
 
-| Pilar | Funcao | Fundamentos |
+| Pilar | Funcao | Temas do pilar |
 |---|---|---|
 | **ESPELHO** | Ver a verdade sem anestesia | Identidade, Consciencia, Emocao, Proposito |
 | **TATICA** | Micro-acoes para atravessar hoje | Gatilhos, Corpo, Ambiente, Consistencia, Ciclos, Repeticao |
@@ -43,6 +43,9 @@ Nao e religioso. Nao e coach. E baseado em estoicismo, mindfulness, psicoeducaca
 guardiao-sobrio-docs/
 ├── README.md                              # Este arquivo
 ├── ROADMAP.md                             # Status de tarefas — historico e proximos passos
+├── AGENTS.md                              # Instrucoes para agentes/automacoes
+├── AUDITORIA-RECONCILIACAO.md             # Reconciliacao docs x app real (auditoria jun/2026)
+├── GUIA-DO-COLABORADOR.md                 # Por onde comecar (designer, editor, social)
 ├── fundamentos/
 │   └── 13-fundamentos.md                  # Os 13 fundamentos com pilares, estoicismo e mindfulness
 ├── marca/
@@ -54,7 +57,10 @@ guardiao-sobrio-docs/
 │   └── assets/
 │       ├── paleta.md                      # Paleta completa com HEX e RGB para Canva, CapCut e PDFs
 │       ├── tipografia.md                  # Fontes por contexto de uso (impacto, frases, corpo)
-│       └── logo-guidelines.md             # Spec do logo do Escudo — versoes, estilo e regras de uso
+│       ├── logo-guidelines.md             # Spec do logo do Escudo — versoes, estilo e regras de uso
+│       ├── simbolo-escudo-ouro.svg        # Simbolo do escudo (versao ouro)
+│       ├── simbolo-escudo-branco.svg      # Simbolo do escudo (versao branca)
+│       └── simbolo-escudo-preto.svg       # Simbolo do escudo (versao escura)
 ├── protocolos/
 │   ├── primeiros-30-dias.md               # Guia pratico para os primeiros 30 dias
 │   ├── familiares.md                      # Orientacao para conjuge e familia + recursos de emergencia
@@ -80,6 +86,8 @@ guardiao-sobrio-docs/
 │   ├── action-plan-90-dias.md             # Plano de 90 dias com KPIs por fase e ciclos de revisao
 │   ├── plano-correcao-14-dias.md          # Sprint de 14 dias de retomada
 │   └── checklist-operacional.md           # Checklist operacional
+├── prompts/
+│   └── roteiros-tiktok-agente.md          # Prompt pronto para gerar roteiros
 ├── contexto/
 │   ├── contexto-criador.md                # Perfil atualizado do criador (estado real de sobriedade)
 │   └── recomendacoes-tiktok.md            # Estrategia e crescimento no TikTok 2026

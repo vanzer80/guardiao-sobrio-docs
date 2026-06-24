@@ -28,7 +28,7 @@
 | **Logo Horizontal** | Escudo + nome lado a lado em linha | Banners, rodapes de PDFs, assinatura de email |
 | **Logo Branco** | Versao em branco sobre fundo escuro | Todos os materiais no modo noir (padrao) |
 | **Logo Preto** | Versao em preto sobre fundo claro | Documentos impressos, modo acolhimento, apresentacoes em fundo claro |
-| **Logo Ouro** | Versao em ouro `#C8A84B` sobre fundo escuro | Pecas premium, capas de mentoria, momentos de celebracao |
+| **Logo Ouro** | Versao em ouro `#C8A84B` sobre fundo escuro | Pecas premium, capas de produto premium, momentos de celebracao |
 
 ---
 

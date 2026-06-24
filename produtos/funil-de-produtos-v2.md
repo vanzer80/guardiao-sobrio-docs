@@ -1,4 +1,4 @@
-# Funil de Produtos — O Guardiao Sobrio (V3)
+# Funil de Produtos — O Guardiao Sobrio (v2)
 
 > O Guardiao Sobrio — Luis Vanzer
 > Atualizado em: Junho 2026
