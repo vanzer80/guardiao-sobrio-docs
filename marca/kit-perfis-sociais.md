@@ -296,16 +296,11 @@ magick "luis-vanzer.png" -gravity Center -crop 400x400+0+0 +repage -resize 400x4
 
 > ⚠️ Criar o Gmail é **ação manual** — Google exige telefone + captcha. Não é possível automatizar.
 
-### Endereço sugerido
+### Endereço — ✅ criado em 24 jun 2026
 
 ```
 guardiaosobrio@gmail.com
 ```
-
-Se já estiver tomado, alternativas em ordem de preferência:
-1. `oguardiaosobrio@gmail.com`
-2. `contato.guardiaosobrio@gmail.com`
-3. `luisvanzer.gs@gmail.com` (gs = guardião sóbrio)
 
 > Usar um endereço separado do e-mail pessoal do Luis — facilita delegar acesso no futuro e mantém o histórico da marca organizado.
 
