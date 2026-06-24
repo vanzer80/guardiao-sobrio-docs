@@ -76,9 +76,9 @@ Criar os 4 destaques abaixo. Capas SVG prontas em `marca/assets/` → exportar c
 
 ---
 
-## 2. TikTok
+## 2. TikTok — ✅ Perfil criado em 24 jun 2026
 
-**Status:** abrir do zero (conta nova — o @luisvanzer mencionado em versões anteriores dos docs não está mais disponível/ativo).
+**Status:** ✅ Conta criada — `@guardiaosobrio`
 **Tipo de conta:** Conta Pro gratuita (habilita analytics sem custo).
 
 ### Dados do perfil
