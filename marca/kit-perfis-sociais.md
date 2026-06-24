@@ -31,9 +31,9 @@ Verificação realizada em **24 jun 2026** — acesso direto às URLs via navega
 
 ---
 
-## 1. Instagram
+## 1. Instagram — ✅ Perfil criado em 24 jun 2026
 
-**Status:** abrir do zero.
+**Status:** ✅ Conta criada — `@guardiaosobrio`
 **Tipo de conta:** Profissional → Criador (para analytics, ferramenta de link na bio e contato).
 
 ### Dados do perfil
