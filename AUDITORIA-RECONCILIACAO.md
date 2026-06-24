@@ -5,7 +5,7 @@
 > Objetivo: nada se perde. Cada arquivo do repo tem aqui "o que diz × realidade × ação".
 > Preservar histórico: nas edições, anexar bloco datado "Estado real (auditoria jun/2026)" sem apagar a intenção original.
 >
-> **Correção (verificação completa):** o repo tem **43 arquivos** (não 28). Após reler todos, **26 recebem bloco de reconciliação** e **17 ficam sem alteração**. O inventário definitivo, com o bloco exato de cada arquivo, está em `ATUALIZACOES-DOCS.md` (Blocos A–F + Inventário completo) — use-o como fonte de execução.
+> **Correção (verificação completa):** o repo tem **51 arquivos** (48 .md + 3 .svg). Após reler todos, **26 recebem bloco de reconciliação** e **17 ficam sem alteração**. O inventário definitivo, com o bloco exato de cada arquivo, está planejado em `ATUALIZACOES-DOCS.md` (Blocos A–F + Inventário completo) — ⏳ **PENDENTE: este arquivo ainda não foi criado.**
 
 ---
 
@@ -14,7 +14,7 @@
 | # | Tema | A doc diz | Realidade (CODE/LIVE) | Decisão / ação |
 |---|---|---|---|---|
 | G1 | **Stack** | PRD §4.2: "Next.js 15 (App Router)" como frontend | **Expo / React Native + Expo Router** (web via `react-native-web` no Vercel); Next.js só era cogitado p/ landing/dashboard | Corrigir PRD para a stack real; `02-arquitetura` já está correto (Expo mobile + Next.js web opcional) |
-| G2 | **Monetização** | Dois modelos conflitantes: PRD/funil = **produtos avulsos** (R$47/97/197 + mentoria R$997); `02`/`07` = **assinaturas** (Free / Essential R$19,90 / Guardião R$39,90) | App implementa **assinaturas** (Stripe Checkout + webhook); planos `free/essential/guardian`; trial 5 dias; modo anônimo | **Decisão a registrar (ADR):** o produto é **assinatura**. Atualizar PRD/funil para refletir (ou marcar avulsos como descontinuados/futuros). Preço anual: alinhar (`02` diz R$299; código R$399) |
+| G2 | **Monetização** | Dois modelos conflitantes: PRD/funil = **produtos avulsos** (R$47/97/197 + mentoria R$997); `02`/`07` = **assinaturas** (Free / Essential R$19,90 / Guardião R$39,90) | App implementa **assinaturas** (Stripe Checkout + webhook); planos `free/essential/guardian`; trial 5 dias; modo anônimo | **Decisão a registrar (ADR):** o produto é **assinatura**. Atualizar PRD/funil para refletir (ou marcar avulsos como descontinuados/futuros). Preço anual: **R$ 299 é o oficial (D14)** — alinhar código (399 → 299) |
 | G3 | **Autenticação** | PRD: magic link sem senha | **E-mail + senha** (`signUp`/`signInWithPassword`) + **OAuth Google/Apple** + **modo anônimo** ("explorar sem cadastro") + confirmação de e-mail | Corrigir PRD/fluxos para auth real |
 | G4 | **Landing pública + Painel Admin** | PRD §5.1 (landing) e §5.6 (admin `/admin`) | **Não implementados** (app entra em welcome→onboarding; sem `/admin`, sem SSR/landing) | Marcar como não construídos / fase futura ou fora de escopo do app mobile |
 | G5 | **Fonte de verdade do plano** | — | Cliente lê `profiles.plan`; webhook escreve `profiles.plan`+`subscriptions.plan`; RLS usa `effective_plan()` (trial→guardian). Colunas estavam ausentes (migration drift), corrigidas em jun/2026 | Documentar a decisão (Opção A) + a função `effective_plan()` no `06` |
@@ -46,10 +46,10 @@
 ### Bloco C — marca
 | Arquivo | Ajustes |
 |---|---|
-| `manual-de-marca.md` (Interface Digital App) | Ícone do app = placeholder (logo do Escudo ainda pendente D10); ícones de UI = Ionicons; SOS central; demais âncoras conferem |
+| `manual-de-marca.md` (Interface Digital App) | Ícone do app = placeholder; **símbolo do escudo criado (SVGs em `/marca/assets/`)**, logotipo completo/mockups pendentes; ícones de UI = Ionicons; SOS central; demais âncoras conferem |
 | `assets/paleta.md` | Tokens do app conferem; sem mudança material (apontar 04 para os tons de hover reais) |
 | `assets/tipografia.md` | App usa Cormorant + JetBrains Mono ✅; **General Sans ainda não embarcada** no app (corpo cai p/ sistema) — registrar pendência |
-| `assets/logo-guidelines.md` | Logo segue **não criado** (D10); o app usa ícone placeholder + shield do Ionicons no SOS — consistente |
+| `assets/logo-guidelines.md` | **Símbolo do escudo criado** (3 versões SVG em `/marca/assets/`); logotipo completo/mockups ainda pendentes; o app usa o símbolo + shield do Ionicons no SOS |
 
 ### Bloco D — produtos
 | Arquivo | Ajustes |
@@ -78,4 +78,4 @@
 4. **Bloco D** (produtos) — depende da decisão G2/D12.
 5. **Bloco E** — registrar como revisados.
 
-Cada bloco gera arquivos atualizados em `kit-docs-update/` (espelhando o repo) + um prompt de commit para o Claude Code. Nada é aplicado sem sua revisão.
+Cada bloco gera arquivos atualizados em `kit-docs-update/` (espelhando o repo) + um prompt de commit para o Claude Code. Nada é aplicado sem sua revisão. (⏳ **PENDENTE:** `kit-docs-update/` ainda não foi criado.)

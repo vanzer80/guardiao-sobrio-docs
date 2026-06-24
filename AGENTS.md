@@ -13,7 +13,7 @@ Arquivos crus (raw) em:
 Listagem de pastas via API:
 `https://api.github.com/repos/vanzer80/guardiao-sobrio-docs/contents/<pasta>`
 
-**Não leia os 43 arquivos sem necessidade.** Comece pelo `GUIA-DO-COLABORADOR.md` (raiz) e abra **apenas os arquivos da tarefa**. Mapa rápido por tarefa:
+**Não leia todos os 51 arquivos sem necessidade.** Comece pelo `GUIA-DO-COLABORADOR.md` (raiz) e abra **apenas os arquivos da tarefa**. Mapa rápido por tarefa:
 
 | Tarefa | Arquivos-base (ler nesta ordem) |
 |---|---|
