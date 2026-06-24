@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  O Guardião Sóbrio — Capa Destaque Instagram: FAMÍLIA
+  ======================================================
+  Dimensões: 1000 × 1000 px (exibido como círculo pelo Instagram)
+  Cor do pilar: Aço Ardósia #6B8FA3 (pilar ESCUDO — família, perímetro, proteção)
+
+  Nota: o conteúdo de Família usa Modo Limpo (fundo claro #F5F3EF) para Reels/carrosséis.
+  Esta capa do destaque mantém fundo noir para uniformidade da grade de destaques.
+
+  Exportar como PNG 1000×1000 antes de subir como capa do Destaque.
+-->
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1000 1000"
+     width="1000" height="1000"
+     role="img"
+     aria-label="Destaque Instagram — Família">
+
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&amp;display=swap');
+    </style>
+  </defs>
+
+  <!-- Fundo -->
+  <rect width="1000" height="1000" fill="#0E0D0C"/>
+
+  <!--
+    Escudo — símbolo da marca
+    Tamanho: 360×360 px, centralizado horizontalmente
+    Cor: Aço Ardósia (pilar ESCUDO) — diferencia este destaque dos outros
+    x = 500 - 180 = 320 | y = 180
+  -->
+  <svg x="320" y="180" width="360" height="360" viewBox="0 0 100 100" overflow="visible">
+    <path
+      d="M 27,5 L 73,5 Q 78,5 78,10 L 78,61 C 78,73 60,93 50,95 C 40,93 22,73 22,61 L 22,10 Q 22,5 27,5 Z"
+      fill="#6B8FA3"
+      stroke="none"
+    />
+  </svg>
+
+  <!-- Título do destaque — pilar ESCUDO -->
+  <text x="500" y="666"
+        font-family="'Oswald', 'Arial Narrow', Impact, sans-serif"
+        font-weight="700"
+        font-size="96"
+        fill="#6B8FA3"
+        text-anchor="middle"
+        letter-spacing="5">FAMÍLIA</text>
+
+  <!-- Subtítulo -->
+  <text x="500" y="740"
+        font-family="'Oswald', 'Arial Narrow', sans-serif"
+        font-weight="400"
+        font-size="30"
+        fill="#8A8782"
+        text-anchor="middle"
+        letter-spacing="3">CÔNJUGES · FILHOS · APOIO</text>
+
+</svg>

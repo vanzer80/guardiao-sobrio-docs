@@ -1,5 +1,7 @@
 # Setup de Canais Sociais — O Guardião Sóbrio
 
+> **Atualização jun/2026:** Todas as plataformas serão abertas do zero (nenhuma conta existe). Handle definido: **`@guardiaosobrio`** — validar disponibilidade antes de criar (ver `marca/kit-perfis-sociais.md` § 0). Kit completo por plataforma (bios prontas, ativos visuais SVG, guia de cadastro passo a passo): **`marca/kit-perfis-sociais.md`**.
+
 > Checklist para abrir e configurar os canais da marca, já no padrão visual e de voz.
 > Para a estratégia de cada canal (papel, cadência, critérios de ativação), ver `/estrategia/estrategia-multicanal.md`.
 > Atualizado em: Junho 2026.
@@ -21,11 +23,11 @@
 | **Link na bio** | Apontar para a página/Linktree das **iscas gratuitas** (Checklist do Escudo, Diário de Prompts, Guia do Familiar) → cadastro → **trial da assinatura**. ⚠️ **NÃO** usar CTA de produtos avulsos (descontinuados — D12). *Definir a URL atual.* | `/estrategia/estrategia-multicanal.md` |
 | **Disclaimer** | Em bio/descrição, deixar claro: não substitui profissionais de saúde. | `marca/manual-de-marca.md` |
 
-> **@ (handle):** decisão do criador. Manter consistência entre canais (mesmo @ em todos, se possível). Sugestões a validar: `@oguardiaosobrio` / `@luisvanzer.oficial`. No TikTok já existe **@luisvanzer**.
+> **@ (handle) — definido:** **`@guardiaosobrio`** em todos os canais. ⚠️ Validar disponibilidade em cada plataforma antes de criar a conta (ver `marca/kit-perfis-sociais.md` § 0). Alternativas se indisponível: `@oguardiaosobrio`, `@guardiaosobrio.oficial`, `@luisvanzer.oficial`. Usar o mesmo @ em todas as 4 plataformas.
 
 ---
 
-## TikTok (canal principal — já ativo)
+## TikTok (canal principal — abrir do zero)
 
 - [ ] Conta Pro (gratuita) ativada — habilita analytics.
 - [ ] Foto de perfil 400×400 (padrão acima).
@@ -85,13 +87,31 @@ Conteúdo de apoio — não substitui psiquiatra, psicólogo ou grupos de apoio.
 Comece de graça: [link]
 ```
 
+## Facebook (alcance de familiares — abrir junto com os demais)
+
+- [ ] Criar **Página** (não perfil pessoal) com o nome **O Guardião Sóbrio**.
+- [ ] @ consistente: `guardiaosobrio`.
+- [ ] Foto de perfil 400×400 (padrão acima).
+- [ ] **Foto de capa:** `marca/assets/capa-facebook.svg` → exportar PNG 851×315 antes de subir.
+- [ ] Descrição curta (campo "Sobre em poucas palavras"):
+  ```
+  Sobriedade não é abstinência. É construção. Método p/ os primeiros 30 dias + familiares. Não substitui profissionais. Crise: CVV 188.
+  ```
+- [ ] Sobre completo: ver `marca/kit-perfis-sociais.md` § 4.
+- [ ] Site: `[LINK-NA-BIO]` (preencher quando Linktree estiver pronto).
+- [ ] Configurar **Meta Business Suite** para publicar Reels automaticamente (reaproveitamento TikTok/Instagram → Facebook sem custo extra).
+
+**Papel estratégico:** alcance do público de familiares e cônjuges (35+, mais ativos no Facebook que no TikTok). Cadência via automação. Ver `estrategia/estrategia-multicanal.md` — Pilar 4.
+
 ---
 
 ## Checklist final (antes de publicar em qualquer canal novo)
 
-- [ ] Foto, nome e @ consistentes entre os canais.
-- [ ] Bio com tagline + disclaimer + link das iscas gratuitas (não avulso).
+- [ ] Foto, nome e @ (`@guardiaosobrio`) consistentes entre os 4 canais.
+- [ ] Bio dentro do limite de caracteres da plataforma, com tagline + disclaimer + CVV 188.
+- [ ] Link na bio: iscas gratuitas → trial (não produto avulso — D12).
 - [ ] Cores e fontes da marca aplicadas (paleta + tipografia).
+- [ ] Conta tipo Pro/Criador/Página ativada (para analytics).
 - [ ] Primeiro lote de conteúdo seguindo `frequencia-e-consistencia.md`.
 - [ ] UTMs nos links, se aplicável (ver `estrategia/metricas-de-funil.md`).
 

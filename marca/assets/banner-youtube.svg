@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  O Guardião Sóbrio — Banner YouTube
+  ====================================
+  Dimensões: 2560 × 1440 px
+
+  Área segura (onde o conteúdo deve estar para aparecer em desktop e mobile):
+    x=507  a  x=2053  (largura: 1546 px)
+    y=509  a  y=932   (altura:  423  px)
+
+  Conteúdo posicionado:
+    Shield:  x=600–900, y=570–870  — dentro da área segura ✓
+    Texto:   x=980–2050, y=670–810 — dentro da área segura ✓
+
+  Para exportar como PNG:
+    1. Abrir no Chrome (com internet para carregar as fontes Google)
+    2. Usar extensão "SVG Export" ou ferramenta svg2png
+    3. Especificar 2560×1440 px na exportação
+    Alternativa: abrir no Inkscape → Arquivo → Exportar PNG → 2560×1440
+
+  Fontes: Oswald Bold (títulos), Cormorant Garamond Italic (tagline), Inter (handle)
+  Cores: paleta oficial — marca/assets/paleta.md
+-->
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 2560 1440"
+     width="2560" height="1440"
+     role="img"
+     aria-label="O Guardião Sóbrio — Banner YouTube">
+
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&amp;family=Cormorant+Garamond:ital@1&amp;family=Inter&amp;display=swap');
+      .brand-name {
+        font-family: 'Oswald', 'Arial Narrow', Impact, sans-serif;
+        font-weight: 700;
+        font-size: 72px;
+        fill: #C8A84B;
+        letter-spacing: 4px;
+      }
+      .tagline {
+        font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+        font-style: italic;
+        font-size: 36px;
+        fill: #E8E6E2;
+        opacity: 0.92;
+      }
+      .handle {
+        font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+        font-size: 26px;
+        fill: #8A8782;
+        letter-spacing: 1.5px;
+      }
+    </style>
+  </defs>
+
+  <!-- Fundo principal — Fundo Principal da marca -->
+  <rect width="2560" height="1440" fill="#0E0D0C"/>
+
+  <!-- Linha decorativa sutil no topo (visível em TV) -->
+  <line x1="0" y1="2" x2="2560" y2="2" stroke="#C8A84B" stroke-width="1" opacity="0.15"/>
+
+  <!-- Linha decorativa sutil na base -->
+  <line x1="0" y1="1438" x2="2560" y2="1438" stroke="#C8A84B" stroke-width="1" opacity="0.15"/>
+
+  <!--
+    Escudo — símbolo da marca
+    Nested SVG mantém o viewBox 0 0 100 100 original do arquivo-fonte
+    Posição: center (750, 720), tamanho 300×300 px
+    x = 750 - 150 = 600 | y = 720 - 150 = 570
+  -->
+  <svg x="600" y="570" width="300" height="300" viewBox="0 0 100 100" overflow="visible">
+    <path
+      d="M 27,5 L 73,5 Q 78,5 78,10 L 78,61 C 78,73 60,93 50,95 C 40,93 22,73 22,61 L 22,10 Q 22,5 27,5 Z"
+      fill="#C8A84B"
+      stroke="none"
+    />
+  </svg>
+
+  <!-- Nome da marca -->
+  <text x="978" y="670" class="brand-name">O GUARDIÃO SÓBRIO</text>
+
+  <!-- Separador dourado -->
+  <line x1="978" y1="692" x2="2052" y2="692"
+        stroke="#C8A84B" stroke-width="1" opacity="0.5"/>
+
+  <!-- Tagline -->
+  <text x="978" y="740" class="tagline">Sobriedade não é abstinência. É construção.</text>
+
+  <!-- Handle -->
+  <text x="978" y="795" class="handle">@guardiaosobrio</text>
+
+</svg>
