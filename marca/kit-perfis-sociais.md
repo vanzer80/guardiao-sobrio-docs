@@ -11,21 +11,23 @@ Para regras de voz/CTA: `AGENTS.md` · Para specs visuais de referência: `marca
 
 ## 0. Validar o @ antes de criar as contas
 
-Antes de criar qualquer conta, confirme que `guardiaosobrio` está disponível:
+Verificação realizada em **24 jun 2026** — acesso direto às URLs via navegador.
 
-| Plataforma | Como verificar |
-|---|---|
-| Instagram | Acesse `instagram.com/guardiaosobrio` — se der "Página não encontrada", está livre |
-| TikTok | Acesse `tiktok.com/@guardiaosobrio` — se der 404, está livre |
-| YouTube | Acesse `youtube.com/@guardiaosobrio` — se não existir, está livre |
-| Facebook | Acesse `facebook.com/guardiaosobrio` — se não existir página, está livre |
+| Plataforma | Status | Evidência |
+|---|---|---|
+| Instagram | ✅ **Livre** | "Profile não está disponível" / "O link pode estar corrompido ou o perfil pode ter sido removido" — equivale a handle inexistente |
+| TikTok | ✅ **Livre** | "Não foi possível localizar esta conta" — 404 equivalente |
+| YouTube | ✅ **Livre** | 404 Not Found |
+| Facebook | ✅ **Livre** (alta confiança) | Mesmo comportamento de URLs completamente inexistentes; Páginas públicas são visíveis sem login (confirmado com teste de controle em `facebook.com/cocacola`) |
 
-**Se `guardiaosobrio` já estiver tomado em alguma plataforma**, alternativas em ordem de preferência:
+**Resultado:** `@guardiaosobrio` está disponível nas 4 plataformas. ✅ Pode criar as contas.
+
+> ⚠️ **Regra:** registrar o mesmo @ nos 4 canais antes de divulgar qualquer um. Consistência entre plataformas é essencial para que seguidores te encontrem.
+
+**Se `guardiaosobrio` não estiver mais disponível quando for criar**, alternativas em ordem de preferência:
 1. `@oguardiaosobrio`
 2. `@guardiaosobrio.oficial`
 3. `@luisvanzer.oficial`
-
-> ⚠️ **Regra:** registrar o mesmo @ nos 4 canais antes de divulgar qualquer um. Consistência entre plataformas é essencial para que seguidores te encontrem.
 
 ---
 
@@ -287,6 +289,54 @@ magick "luis-vanzer.png" -gravity Center -crop 400x400+0+0 +repage -resize 400x4
 > Para exportar SVG → PNG: abrir o arquivo SVG no Chrome com conexão à internet (para carregar Google Fonts) → F12 → Console → `document.querySelector('svg').outerHTML` (ou usar extensão "SVG Export" / ferramenta online [svgomg.net](https://svgomg.net/) → download → abrir no Canva para exportar como PNG no tamanho correto).
 >
 > Alternativa rápida: abrir o SVG no Inkscape (gratuito) → Arquivo → Exportar PNG → digitar o tamanho.
+
+---
+
+## 9. Gmail exclusivo da marca
+
+> ⚠️ Criar o Gmail é **ação manual** — Google exige telefone + captcha. Não é possível automatizar.
+
+### Endereço sugerido
+
+```
+guardiaosobrio@gmail.com
+```
+
+Se já estiver tomado, alternativas em ordem de preferência:
+1. `oguardiaosobrio@gmail.com`
+2. `contato.guardiaosobrio@gmail.com`
+3. `luisvanzer.gs@gmail.com` (gs = guardião sóbrio)
+
+> Usar um endereço separado do e-mail pessoal do Luis — facilita delegar acesso no futuro e mantém o histórico da marca organizado.
+
+### Para que serve esta conta Google
+
+| Uso | Obrigatório? | Observação |
+|---|---|---|
+| **Canal YouTube** | ✅ Sim | O YouTube usa conta Google — este Gmail **é** o login do canal |
+| **Google Analytics** | ✅ Sim | Propriedade do site `guardiasobrio.com.br` |
+| **Google Search Console** | Recomendado | Monitorar SEO do site |
+| **Google Business Profile** | Opcional | Criar perfil de negócio local (se aplicável) |
+| **Login no Linktree / bio.link** | Recomendado | Centralizar tudo na conta da marca |
+| **Meta Business Suite (Instagram/Facebook)** | Opcional | Pode usar e-mail separado, mas usar este mantém tudo num lugar |
+
+### Passo a passo para criar
+
+1. Acesse `accounts.google.com/signup`
+2. Escolha **Para uso pessoal** (não empresarial — evita cobrança)
+3. Nome: **Luis Vanzer** (ou "O Guardião Sóbrio" no campo "Apelido")
+4. Endereço: `guardiaosobrio` (verificar disponibilidade na hora)
+5. Senha forte — salvar em gerenciador de senhas (Bitwarden, 1Password, etc.)
+6. Número de telefone: usar o do criador (necessário para verificação)
+7. **Não vincular** recuperação ao e-mail pessoal sem pensar — se perder acesso ao pessoal, perde a conta da marca também. Usar um telefone de backup se disponível.
+8. Após criar: ativar **verificação em duas etapas** imediatamente (Configurações → Segurança)
+
+### Após criar — primeiros usos
+
+- [ ] Criar canal YouTube com esta conta (ver § 3)
+- [ ] Configurar Google Analytics para `guardiasobrio.com.br`
+- [ ] Usar este e-mail como login do Linktree (quando criado)
+- [ ] Atualizar o campo "Email de contato" nas páginas do Instagram e Facebook
 
 ---
 
