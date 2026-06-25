@@ -114,19 +114,24 @@ Não substitui profissionais. CVV 188
 
 ---
 
-## 3. YouTube
+## 3. YouTube — ✅ Canal criado em 24 jun 2026
 
-**Status:** abrir do zero. Criar dentro de uma conta Google do criador.
+**Status:** ✅ Canal ativo — `@guardiaosobrio`
+**Conta Google:** `guardiaosobrio@gmail.com`
 
 ### Dados do canal
 
-| Campo | Valor |
-|---|---|
-| **Nome do canal** | `O Guardião Sóbrio` |
-| **Handle (@)** | `@guardiaosobrio` |
-| **Categoria** | Saúde / Pessoa e blog |
-| **País** | Brasil |
-| **URL do canal** | `youtube.com/@guardiaosobrio` (gerada após criação) |
+| Campo | Valor | Status |
+|---|---|---|
+| **Nome do canal** | `Guardião Sóbrio` | ✅ (sem "O" — decisão do criador) |
+| **Handle (@)** | `@guardiaosobrio` | ✅ |
+| **URL do canal** | `youtube.com/@guardiaosobrio` | ✅ |
+| **Categoria** | Saúde / Pessoa e blog | ⬜ Configurar |
+| **País** | Brasil | ⬜ Configurar |
+| **Descrição do canal** | Ver bloco abaixo | ⬜ Colar no YouTube Studio |
+| **Banner** | `marca/assets/banner-youtube.svg` → exportar PNG 2560×1440 | ⬜ |
+| **Ícone do canal** | Foto de perfil 400×400 | ⬜ Subir quando foto estiver pronta |
+| **Links** | Ver tabela abaixo | ⬜ Configurar em Personalizar canal |
 
 ### Descrição do canal
 
