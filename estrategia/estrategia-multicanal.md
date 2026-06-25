@@ -97,12 +97,41 @@ Instagram nao e canal prioritario de aquisicao, mas tem papel util em reaproveit
 
 ---
 
+## Pilar 4 — Facebook (Prioridade Baixa — Reaproveitamento via Automação)
+
+Facebook nao e canal prioritario de aquisicao, mas tem papel relevante para alcance do publico de familiares e conjuges (35+), que usam Facebook mais do que TikTok. O custo de manutencao e minimo quando vinculado ao Meta Business Suite.
+
+### Objetivo
+
+Ampliar o alcance da marca para o publico de apoio (familiares, conjuges, amigos de quem esta em recuperacao) sem adicionar carga de producao ao criador.
+
+### Uso Recomendado
+
+| Formato | Conteudo | Frequencia |
+|---|---|---|
+| Facebook Reels | Reaproveitamento automatico do TikTok/Instagram (via Meta Business Suite) | Automatico — sem esforco adicional |
+| Posts de texto | Depoimentos e frases de ancora da marca | 1x/semana (agendado) |
+| Stories | Bastidores e CTA para iscas gratuitas | 2-3x/semana (reaproveitamento) |
+
+### Criterio de Ativacao
+
+- Abrir a **Pagina** (nao perfil pessoal) junto com os demais canais para reservar o handle
+- Vincular ao Meta Business Suite imediatamente para automacao de Reels
+- Nao criar conteudo exclusivo para Facebook antes de a base de TikTok/Instagram estar consolidada
+
+### Grupo Privado (futuro)
+
+Avaliar criacao de Grupo privado da comunidade quando a base de leads ultrapassar 500 contatos. O grupo pode servir como espaco de suporte peer-to-peer moderado pelo criador.
+
+---
+
 ## Roadmap de Ativacao por Canal
 
 | Canal | Fase | Criterio |
 |---|---|---|
 | Email | Fase 1 (imediato) | Junto com primeira isca digital |
 | Instagram (reels) | Fase 1 ou 2 | Reaproveitamento — baixo custo de energia |
+| Facebook (Página) | Fase 1 ou 2 | Reservar handle + automação via Meta Business Suite |
 | YouTube | Fase 2 ou 3 | Base consolidada + primeiras vendas |
 | Podcast | Futuro (pos-Fase 3) | Avaliar quando base for acima de 1.000 leads |
 
@@ -117,6 +146,8 @@ Instagram nao e canal prioritario de aquisicao, mas tem papel util em reaproveit
 | YouTube | Retencao media de video | Acima de 40% dos primeiros 5 min |
 | YouTube | Inscricoes organicas/mes | 100+ (3 meses apos ativacao) |
 | Instagram Reels | Alcance por reel | Equivalente a 20-30% do alcance TikTok equivalente |
+| Facebook Reels | Alcance por reel | Equivalente a 30-40% do alcance Instagram Reels |
+| Facebook Página | Seguidores/mês | 50+ (meta conservadora — foco em qualidade, nao volume) |
 
 ---
 

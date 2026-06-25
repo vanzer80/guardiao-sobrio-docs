@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  O Guardião Sóbrio — Foto de Capa Facebook
+  ==========================================
+  Dimensões: 851 × 315 px
+
+  Desktop: exibe 820×312 (leve crop nas laterais).
+  Mobile: exibe ~640×360 (crop maior nas laterais, mais alto).
+  Zona segura para não cortar: manter conteúdo com ~15px de margem em cada lado.
+
+  Conteúdo posicionado:
+    Shield:  x=38–273,  y=38–273  — dentro da zona segura ✓
+    Texto:   x=300–835, y=95–240  — dentro da zona segura ✓
+
+  Para exportar como PNG:
+    Abrir no Inkscape → Exportar PNG → 851×315 px
+    Ou abrir no Chrome → extensão SVG Export → 851×315
+
+  Fontes: Oswald Bold, Cormorant Garamond Italic, Inter
+-->
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 851 315"
+     width="851" height="315"
+     role="img"
+     aria-label="O Guardião Sóbrio — Capa Facebook">
+
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&amp;family=Cormorant+Garamond:ital@1&amp;family=Inter&amp;display=swap');
+      .fb-brand-name {
+        font-family: 'Oswald', 'Arial Narrow', Impact, sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+        fill: #C8A84B;
+        letter-spacing: 2.5px;
+      }
+      .fb-tagline {
+        font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+        font-style: italic;
+        font-size: 20px;
+        fill: #E8E6E2;
+        opacity: 0.90;
+      }
+      .fb-handle {
+        font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+        font-size: 15px;
+        fill: #8A8782;
+        letter-spacing: 1px;
+      }
+    </style>
+  </defs>
+
+  <!-- Fundo -->
+  <rect width="851" height="315" fill="#0E0D0C"/>
+
+  <!-- Linha decorativa topo -->
+  <line x1="0" y1="1.5" x2="851" y2="1.5" stroke="#C8A84B" stroke-width="0.8" opacity="0.2"/>
+
+  <!-- Linha decorativa base -->
+  <line x1="0" y1="313.5" x2="851" y2="313.5" stroke="#C8A84B" stroke-width="0.8" opacity="0.2"/>
+
+  <!--
+    Escudo — símbolo da marca
+    Tamanho 235×235 px, centralizado verticalmente (157.5 - 117.5 = 40)
+    x=38, y=38 → center: (155.5, 155.5)
+  -->
+  <svg x="38" y="38" width="235" height="235" viewBox="0 0 100 100" overflow="visible">
+    <path
+      d="M 27,5 L 73,5 Q 78,5 78,10 L 78,61 C 78,73 60,93 50,95 C 40,93 22,73 22,61 L 22,10 Q 22,5 27,5 Z"
+      fill="#C8A84B"
+      stroke="none"
+    />
+  </svg>
+
+  <!-- Linha separadora vertical entre shield e texto -->
+  <line x1="288" y1="60" x2="288" y2="255"
+        stroke="#C8A84B" stroke-width="0.7" opacity="0.30"/>
+
+  <!-- Nome da marca -->
+  <text x="308" y="130" class="fb-brand-name">O GUARDIÃO SÓBRIO</text>
+
+  <!-- Separador dourado horizontal -->
+  <line x1="308" y1="147" x2="835" y2="147"
+        stroke="#C8A84B" stroke-width="0.8" opacity="0.45"/>
+
+  <!-- Tagline -->
+  <text x="308" y="177" class="fb-tagline">Sobriedade não é abstinência. É construção.</text>
+
+  <!-- Handle + site placeholder -->
+  <text x="308" y="212" class="fb-handle">@guardiaosobrio · guardiasobrio.com.br</text>
+
+  <!-- Disclaimer mínimo -->
+  <text x="308" y="245"
+        font-family="'Inter', 'Helvetica Neue', Arial, sans-serif"
+        font-size="12"
+        fill="#524F4C">Não substitui profissionais de saúde · Crise: CVV 188</text>
+
+</svg>

@@ -19,7 +19,7 @@ Listagem de pastas via API:
 |---|---|
 | **Roteiros de vídeo (TikTok/Reels/Shorts)** | `GUIA-DO-COLABORADOR.md` → `marca/manual-de-marca.md` → `estrategia/frequencia-e-consistencia.md` → `estrategia/series-tematicas.md` → `marca/diretrizes-video.md` → `estrategia/palavras-chave-nicho.md` → `marca/tom-visual-por-produto.md` → substância: `fundamentos/13-fundamentos.md`, `protocolos/*` |
 | **Logo / identidade** | `marca/assets/logo-guidelines.md`, `marca/assets/paleta.md`, `marca/assets/tipografia.md`, `marca/manual-de-marca.md` |
-| **Setup de canais sociais** | `marca/setup-canais-sociais.md`, `estrategia/estrategia-multicanal.md` |
+| **Setup de canais sociais** | `marca/kit-perfis-sociais.md` (kit completo — bios, ativos, guia), `marca/setup-canais-sociais.md`, `estrategia/estrategia-multicanal.md` |
 | **Copy de marketing / e-mail / funil** | `estrategia/estrategia-multicanal.md`, `estrategia/metricas-de-funil.md`, `estrategia/prova-social.md`, `marca/manual-de-marca.md` |
 | **Entender o app** | `app/*`, `AUDITORIA-RECONCILIACAO.md` (estado real do app vs. doc) |
 
