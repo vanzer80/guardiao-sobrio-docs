@@ -246,31 +246,21 @@ Quando o Linktree (ou bio.link, beacons.ai, carrd.co) estiver pronto, configurar
 
 ---
 
-## 6. Foto de perfil — spec de recorte (400×400)
+## 6. Foto de perfil — ativo em uso (25 jun 2026)
 
-**Arquivo-fonte:** `C:\dev\guardiao-sobrio-digital\public\luis-vanzer.png`
-**Destino (copiar antes):** `C:\dev\guardiao-sobrio-docs\marca\assets\foto-perfil-luis-vanzer.png`
+**Ativo atual:** `marca/assets/foto-perfil-800x800.png` — escudo dourado metálico, fundo `#0E0D0C`
+**Publicado em:** Instagram ✅ · TikTok ✅ · YouTube ✅ (25 jun 2026)
 
-**Spec de recorte:**
-- Dimensão final: 400×400 px (quadrado perfeito)
-- Fundo: escuro (manter o fundo natural da foto se já for escuro; caso contrário, recolorir para `#0E0D0C`)
-- Rosto: centralizado, ocupando ~70–80% da altura do quadrado
-- Expressão: séria e firme — sem sorriso performático
-- Formato de entrega: PNG, sem borda arredondada (as plataformas aplicam o círculo automaticamente)
+> O escudo foi adotado como foto de perfil provisória em todas as plataformas enquanto a foto do criador
+> (`luis-vanzer.png`) não tiver o fundo tratado. A foto-fonte tem fundo claro de escritório —
+> incompatível com a estética noir da marca sem remoção de fundo prévia (Canva / remove.bg).
 
-**Opções de recorte:**
+### Quando trocar para a foto do criador (futuro)
 
-*Via Canva (sem instalar software):*
-1. Fazer upload de `luis-vanzer.png` no Canva
-2. Criar design 400×400 px, fundo `#0E0D0C`
-3. Inserir a foto, centralizar o rosto, ajustar escala
-4. Baixar como PNG
-
-*Via ImageMagick (terminal, se instalado):*
-```bash
-# Exemplo — ajustar os valores de crop conforme a foto real
-magick "luis-vanzer.png" -gravity Center -crop 400x400+0+0 +repage -resize 400x400 "foto-perfil-400.png"
-```
+- **Arquivo-fonte:** `C:\dev\guardiao-sobrio-digital\public\luis-vanzer.png`
+- **Pré-requisito:** remover o fundo claro e aplicar `#0E0D0C`
+- **Spec final:** 400×400 px, rosto centralizado (~70–80% da altura), expressão séria e firme, PNG sem borda arredondada
+- **Ferramentas:** Canva (remove.bg integrado) ou remove.bg → exportar 400×400 PNG
 
 ---
 
@@ -279,7 +269,7 @@ magick "luis-vanzer.png" -gravity Center -crop 400x400+0+0 +repage -resize 400x4
 - [ ] `@guardiaosobrio` disponível e reservado na plataforma (ver § 0)
 - [ ] Nome de exibição consistente: **O Guardião Sóbrio** (todos os canais)
 - [ ] Bio dentro do limite de caracteres, com tagline + disclaimer + CVV 188
-- [ ] Foto de perfil 400×400: rosto do criador, fundo escuro, expressão firme
+- [ ] Foto de perfil: escudo dourado (`foto-perfil-800x800.png`) — ativo até foto do criador ter fundo tratado
 - [ ] Link-na-bio aponta para iscas gratuitas — **não** produto avulso (D12)
 - [ ] Conta tipo Pro / Criador / Página ativada (para analytics)
 - [ ] Conta piloto validada (sugestão: Instagram primeiro) antes de replicar nos outros 3
@@ -291,13 +281,21 @@ magick "luis-vanzer.png" -gravity Center -crop 400x400+0+0 +repage -resize 400x4
 
 | Arquivo | Uso | Status |
 |---|---|---|
-| `marca/assets/banner-youtube.svg` | Banner do canal YouTube 2560×1440 | ✅ Gerado e publicado no canal em 24 jun 2026 |
-| `marca/assets/capa-facebook.svg` | Foto de capa Facebook 851×315 | ✅ Gerado |
-| `marca/assets/destaque-instagram-metodo.svg` | Capa Destaque Instagram: Método | ✅ Gerado |
-| `marca/assets/destaque-instagram-protocolos.svg` | Capa Destaque Instagram: Protocolos | ✅ Gerado |
-| `marca/assets/destaque-instagram-familia.svg` | Capa Destaque Instagram: Família | ✅ Gerado |
-| `marca/assets/destaque-instagram-depoimentos.svg` | Capa Destaque Instagram: Depoimentos | ✅ Gerado |
-| `marca/assets/foto-perfil-luis-vanzer.png` | Foto de perfil 400×400 (todos os canais) | ⬜ Recortar (ver § 6) |
+| `marca/assets/foto-perfil-800x800.png` | Foto de perfil — Instagram, TikTok, YouTube | ✅ Publicado em todos os canais em 25 jun 2026 |
+| `marca/assets/escudo.jpg` | Escudo dourado metálico — referência visual da marca | ✅ Adicionado em 25 jun 2026 |
+| `marca/assets/banner-youtube.png` | Banner do canal YouTube 2560×1440 | ✅ Publicado no canal em 25 jun 2026 |
+| `marca/assets/banner-youtube.svg` | Banner do canal YouTube — fonte SVG editável | ✅ Gerado |
+| `marca/assets/marca-dagua-youtube.png` | Marca d'água para vídeos YouTube | ✅ Gerado em 25 jun 2026 |
+| `marca/assets/capa-facebook.svg` | Foto de capa Facebook 851×315 | ✅ Gerado — aguarda criação da Página |
+| `marca/assets/destaque-instagram-metodo.svg` | Capa Destaque Instagram: Método (SVG) | ✅ Gerado |
+| `marca/assets/destaque-instagram-protocolos.svg` | Capa Destaque Instagram: Protocolos (SVG) | ✅ Gerado |
+| `marca/assets/destaque-instagram-familia.svg` | Capa Destaque Instagram: Família (SVG) | ✅ Gerado |
+| `marca/assets/destaque-instagram-depoimentos.svg` | Capa Destaque Instagram: Depoimentos (SVG) | ✅ Gerado |
+| `marca/assets/destaque-metodo-1000x1000.png` | Capa Destaque Instagram: Método (PNG) | ✅ Exportado em 25 jun 2026 |
+| `marca/assets/destaque-protocolos-1000x1000.png` | Capa Destaque Instagram: Protocolos (PNG) | ✅ Exportado em 25 jun 2026 |
+| `marca/assets/destaque-familia-1000x1000.png` | Capa Destaque Instagram: Família (PNG) | ✅ Exportado em 25 jun 2026 |
+| `marca/assets/destaque-depoimentos-1000x1000.png` | Capa Destaque Instagram: Depoimentos (PNG) | ✅ Exportado em 25 jun 2026 |
+| `marca/assets/foto-perfil-luis-vanzer.png` | Foto do criador 400×400 (futura substituição do escudo) | ⬜ Aguarda remoção de fundo (ver § 6) |
 
 > Para exportar SVG → PNG: abrir o arquivo SVG no Chrome com conexão à internet (para carregar Google Fonts) → F12 → Console → `document.querySelector('svg').outerHTML` (ou usar extensão "SVG Export" / ferramenta online [svgomg.net](https://svgomg.net/) → download → abrir no Canva para exportar como PNG no tamanho correto).
 >
