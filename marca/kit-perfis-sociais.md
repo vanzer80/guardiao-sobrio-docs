@@ -2,7 +2,7 @@
 
 > **Handle:** `@guardiaosobrio` (validar disponibilidade antes de criar qualquer conta — ver § 0)
 > **Link-na-bio:** `[LINK-NA-BIO]` ← preencher quando o Linktree estiver pronto
-> **Status:** todas as plataformas do zero (nenhuma conta existia em jun/2026)
+> **Status:** Instagram, TikTok e YouTube criados em 24 jun 2026 · Facebook: fora de escopo (a criar futuramente)
 > **Atualizado em:** junho 2026
 
 Para regras de voz/CTA: `AGENTS.md` · Para specs visuais de referência: `marca/setup-canais-sociais.md`
@@ -27,7 +27,8 @@ Verificação realizada em **24 jun 2026** — acesso direto às URLs via navega
 **Se `guardiaosobrio` não estiver mais disponível quando for criar**, alternativas em ordem de preferência:
 1. `@oguardiaosobrio`
 2. `@guardiaosobrio.oficial`
-3. `@luisvanzer.oficial`
+
+> ⚠️ Nunca usar `@luisvanzer.oficial` ou qualquer handle com "Luis Vanzer" — perfis públicos da marca não mencionam o nome pessoal do criador (AGENTS.md regra inegociável).
 
 ---
 
@@ -47,7 +48,7 @@ Verificação realizada em **24 jun 2026** — acesso direto às URLs via navega
 | **Nome de exibição** | `O Guardião Sóbrio` | ⚠️ Alterar via app — web não permite editar nome |
 | **Site (link na bio)** | `[LINK-NA-BIO]` | ⬜ Só editável via app — adicionar quando Linktree estiver pronto |
 | **Email de contato** | `guardiaosobrio@gmail.com` | ⬜ Adicionar via app |
-| **Foto de perfil** | 400×400 px | ⬜ Subir via app |
+| **Foto de perfil** | 400×400 px | ✅ Escudo 800×800 subido via web em 25 jun 2026 |
 
 ### Bio — 131 chars (limite: 150 ✓)
 
@@ -93,7 +94,7 @@ Criar os 4 destaques abaixo. Capas SVG prontas em `marca/assets/` → exportar c
 | **Categoria** | Saúde e bem-estar | ✅ |
 | **Bio** | 80/80 chars configurada | ✅ |
 | **Link da bio** | `[LINK-NA-BIO]` (disponível em contas Pro) | ⬜ Preencher quando Linktree estiver pronto |
-| **Foto de perfil** | 400×400 px | ⬜ Subir (ver § 6) |
+| **Foto de perfil** | 400×400 px | ✅ Escudo 800×800 subido via web em 25 jun 2026 |
 
 > ⚠️ **Nome temporário:** O TikTok permite 1 troca de nome a cada 7 dias. O nome atual é `Luis Vanzer - Guardião Sóbrio`. **Trocar para `O Guardião Sóbrio` após 1 jul 2026** em Editar Perfil → Nome.
 
@@ -126,12 +127,12 @@ Não substitui profissionais. CVV 188
 | **Nome do canal** | `Guardião Sóbrio` | ✅ (sem "O" — decisão do criador) |
 | **Handle (@)** | `@guardiaosobrio` | ✅ |
 | **URL do canal** | `youtube.com/@guardiaosobrio` | ✅ |
-| **Categoria** | Saúde / Pessoa e blog | ⬜ Configurar |
-| **País** | Brasil | ⬜ Configurar |
-| **Descrição do canal** | Ver bloco abaixo | ⬜ Colar no YouTube Studio |
-| **Banner** | `marca/assets/banner-youtube.svg` → exportar PNG 2560×1440 | ⬜ |
-| **Ícone do canal** | Foto de perfil 400×400 | ⬜ Subir quando foto estiver pronta |
-| **Links** | Ver tabela abaixo | ⬜ Configurar em Personalizar canal |
+| **Categoria** | N/A | ℹ️ YouTube Studio moderno não tem categoria por canal — é configurada por vídeo |
+| **País** | Brasil | ✅ Configurado em 24 jun 2026 |
+| **Descrição do canal** | Ver bloco abaixo | ✅ Publicada em 24 jun 2026 |
+| **Banner** | `marca/assets/banner-youtube.svg` → PNG 2560×1440 | ✅ Exportado e publicado em 24 jun 2026 |
+| **Ícone do canal** | Foto de perfil 400×400 | ✅ Escudo 800×800 publicado em 25 jun 2026 |
+| **Links** | Ver tabela abaixo | ✅ Instagram + TikTok adicionados em 24 jun 2026 |
 
 ### Descrição do canal
 
@@ -162,12 +163,12 @@ Em crise, ligue 188 (CVV) ou procure um serviço de saúde.
 
 ### Links (configurar em "Personalizar canal → Links")
 
-| Rótulo | URL |
-|---|---|
-| ↓ Comece de graça | `[LINK-NA-BIO]` |
-| Instagram | `instagram.com/guardiaosobrio` |
-| TikTok | `tiktok.com/@guardiaosobrio` |
-| Facebook | `facebook.com/guardiaosobrio` |
+| Rótulo | URL | Status |
+|---|---|---|
+| ↓ Comece de graça | `[LINK-NA-BIO]` | ⬜ Adicionar quando Linktree estiver pronto |
+| Instagram | `instagram.com/guardiaosobrio` | ✅ Adicionado em 24 jun 2026 |
+| TikTok | `tiktok.com/@guardiaosobrio` | ✅ Adicionado em 24 jun 2026 |
+| Facebook | `facebook.com/guardiaosobrio` | ⬜ NÃO adicionar até a Página existir |
 
 ---
 
@@ -290,7 +291,7 @@ magick "luis-vanzer.png" -gravity Center -crop 400x400+0+0 +repage -resize 400x4
 
 | Arquivo | Uso | Status |
 |---|---|---|
-| `marca/assets/banner-youtube.svg` | Banner do canal YouTube 2560×1440 | ✅ Gerado |
+| `marca/assets/banner-youtube.svg` | Banner do canal YouTube 2560×1440 | ✅ Gerado e publicado no canal em 24 jun 2026 |
 | `marca/assets/capa-facebook.svg` | Foto de capa Facebook 851×315 | ✅ Gerado |
 | `marca/assets/destaque-instagram-metodo.svg` | Capa Destaque Instagram: Método | ✅ Gerado |
 | `marca/assets/destaque-instagram-protocolos.svg` | Capa Destaque Instagram: Protocolos | ✅ Gerado |

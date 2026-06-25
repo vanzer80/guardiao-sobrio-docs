@@ -23,7 +23,7 @@
 | **Link na bio** | Apontar para a página/Linktree das **iscas gratuitas** (Checklist do Escudo, Diário de Prompts, Guia do Familiar) → cadastro → **trial da assinatura**. ⚠️ **NÃO** usar CTA de produtos avulsos (descontinuados — D12). *Definir a URL atual.* | `/estrategia/estrategia-multicanal.md` |
 | **Disclaimer** | Em bio/descrição, deixar claro: não substitui profissionais de saúde. | `marca/manual-de-marca.md` |
 
-> **@ (handle) — definido:** **`@guardiaosobrio`** em todos os canais. ⚠️ Validar disponibilidade em cada plataforma antes de criar a conta (ver `marca/kit-perfis-sociais.md` § 0). Alternativas se indisponível: `@oguardiaosobrio`, `@guardiaosobrio.oficial`, `@luisvanzer.oficial`. Usar o mesmo @ em todas as 4 plataformas.
+> **@ (handle) — definido:** **`@guardiaosobrio`** em todos os canais. ⚠️ Validar disponibilidade em cada plataforma antes de criar a conta (ver `marca/kit-perfis-sociais.md` § 0). Alternativas se indisponível: `@oguardiaosobrio`, `@guardiaosobrio.oficial`. ⚠️ Nunca usar handle com "Luis Vanzer" — perfis públicos não mencionam o nome pessoal do criador (AGENTS.md). Usar o mesmo @ em todas as 4 plataformas.
 
 ---
 
@@ -34,14 +34,13 @@
 - [ ] Bio + link (modelo abaixo).
 - [ ] Nome de exibição: **O Guardião Sóbrio**.
 
-**Bio (rascunho pronto — ajustar ao limite de caracteres):**
+**Bio — versão implementada (80/80 chars — não alterar sem recontar):**
 ```
-O Guardião Sóbrio
 Sobriedade não é abstinência. É construção.
-Método próprio p/ os primeiros 30 dias + familiares.
-Não substitui profissionais. Crise: CVV 188.
-↓ Comece de graça
+Não substitui profissionais. CVV 188
 ```
+
+> ⚠️ O limite de 80 chars do TikTok (contando espaços e newlines) não permite texto adicional. O CTA funciona via link na bio. Texto implementado em 24 jun 2026 — ver `marca/kit-perfis-sociais.md` § 2.
 
 ---
 
@@ -56,13 +55,15 @@ Não substitui profissionais. Crise: CVV 188.
 - [ ] Conta profissional (Criador) para ter métricas.
 - [ ] Conteúdo inicial: **reels reaproveitados do TikTok** (ver `estrategia-multicanal.md` — não produzir exclusivo antes da base consolidar).
 
-**Bio (rascunho pronto — limite ~150 caracteres, ajustar):**
+**Bio — versão implementada (131/150 chars):**
 ```
 Sobriedade não é abstinência. É construção.
-Método p/ os primeiros 30 dias + familiares.
-Não substitui profissionais • Crise: CVV 188
+Método p/ 30 dias + familiares.
+Não substitui profissionais • CVV 188
 ↓ Comece de graça
 ```
+
+> Texto implementado em 24 jun 2026 — ver `marca/kit-perfis-sociais.md` § 1.
 
 > Modo visual para conteúdo de família no Instagram: **Limpo** (acolhimento). Demais: Noir. Ver `tom-visual-por-produto.md`.
 
@@ -79,13 +80,24 @@ Critério de ativação (de `estrategia-multicanal.md`): base de leads consolida
 - [ ] Descrição do canal: posicionamento + tagline + disclaimer + link.
 - [ ] Formato: conteúdo longo (10–20 min) — ver tipos em `estrategia-multicanal.md`.
 
-**Descrição do canal (rascunho pronto):**
+**Descrição do canal — versão definitiva (colar no YouTube Studio):**
 ```
 O Guardião Sóbrio — sobriedade adulta real, sem julgamento e sem jargão de coach.
+
 Método próprio (Espelho · Tática · Escudo) para os primeiros 30 dias e para familiares.
-Conteúdo de apoio — não substitui psiquiatra, psicólogo ou grupos de apoio. Em crise, ligue 188 (CVV).
-Comece de graça: [link]
+
+📋 O que você vai encontrar aqui:
+• Histórias reais e vulnerabilidade honesta (Espelho)
+• Protocolos táticos para atravessar o impulso de beber (Tática)
+• Guias para cônjuges e familiares (Escudo)
+
+⚠️ Conteúdo de apoio — não substitui psiquiatra, psicólogo ou grupos de apoio.
+Em crise, ligue 188 (CVV) ou procure um serviço de saúde.
+
+↓ Comece de graça: [LINK-NA-BIO]
 ```
+
+> Versão completa em `marca/kit-perfis-sociais.md` § 3. Substituir `[LINK-NA-BIO]` quando o Linktree estiver pronto.
 
 ## Facebook (alcance de familiares — abrir junto com os demais)
 
