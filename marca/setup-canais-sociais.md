@@ -32,7 +32,7 @@
 - [ ] Conta Pro (gratuita) ativada — habilita analytics.
 - [ ] Foto de perfil 400×400 (padrão acima).
 - [ ] Bio + link (modelo abaixo).
-- [ ] Nome de exibição: **Luis Vanzer — O Guardião Sóbrio**.
+- [ ] Nome de exibição: **O Guardião Sóbrio**.
 
 **Bio (rascunho pronto — ajustar ao limite de caracteres):**
 ```
@@ -49,7 +49,7 @@ Não substitui profissionais. Crise: CVV 188.
 
 - [ ] Criar conta (ou usar existente) — não criar do zero se já houver uma.
 - [ ] @ consistente com os outros canais (ver nota acima).
-- [ ] Nome de exibição: **Luis Vanzer — O Guardião Sóbrio**.
+- [ ] Nome de exibição: **O Guardião Sóbrio**.
 - [ ] Foto de perfil 400×400 (padrão acima).
 - [ ] Bio + link (modelo abaixo).
 - [ ] **Capas de Destaques (Stories):** fundo `#0E0D0C`, ícone/título em Ouro `#C8A84B`, fonte Oswald. Sugestão de destaques: "Método", "Protocolos", "Família", "Depoimentos".

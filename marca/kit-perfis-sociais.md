@@ -31,20 +31,23 @@ Verificação realizada em **24 jun 2026** — acesso direto às URLs via navega
 
 ---
 
-## 1. Instagram — ✅ Perfil criado em 24 jun 2026
+## 1. Instagram — ✅ Conta profissional configurada em 24 jun 2026
 
-**Status:** ✅ Conta criada — `@guardiaosobrio`
-**Tipo de conta:** Profissional → Criador (para analytics, ferramenta de link na bio e contato).
+**Status:** ✅ Conta Criador ativa, bio salva — `@guardiaosobrio`
+**Tipo de conta:** ✅ Profissional → **Criador de conteúdo** (categoria: Saúde/beleza)
 
 ### Dados do perfil
 
-| Campo | Valor |
-|---|---|
-| **@** (username) | `guardiaosobrio` |
-| **Nome de exibição** | `Luis Vanzer — O Guardião Sóbrio` |
-| **Categoria** | Criador de conteúdo digital *ou* Saúde/bem-estar |
-| **Site (link na bio)** | `[LINK-NA-BIO]` |
-| **Email de contato** | (email do criador) |
+| Campo | Valor | Status |
+|---|---|---|
+| **@** (username) | `guardiaosobrio` | ✅ |
+| **Tipo de conta** | Criador de conteúdo (Profissional) | ✅ configurado em 24 jun 2026 |
+| **Categoria** | Saúde/beleza | ✅ |
+| **Bio** | 131/150 chars — configurada | ✅ |
+| **Nome de exibição** | `O Guardião Sóbrio` | ⚠️ Alterar via app — web não permite editar nome |
+| **Site (link na bio)** | `[LINK-NA-BIO]` | ⬜ Só editável via app — adicionar quando Linktree estiver pronto |
+| **Email de contato** | `guardiaosobrio@gmail.com` | ⬜ Adicionar via app |
+| **Foto de perfil** | 400×400 px | ⬜ Subir via app |
 
 ### Bio — 131 chars (limite: 150 ✓)
 
@@ -76,21 +79,25 @@ Criar os 4 destaques abaixo. Capas SVG prontas em `marca/assets/` → exportar c
 
 ---
 
-## 2. TikTok — ✅ Perfil criado em 24 jun 2026
+## 2. TikTok — ✅ Perfil configurado em 24 jun 2026
 
-**Status:** ✅ Conta criada — `@guardiaosobrio`
+**Status:** ✅ Bio e nome configurados — `@guardiaosobrio`
 **Tipo de conta:** Conta Pro gratuita (habilita analytics sem custo).
 
 ### Dados do perfil
 
-| Campo | Valor |
-|---|---|
-| **@** (username) | `guardiaosobrio` |
-| **Nome de exibição** | `Luis Vanzer — O Guardião Sóbrio` |
-| **Categoria** | Saúde e bem-estar |
-| **Link da bio** | `[LINK-NA-BIO]` (disponível em contas Pro) |
+| Campo | Valor | Status |
+|---|---|---|
+| **@** (username) | `guardiaosobrio` | ✅ |
+| **Nome de exibição** | `O Guardião Sóbrio` | ⚠️ Trocar após 1 jul 2026 (ver nota abaixo) |
+| **Categoria** | Saúde e bem-estar | ✅ |
+| **Bio** | 80/80 chars configurada | ✅ |
+| **Link da bio** | `[LINK-NA-BIO]` (disponível em contas Pro) | ⬜ Preencher quando Linktree estiver pronto |
+| **Foto de perfil** | 400×400 px | ⬜ Subir (ver § 6) |
 
-### Bio — 80 chars exatos (limite: 80 ✓)
+> ⚠️ **Nome temporário:** O TikTok permite 1 troca de nome a cada 7 dias. O nome atual é `Luis Vanzer - Guardião Sóbrio`. **Trocar para `O Guardião Sóbrio` após 1 jul 2026** em Editar Perfil → Nome.
+
+### Bio — 80 chars exatos (limite: 80 ✓) — ✅ Configurada
 
 ```
 Sobriedade não é abstinência. É construção.
@@ -184,7 +191,7 @@ Sobriedade não é abstinência. É construção. Método p/ os primeiros 30 dia
 ```
 O Guardião Sóbrio — sobriedade adulta real, sem julgamento e sem jargão de coach.
 
-Método próprio (Espelho · Tática · Escudo) criado por Luis Vanzer para atravessar os primeiros 30 dias de sobriedade e apoiar familiares de quem está em recuperação.
+Método próprio (Espelho · Tática · Escudo) para atravessar os primeiros 30 dias de sobriedade e apoiar familiares de quem está em recuperação.
 
 ✅ Protocolos táticos para atravessar o impulso de beber
 ✅ Guias honestos de vulnerabilidade e consciência
@@ -227,7 +234,7 @@ Quando o Linktree (ou bio.link, beacons.ai, carrd.co) estiver pronto, configurar
 - Fundo: `#0E0D0C`
 - Botões: borda `#C8A84B`, texto `#E8E6E2`
 - Foto: mesma 400×400 do perfil
-- Nome: "O Guardião Sóbrio" / "Luis Vanzer"
+- Nome: "O Guardião Sóbrio"
 
 > ⚠️ Não criar botão de produto avulso. CTA padrão: isca grátis → trial de assinatura (D12).
 
@@ -264,7 +271,7 @@ magick "luis-vanzer.png" -gravity Center -crop 400x400+0+0 +repage -resize 400x4
 ## 7. Checklist final — antes de publicar em qualquer canal
 
 - [ ] `@guardiaosobrio` disponível e reservado na plataforma (ver § 0)
-- [ ] Nome de exibição consistente: **Luis Vanzer — O Guardião Sóbrio** (ou **O Guardião Sóbrio** no YouTube/Facebook)
+- [ ] Nome de exibição consistente: **O Guardião Sóbrio** (todos os canais)
 - [ ] Bio dentro do limite de caracteres, com tagline + disclaimer + CVV 188
 - [ ] Foto de perfil 400×400: rosto do criador, fundo escuro, expressão firme
 - [ ] Link-na-bio aponta para iscas gratuitas — **não** produto avulso (D12)
