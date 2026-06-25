@@ -95,7 +95,7 @@ Caminho: Editar Perfil → Nome → `O Guardião Sóbrio` → Salvar
 | 1 | **Descrição do canal** | YouTube Studio → Personalizar canal → Descrição básica | ✅ Publicada em 24 jun 2026 |
 | 2 | **Categoria** | YouTube Studio → Configurações do canal | ℹ️ N/A — YouTube moderno não tem categoria por canal; é por vídeo |
 | 3 | **País** | YouTube Studio → Configurações → Canal → Informações básicas | ✅ Brasil — configurado em 24 jun 2026 |
-| 4 | **Banner** | Exportar SVG → PNG 2560×1440 → Personalizar canal | ✅ Exportado e publicado em 24 jun 2026 |
+| 4 | **Banner** | Exportar SVG → PNG 2560×1440 → Personalizar canal | ✅ Banner corrigido (2560×1440, escudo dourado + tipografia dentro da zona segura) publicado em 25 jun 2026 |
 | 5 | **Ícone do canal** | Personalizar canal → Foto do perfil → subir 400×400 | ✅ Escudo 800×800 publicado em 25 jun 2026 |
 | 6 | **Links** | Personalizar canal → Links | ✅ Instagram + TikTok adicionados em 24 jun 2026; Facebook aguarda criação da Página |
 
@@ -139,7 +139,7 @@ Em crise, ligue 188 (CVV) ou procure um serviço de saúde.
 | 2 | 🟠 Alta | **Todos** | Recortar foto de perfil 400×400 e subir (Instagram, TikTok, YouTube) | ✅ Escudo gerado 800×800 e publicado em YouTube, Instagram e TikTok — 25 jun 2026 |
 | 3 | 🟠 Alta | **YouTube** | Descrição do canal | ✅ Publicada em 24 jun 2026 |
 | 4 | 🟠 Alta | **YouTube** | País do canal | ✅ Brasil — 24 jun 2026 |
-| 5 | 🟠 Alta | **YouTube** | Banner 2560×1440 | ✅ Exportado e publicado em 24 jun 2026 |
+| 5 | 🟠 Alta | **YouTube** | Banner 2560×1440 | ✅ Banner corrigido publicado em 25 jun 2026 (zona segura respeitada: y 508–931) |
 | 6 | 🟡 Média | **Instagram** | Editar nome de exibição no app | ⬜ Ação manual — somente via app |
 | 7 | 🟡 Média | **Instagram** | Adicionar email de contato no app | ⬜ Ação manual — somente via app |
 | 8 | 🟡 Média | **YouTube** | Links do canal (Instagram + TikTok) | ✅ Configurados em 24 jun 2026 |
