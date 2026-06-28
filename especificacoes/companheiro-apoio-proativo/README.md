@@ -5,8 +5,8 @@
 |---|---|
 | **Versão** | 0.1 (rascunho — documento vivo) |
 | **Status** | Em definição. Nada aqui é fechado; tudo pode ser refinado, validado clinicamente e escalado por fases. |
-| **Stack alvo** | Next.js 15 · TypeScript · Tailwind · shadcn/ui · next-intl · Supabase · Vercel |
-| **Idioma do produto** | Português (BR), com i18n via next-intl |
+| **Stack alvo** | **Expo / React Native** (expo-router · NativeWind · Zustand) · TypeScript · **Supabase (Edge Functions)** · backend LLM com provedor abstraído. _(Decisão de implementação registrada em `guardiao-sobrio-app/docs/adr/0002-companheiro-apoio-proativo-fundacao.md`, D1. A stack Next.js cogitada inicialmente foi descartada: o produto real é o app Expo.)_ |
+| **Idioma do produto** | Português (BR) |
 | **Público** | Pessoas em recuperação de uso de álcool e outras substâncias |
 
 > **Como ler este documento:** ele descreve o *que* e o *porquê*, e dá direção suficiente de *como* sem fechar decisões de implementação. Onde houver decisão em aberto, está marcado com **[EM ABERTO]**. Onde houver risco que exige cuidado especial, está marcado com **⚠️**.

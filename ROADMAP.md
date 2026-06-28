@@ -230,3 +230,44 @@ General Sans (D15) · Contatos de Confiança (stub) · Comunidade O Escudo (Fase
 | D16 | Prevenção de migration drift: checagem no CI antes de marcar migration como concluída | ⏳ Pendente |
 
 > Atualizado em: 21/06/2026 — Fase 7 (Auditoria do App) e decisões D12–D16 adicionadas.
+
+---
+
+## Fase 8 — Companheiro de Apoio Proativo (jun/2026)
+
+> Iniciada em: 25/06/2026 · **Concluída em: 27/06/2026**
+> Feature completa: chat de apoio para momentos de fissura, com detecção e escalonamento de crise.
+
+### Entregues
+
+| # | Item | Status | Observação |
+|---|---|---|---|
+| 8.1 | Migration Fase 1 — 7 tabelas `companion_*` | ✅ | `20260625120000_add_companion_schema.sql`; RLS versionada, sem recursão; aplicada em produção via Management API (27/06) |
+| 8.2 | Edge Function `companion-chat` | ✅ | Deployada em produção (`supabase functions deploy`); módulos: `index.ts`, `crisis.ts`, `prompts.ts`, `provider.ts` |
+| 8.3 | Correções de auditoria F1/F4/F5 | ✅ | Histórico de mensagens ascending+reverse (F1) · CAPS em maiúsculas (F4) · sigilo no system prompt (F5) |
+| 8.4 | `lib/companion.ts` — cliente da Edge Function | ✅ | Segue padrão de `lib/stripe.ts`; chaves de LLM nunca chegam ao cliente |
+| 8.5 | `app/companheiro.tsx` — tela de chat | ✅ | Mensagens, indicador "escrevendo…", banner de crise (CVV 188 / SAMU 192), fallback seguro, acessibilidade |
+| 8.6 | Card de entrada na Home | ✅ | `app/(tabs)/index.tsx` — Pressable → `/companheiro` |
+| 8.7 | Secrets configurados em produção | ✅ | `COMPANION_PRIMARY_API_KEY` (Gemini 2.0 Flash) · `COMPANION_PRIMARY_BASE_URL` · `COMPANION_PRIMARY_MODEL` · `OPENAI_API_KEY` (fallback gpt-4o-mini) |
+| 8.8 | `database.types.ts` regenerado | ✅ | 7 tabelas `companion_*` tipadas; PR #10 mergeado |
+| 8.9 | `.gitignore` — `supabase/.temp/` | ✅ | Estado local do CLI Supabase nunca vai para o repositório |
+| 8.10 | Spec `especificacoes/companheiro-apoio-proativo/README.md` | ✅ | Stack corrigida: Expo/RN (não Next.js) · ADR-0002 referenciado |
+
+### Backlog aberto (Fase 8+)
+
+| # | Item | Status |
+|---|---|---|
+| 8.B1 | F3 — Árvore de decisão de escalonamento + revisão clínica | ⏳ Exige profissional de saúde (D8) |
+| 8.B2 | Testes automatizados do Companheiro (`__tests__/companion.ts`) | ⏳ |
+| 8.B3 | E2E: fluxo normal de conversa + fluxo de crise (`companion_crisis_events`) | ⏳ |
+| 8.B4 | VOZ-01 — `lib/notifications.ts:57` — remover "Um dia de cada vez" (contraria D2) | ⏳ |
+| 8.B5 | IV-07 — `app/_layout.tsx:31` — carregar General Sans no `useFonts` (D15) | ⏳ |
+
+### Provedor LLM em produção
+
+| Camada | Provedor | Modelo | Observação |
+|---|---|---|---|
+| Primário | Google Gemini | `gemini-2.0-flash` | Endpoint OpenAI-compatible (`generativelanguage.googleapis.com/v1beta/openai`) |
+| Fallback | OpenAI | `gpt-4o-mini` | Ativado automaticamente se primário falhar |
+
+> Atualizado em: 27/06/2026 — Fase 8 (Companheiro de Apoio Proativo) concluída e deployada em produção.
