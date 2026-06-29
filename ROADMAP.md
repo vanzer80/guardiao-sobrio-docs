@@ -271,3 +271,34 @@ General Sans (D15) · Contatos de Confiança (stub) · Comunidade O Escudo (Fase
 | Fallback | OpenAI | `gpt-4o-mini` | Ativado automaticamente se primário falhar |
 
 > Atualizado em: 27/06/2026 — Fase 8 (Companheiro de Apoio Proativo) concluída e deployada em produção.
+
+---
+
+## Fase 9 — Analise de Perfil TikTok com Dados Reais (jun/2026)
+
+> Iniciada e concluida em: 29/06/2026
+> Cruzamento da Analise Estrategica (27/06) + Relatorio de Performance (28/06) com dados nativos do TikTok Studio.
+
+### Entregues
+
+| # | Arquivo | Status | Observacao |
+|---|---|---|---|
+| 9.1 | `/estrategia/analise-perfil/analise-mestre.md` | ✅ | Documento mestre — reconcilia as duas analises, prioriza o diagnostico, define plano de acao unico |
+| 9.2 | `/estrategia/analise-perfil/playbook-execucao.md` | ✅ | Bio, formato, horario, monetizacao e prioridades dos proximos 7 dias — baseado em dados reais |
+| 9.3 | `/estrategia/analise-perfil/banco-de-roteiros.md` | ✅ | 23 roteiros prontos (gancho, CTA de seguir, SEO, hashtags) organizados por pilar e prioridade |
+| 9.4 | `/estrategia/analise-perfil/README.md` | ✅ | Indice da pasta com ordem de leitura e resumo do diagnostico |
+| 9.5 | `/README.md` | ✅ | Arvore de estrutura atualizada com nova pasta `analise-perfil/` |
+
+### Diagnostico aplicado (fonte de verdade — jun/2026)
+
+| Metrica | Valor | Fonte |
+|---|---|---|
+| Seguidores | ~3.480 | TikTok Studio (28/06) |
+| Trafego de busca | 68,8% | Janela mai/25–jun/26, dados nativos |
+| Trafego "Para Voce" | 29,2% | idem |
+| Publico nucleo | Mulher 35-54, Brasil 83% | TikTok Studio |
+| Teto de alcance atual | ~8 mil views | Videos recentes |
+| Motor desligado | Som em alta (0% de trafego) | Comparado a 2023 (48,5k views) |
+| Gargalo principal | Constancia + CTA de seguir + FYP | Analise cruzada |
+
+> Atualizado em: 29/06/2026 — Fase 9 (Analise de Perfil TikTok) incorporada ao repositorio.

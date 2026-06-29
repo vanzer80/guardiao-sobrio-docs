@@ -81,7 +81,12 @@ guardiao-sobrio-docs/
 │   ├── metricas-de-funil.md               # KPIs por etapa, metas por fase, UTMs, cohort tracking
 │   ├── series-tematicas.md                # 10 series de 3 videos cada baseadas nas frases de ancora
 │   ├── estrategia-b2b.md                  # Licenciamento para clinicas e terapeutas (roadmap futuro)
-│   └── prova-social.md                    # Quando/como coletar depoimentos, prompts, filtros eticos e metas
+│   ├── prova-social.md                    # Quando/como coletar depoimentos, prompts, filtros eticos e metas
+│   └── analise-perfil/                    # Diagnostico do perfil @luisvanzer com dados reais (jun/2026)
+│       ├── README.md                      # Indice: o que e cada doc e ordem de leitura
+│       ├── analise-mestre.md              # Documento mestre — cruzamento das analises 27/06 + 28/06
+│       ├── playbook-execucao.md           # Bio, formato, horario, monetizacao e prioridades 7 dias
+│       └── banco-de-roteiros.md           # 23 roteiros prontos (gancho, CTA, SEO, hashtags)
 ├── planos/
 │   ├── action-plan-90-dias.md             # Plano de 90 dias com KPIs por fase e ciclos de revisao
 │   ├── plano-correcao-14-dias.md          # Sprint de 14 dias de retomada
