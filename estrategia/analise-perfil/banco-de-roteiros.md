@@ -17,6 +17,17 @@ Escolha **1 palavra-chave-foco** por vídeo (do banco em `estrategia/palavras-ch
 
 ---
 
+## 🖼️ CAPA (inclua em todo roteiro)
+
+Toda entrega de roteiro inclui recomendação de capa com:
+- **Frame:** timecode + o que está sendo dito (momento de maior emoção ou revelação)
+- **Texto sobreposto:** frase que para o scroll — preferencialmente a dor do público ou promessa de revelação
+- **Instrução pro editor:** fonte grossa branca com contorno preto · terço superior ou inferior · sem cobrir o rosto
+
+> Prefira o frame da **dor** sobre o frame da **revelação** — identificação emocional imediata para do scroll mais do que curiosidade.
+
+---
+
 ## 🎗️ ESTILO DE VOZ (padrão validado — aplique em todo roteiro)
 
 - **"Tu"** nos momentos de identificação direta com a audiência ("Tu já ouviu isso?", "Tu espera. Tu acredita.")
