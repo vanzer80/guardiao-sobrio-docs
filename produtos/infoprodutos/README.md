@@ -26,6 +26,7 @@ Esta pasta é o **funil de captação** da marca: dois lead magnets gratuitos qu
 | `gerar-pdf.bat` | Script HTML → PDF (Escudo da Família) | — | — | ✅ Funcional |
 | `gerar-72h.bat` | Script HTML → PDF (Primeiras 72h) | — | — | ✅ Funcional |
 | `gerar-metodo.bat` | Script HTML → PDF (O Método) | — | — | ✅ Funcional |
+| `gerar-todos.bat` | Script HTML → PDF (todos os três em sequência) | — | — | ✅ Funcional |
 
 ---
 
@@ -38,6 +39,7 @@ Esta pasta é o **funil de captação** da marca: dois lead magnets gratuitos qu
 gerar-pdf.bat      → regera o-escudo-da-familia.pdf
 gerar-72h.bat      → regera as-primeiras-72-horas.pdf
 gerar-metodo.bat   → regera o-metodo-13-fundamentos.pdf
+gerar-todos.bat    → regera os três PDFs em sequência
 ```
 
 > **Pré-requisito:** o wkhtmltopdf ou Puppeteer precisa estar instalado (conforme configurado nos .bat). Se o script falhar, use o modo manual abaixo.
