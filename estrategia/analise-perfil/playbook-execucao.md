@@ -34,8 +34,8 @@ Sua bio atual converte: o conceito "Espelho" teve sua melhor taxa de conversão 
 
 ## 3. PARÂMETROS DE EXECUÇÃO (todo vídeo)
 
-- **Gancho** texto + fala nos **3 primeiros segundos** (sua audiência some em ~0:02 sem isso).
-- **CTA de SEGUIR** ("segue pro Escudo da Família") nos últimos 10s + comentário de 1 palavra opcional.
+- **Gancho** texto + fala nos **3 primeiros segundos** (sua audiência some em ~0:02 sem isso). O texto na tela deve sinalizar o nicho imediatamente — evite textos vagos ("A frase que mantém você preso(a)"); prefira específicos ("A mentira que todo alcoólatra repete").
+- **CTA de SEGUIR** nos últimos 10s + comentário opcional. **Formato validado:** *"Se isso fez sentido pra você, clica pra me seguir — aqui tem muito mais do que ninguém te conta sobre o vício."* Evite condicional fraca ("se gostou") — use reconhecimento ("se isso fez sentido"). Evite "nos seguir" (perfil solo → "me seguir").
 - **Som em alta** nos curtos (30-70s) — motor de FYP hoje zerado.
 - **Formato:** curtos 30-60s (alcance) + histórias 80-150s (busca). **Evite 180-330s.**
 - **Primeira linha da legenda = consulta de busca real.** 🎯 Lacuna de ouro: "efeitos da abstinência" (seu público assiste vídeos de 4,1 milhões nesse tema).

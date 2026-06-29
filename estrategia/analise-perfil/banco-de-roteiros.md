@@ -4,6 +4,18 @@ Reúne os 15 roteiros da análise + 8 novos. **Atualização v2:** CTA de SEGUIR
 
 ---
 
+## 🎗️ ESTILO DE VOZ (padrão validado — aplique em todo roteiro)
+
+- **"Tu"** nos momentos de identificação direta com a audiência ("Tu já ouviu isso?", "Tu espera. Tu acredita.")
+- **"Deixa eu te falar"** em vez de "deixa eu te mostrar" — mais íntimo
+- **Frases curtas** no desenvolvimento — sem construções elaboradas
+- **"Não é falta de X"** em vez de "não é fraqueza de X"
+- **"E pior —"** como pausa e peso emocional antes de uma virada
+- **Mistura tu/você é intencional** — "tu" na identificação, "você" nas transições e conclusão
+- Escrever como o criador fala, não como um texto editado
+
+---
+
 ## 🎯 COMO USAR ESTE DOCUMENTO
 
 1. Olhe o **Índice de Prioridade** abaixo e escolha um roteiro pela coluna "Gravar quando".
@@ -62,9 +74,9 @@ Reúne os 15 roteiros da análise + 8 novos. **Atualização v2:** CTA de SEGUIR
 ## PILAR 1 — A DOR DE QUEM CONVIVE
 
 ### Roteiro 1 — "A mentira que o alcoólatra te conta"
-- **Gancho (0-3s):** [texto: "A frase que mantém você preso(a)"] + voz: *"Existe uma frase que todo alcoólatra usa que destrói quem tenta ajudá-lo. Você já ouviu isso?"*
-- **Desenvolvimento:** apresente a frase ("Eu paro quando quiser") → explique que não é mentira consciente, é o que o vício faz com o cérebro → mostre o impacto em quem acredita → "quando você entende isso, muda como você reage"
-- **CTA:** *"Segue pro Escudo da Família — aqui a gente desmonta as mentiras do vício. E comenta se você já ouviu essa frase."*
+- **Gancho (0-3s):** [texto: "A mentira que todo alcoólatra repete"] + voz: *"Existe uma frase que todo alcoólatra usa que destrói quem tenta ajudá-lo. Você já ouviu isso?"*
+- **Desenvolvimento:** apresente a frase ("Eu paro quando quiser") → explique que não é mentira consciente, é o que o vício faz com o cérebro → mostre o impacto em quem acredita → "quando você entende que o vício decide por ele, você começa a decidir por você"
+- **CTA:** *"Se isso fez sentido pra você, clica pra me seguir — aqui tem muito mais do que ninguém te conta sobre o vício. Comenta se você já ouviu essa frase."*
 - **Formato:** fala direta, cortes a cada 4-5s, texto na tela nos pontos-chave, 60-70s · 🔊 use um som em alta
 - **Descrição pronta:** `A frase que todo alcoólatra repete e que destrói quem tenta ajudar. Se você convive com alcoólatra e já ouviu "eu paro quando quiser", esse vídeo é pra você.`
 - **Hashtags:** #alcoolismo #alcoólatra #relacionamento #saudemental #dependenciaquimica
@@ -267,8 +279,8 @@ Reúne os 15 roteiros da análise + 8 novos. **Atualização v2:** CTA de SEGUIR
 ## ✅ REGRAS FIXAS (valem pra todo vídeo) — atualizadas v2
 
 1. **Constância sem pausas.** 1-2 vídeos/dia, sem sumir. As duas pausas de 5 meses foram a maior causa da estagnação — nenhum roteiro funciona num perfil que some.
-2. **CTA de SEGUIR** ("segue pro Escudo da Família") nos últimos 10s, podendo somar com comentário de 1 palavra. Seu tráfego vem da busca e não segue por padrão — é preciso pedir.
-3. **Gancho** em texto na tela + fala nos **3 primeiros segundos** (sua audiência some em ~0:02 sem isso). Nunca comece com seu nome ou "hoje vou falar sobre...".
+2. **CTA de SEGUIR** nos últimos 10s, podendo somar com comentário de 1 palavra. Seu tráfego vem da busca e não segue por padrão — é preciso pedir. **Formato validado:** *"Se isso fez sentido pra você, clica pra me seguir — aqui tem muito mais do que ninguém te conta sobre o vício."* Evite condicional fraca ("se gostou") — use reconhecimento ("se isso fez sentido").
+3. **Gancho** em texto na tela + fala nos **3 primeiros segundos** (sua audiência some em ~0:02 sem isso). Nunca comece com seu nome ou "hoje vou falar sobre...". **O texto na tela deve sinalizar o nicho imediatamente** — textos vagos ("A frase que mantém você preso(a)") não param o scroll; textos específicos do nicho sim ("A mentira que todo alcoólatra repete").
 4. **Som em alta** nos vídeos curtos (30-70s). Hoje 0% do seu tráfego vem de som; em 2023 era seu motor de alcance. Em histórias longas (80-150s), som suave é suficiente.
 5. **Duração:** mínimo 45-60s. **Evite 180-330s** (full-watch de 0,7-2%, quase não converte).
 6. **Descrição:** primeira linha = consulta de busca real. Cole a versão pronta. Não empilhe palavra-chave.
