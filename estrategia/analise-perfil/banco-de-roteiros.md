@@ -4,6 +4,19 @@ Reúne os 15 roteiros da análise + 8 novos. **Atualização v2:** CTA de SEGUIR
 
 ---
 
+## 🔗 INDEXAÇÃO POR LINKAGEM (aplique em todo roteiro)
+
+Escolha **1 palavra-chave-foco** por vídeo (do banco em `estrategia/palavras-chave-nicho.md`) e garanta que ela apareça encadeada em **4 pontos**:
+
+1. **Texto na tela do gancho** — a palavra-chave sinaliza o nicho imediatamente
+2. **Fala nos primeiros 5s** — mencione 2-3x de forma natural ao longo do vídeo
+3. **Primeira linha da descrição** — como consulta de busca real
+4. **Uma das hashtags** — fechando a trilha de leitura do algoritmo
+
+> O algoritmo lê esse caminho encadeado e entrega melhor. Nunca deixe gancho, descrição e hashtag falando de palavras-chave diferentes.
+
+---
+
 ## 🎗️ ESTILO DE VOZ (padrão validado — aplique em todo roteiro)
 
 - **"Tu"** nos momentos de identificação direta com a audiência ("Tu já ouviu isso?", "Tu espera. Tu acredita.")
