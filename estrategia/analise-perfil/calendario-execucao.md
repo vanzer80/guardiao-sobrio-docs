@@ -10,4 +10,4 @@ Log de postagens do plano de conteúdo. Registra data, horário, status e observ
 | Roteiro | Título | Data | Horário | Status | Observações |
 |---------|--------|------|---------|--------|-------------|
 | 1 | A mentira que o alcoólatra te conta | 2026-06-30 | 18h | Agendado | Capa: "A mentira que todo alcoólatra repete" |
-| 6 | Por que ele para de beber e sempre volta? | 2026-06-30 | Manhã/tarde | Publicado | Capa: "Por que ele sempre volta?" · postado antes das 18h (estratégia: espaçar com R1) |
+| 6 | Por que ele para de beber e sempre volta? | 2026-06-30 | Manhã/tarde | Recurso enviado | Capa: "Por que ele sempre volta?" · bloqueado por filtro automático de álcool · recurso enviado em 2026-06-30 · aguardando revisão |
