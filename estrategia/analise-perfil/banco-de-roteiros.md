@@ -60,7 +60,7 @@ Toda entrega de roteiro inclui recomendação de capa com:
 | Nº | Título curto | Pilar | Demanda de busca | Gravar quando | ✅ |
 |----|-------------|-------|------------------|---------------|----|
 | 1 | A mentira que o alcoólatra conta | 1 · Quem convive | 🔴 Muito alta | Esta semana | ✅ |
-| 6 | Por que ele para e sempre volta | 2 · Verdades | 🔴 Urgente | Esta semana | ☐ |
+| 6 | Por que ele para e sempre volta | 2 · Verdades | 🔴 Urgente | Esta semana | ✅ |
 | 2 | Você está viciada em salvar ele | 1 · Quem convive | 🔴 Urgente | Esta semana | ☐ |
 | 11 | Parar de beber em 2026 | 4 · Primeiros passos | 🔴 Urgente (ano corrente) | Esta semana | ☐ |
 | 16 | Alcoolismo é genético? | 2 · Verdades | 🟠 Média-alta | Semana 1 | ☐ |
