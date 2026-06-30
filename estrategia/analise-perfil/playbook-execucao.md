@@ -80,6 +80,25 @@ Sua audiência chega por **busca de alta intenção emocional** (68,8% via busca
 
 ---
 
+## 6. CHECKLIST PRÉ-PUBLICAÇÃO (confira antes de postar todo vídeo)
+
+Erros identificados na análise do Roteiro 1 (2026-06-30). Confira cada item antes de publicar.
+
+**Edição**
+- [ ] Duração dentro da faixa do roteiro (curtos: 60-70s · histórias: 80-150s)
+- [ ] Gancho: texto na tela some **antes ou exatamente quando** a fala começa — não fica sobreposto
+- [ ] Todos os textos na tela previstos no roteiro estão presentes nos momentos certos
+- [ ] CTA com texto na tela nos últimos 10s (não depender só da legenda automática)
+
+**Publicação**
+- [ ] Hashtag da palavra-chave-foco tem **#** (ex: `#alcoólatra`, não `alcoólatra`) — errar aqui quebra toda a trilha de linkagem
+- [ ] São exatamente **5 hashtags clicáveis** (todas com #)
+- [ ] CTA falado usa o formato exato: *"Se isso fez sentido pra você, clica pra me seguir — aqui tem muito mais do que ninguém te conta sobre o vício."*
+- [ ] Primeira linha da descrição é consulta de busca real (sem empilhamento)
+- [ ] Capa configurada com o texto definido no roteiro
+
+---
+
 ## ⚠️ NOTA DE RESPONSABILIDADE
 
 Seu conteúdo toca dependência química, abstinência e saúde mental — temas sérios e potencialmente de risco. Mantenha sempre dois cuidados:
