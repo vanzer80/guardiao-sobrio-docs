@@ -1,6 +1,6 @@
 # Análise de Perfil @luisvanzer — Documentação
 
-> Kit completo de análise e execução gerado do cruzamento da **Análise Estratégica (27/06/2026)** com o **Relatório de Performance (28/06/2026)**. Os dados vêm do TikTok Studio — não são suposições.
+> Kit completo de análise e execução gerado do cruzamento da **Análise Estratégica (27/06/2026)** com o **Relatório de Performance (28/06/2026)**, e atualizado pela **análise pós-execução de 01/07/2026** (documentação oficial do TikTok + resultados da 1ª semana). Os dados vêm do TikTok Studio — não são suposições.
 
 ---
 
@@ -20,16 +20,18 @@ Diferença em relação ao restante de `estrategia/`: os documentos aqui são ba
 
 ---
 
-## Resumo do Diagnóstico (jun/2026)
+## Resumo do Diagnóstico (atualizado 01/07/2026)
 
 | Força | Gargalo principal |
 |---|---|
-| 68,8% do tráfego vem de busca orgânica | Busca traz views mas não converte em seguidor (falta CTA de seguir) |
-| Nicho família/codependência comprovado (8.146 views, 160 shares) | Duas pausas de ~5 meses zeraram o saldo de seguidores |
-| Maior viral histórico: 48,5 mil views (2023) | 0% do tráfego vem de som — motor de FYP desligado |
+| 68,8% do tráfego vem de busca orgânica | Duas pausas de ~5 meses zeraram o saldo de seguidores |
+| Nicho família/codependência comprovado (8.146 views, 160 shares) | Faltam interações (comentário/share/save) — não seguidor, que não é fator de recomendação |
+| Maior viral histórico: 48,5 mil views (2023) | R6 bloqueado pelo filtro automático de álcool → padrão anti-filtro virou regra fixa |
 
-**Regra de ouro:** o nicho está certo. O gargalo é constância + CTA de seguir + reativar o FYP com som em alta.
+**Regra de ouro:** o nicho está certo. O gargalo é constância + gerar interação real via CTA de comentário + reativar o FYP com gancho forte (som é prioridade baixa, não motor).
+
+> ⚠️ **Atualizado em 01/07/2026:** CTA de seguir → CTA de comentário · som em alta → prioridade baixa · horário 18h-19h → 19h-20h · padrão anti-filtro de álcool (novo). Ver `analise-mestre.md` para o detalhe completo da virada.
 
 ---
 
-*Gerado em: junho/2026 — cruzamento das análises de 27/06 e 28/06.*
+*Gerado em: junho/2026 — cruzamento das análises de 27/06 e 28/06. Atualizado em 01/07/2026 com a análise pós-execução da 1ª semana.*
